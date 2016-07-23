@@ -1,0 +1,77 @@
+/**********Beneficios asep**************/
+.Beneficios {
+  display: flex;
+  border: 2px solid #ca272c;
+  margin-left: 3em;
+  padding-left: 4em;
+  position: relative;
+  min-height: 5.6em;
+}
+.Beneficios-Img img {
+  height: 6em;
+  position: absolute;
+  left: -3em;
+  top: -0.2em;
+}
+@media screen and (max-width: 400px) {
+  .Beneficios-Img img {
+    top: 0.5em !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .Beneficios-Img img {
+    top: 0.6em !important;
+  }
+}
+.Beneficios-Descripcion {
+  padding-top: 1em;
+}
+.Beneficios-Descripcion-Nombre {
+  color: #ca272c;
+}
+.Beneficios-Descripcion-Contenido {
+  color: #6b6767;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+@media screen and (max-width: 900px) {
+  .Beneficios-Descripcion-Contenido {
+    font-size: 0.7em;
+  }
+}
+.Contenedor-Beneficios {
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+  padding-right: 1em;
+}
+.bordeRojo {
+  border: 2px solid #ca272c;
+}
+.letraRoja {
+  color: #ca272c;
+}
+.bordeVerde {
+  border: 2px solid #6fb253;
+}
+.letraVerde {
+  color: #6fb253;
+}
+.bordeMorado {
+  border: 2px solid #7f2c88;
+}
+.letraMorado {
+  color: #7f2c88;
+}
+.bordeCeleste0 {
+  border: 2px solid #64a5dd;
+}
+.letraCeleste0 {
+  color: #64a5dd;
+}
+.bordeMostaza {
+  border: 2px solid #e8ae30;
+}
+.letraMostaza {
+  color: #e8ae30;
+}
+/**********Beneficios asep**************/

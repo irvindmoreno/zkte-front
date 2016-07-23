@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Zkte-front</title>
+    <link rel="stylesheet"  href="./lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./inicio.css">
+  </head>
+  <body>
+    <header id="header-todobusco" class="relative">
+      <div class="todobusco-icon"><a href="/"><span class="todobusco-icon-title">Zkte-</span><span class="todobusco-icon-title-2">Front</span></a></div>
+      <div class="todobusco-register-container">      
+        <div class="todobusco-register-text inline-block-middle"><a href="#" class="todobusco-text-white">Instalación</a><a href="#" class="todobusco-text-white sbmobile">Componentes</a><a href="#" class="todobusco-text-white">Soporte</a>
+          <div class="todobusco-register-botton inline-block-middle">
+            <input type="button" value="Regístrate">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="componentes">
+      <div class="componentes-title"><span>Hay mas de 10.451 componentes</span></div>
+      <div class="componentes-links">
+        <div class="componentes-links-header">
+          <div class="componentes-links-header-tile"><span onclick="actualizarJsonComponente('header')" id="header" class="componenteClassLink">header</span><span onclick="actualizarJsonComponente('footer')" id="footer" class="componenteClassLink">footer</span><span onclick="actualizarJsonComponente('slider')" id="slider" class="componenteClassLink">slider</span><span onclick="actualizarJsonComponente('banner')" id="banner" class="componenteClassLink">banner</span><span onclick="actualizarJsonComponente('button')" id="button" class="componenteClassLink">button</span><span onclick="actualizarJsonComponente('contadores')" id="contadores" class="componenteClassLink">contadores</span><span onclick="actualizarJsonComponente('formulario')" id="formulario" class="componenteClassLink">formulario</span><span onclick="actualizarJsonComponente('gota')" id="gota" class="componenteClassLink">gota</span><span onclick="actualizarJsonComponente('grafico')" id="grafico" class="componenteClassLink">grafico</span><span onclick="actualizarJsonComponente('icons')" id="icons" class="componenteClassLink">icons</span><span onclick="actualizarJsonComponente('input')" id="input" class="componenteClassLink">input</span><span onclick="actualizarJsonComponente('inscripcion')" id="inscripcion" class="componenteClassLink">inscripcion</span><span onclick="actualizarJsonComponente('menu')" id="menu" class="componenteClassLink">menu</span><span onclick="actualizarJsonComponente('navegacion')" id="navegacion" class="componenteClassLink">navegacion</span><span onclick="actualizarJsonComponente('paquete')" id="paquete" class="componenteClassLink">paquete</span><span onclick="actualizarJsonComponente('posit')" id="posit" class="componenteClassLink">posit</span><span onclick="actualizarJsonComponente('post')" id="post" class="componenteClassLink">post</span><span onclick="actualizarJsonComponente('publicidad')" id="publicidad" class="componenteClassLink">publicidad</span><span onclick="actualizarJsonComponente('redesSociales')" id="redesSociales" class="componenteClassLink">redesSociales</span><span onclick="actualizarJsonComponente('select')" id="select" class="componenteClassLink">select</span><span onclick="actualizarJsonComponente('tabs')" id="tabs" class="componenteClassLink">tabs</span><span onclick="actualizarJsonComponente('titulo')" id="titulo" class="componenteClassLink">titulo</span><span onclick="actualizarJsonComponente('vinietas')" id="vinietas" class="componenteClassLink">vinietas</span>
+          </div>
+          <div id="componentes-links-header-content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-preview"><span class="text-view">Vista previa de:</span><span class="text-view-color text-gray"></span>
+      <div><span class="texto-instalacion text-gray">comando:</span><span class="comando-de-instalacion text-gray"></span></div>
+    </div>
+    <div class="contenedor-iframe">
+      <iframe id="idIframe" src="#"></iframe>
+    </div>
+    <script  src="./lib/js/jquery.min.js"></script>
+    <script  src="./lib/js/bootstrap.min.js"></script>
+    <script  src="./inicio/inicio.js"></script> 
+  </body>
+</html>

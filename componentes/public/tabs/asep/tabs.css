@@ -1,0 +1,96 @@
+/*********** tabs asep************/
+.desactivarTab {
+  background: #b4b4b4 !important;
+}
+.desactivarTab:hover {
+  background: #dee0e2 !important;
+}
+.activarTab {
+  background: #dee0e2 !important;
+}
+.TabsAsep {
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 750px) {
+  .TabsAsep {
+    display: none;
+  }
+}
+.TabsAsep a {
+  text-decoration: none;
+}
+.TabsAsep-Pestania {
+  height: inherit;
+  background: #b4b4b4;
+  padding: 0.6em 0.5em;
+  cursor: pointer;
+  border-right: 1px solid #8a8a8a;
+  transition: all ease 0.3s;
+  width: 33%;
+}
+.TabsAsep-Pestania:hover {
+  background: #dee0e2;
+}
+.TabsAsep-Pestania-Bloque2 {
+  margin-top: 0.4em;
+}
+.TabsAsep-Pestania-Ttulo {
+  display: flex;
+  color: #5d5c5c;
+}
+.TabsAsep-Pestania-Ttulo-Numero {
+  background: #5d5c5c;
+  border-radius: 50%;
+  height: 1.9em;
+  width: 3em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5em;
+}
+.TabsAsep-Pestania-Contenido {
+  color: #777;
+  margin-top: 0.4em;
+}
+.TabsAsepMovil {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .TabsAsepMovil {
+    display: block;
+  }
+}
+.TabsAsepMovil a {
+  text-decoration: none;
+}
+.TabsAsepMovil-Pestania {
+  background: #b4b4b4;
+  transition: all ease 0.3s;
+  text-align: center;
+  border-bottom: 1px solid #8a8a8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5em 0em;
+}
+.TabsAsepMovil-Pestania:hover {
+  background: #dee0e2;
+}
+.TabsAsepMovil-Pestania-Numero {
+  color: #fff;
+  background: #777;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+.TabsAsepMovil-Pestania-Titulo {
+  color: #5d5c5c;
+}
+/*********** tabs asep************/

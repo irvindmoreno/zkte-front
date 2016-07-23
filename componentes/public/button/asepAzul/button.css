@@ -1,0 +1,17 @@
+/************button asepAzul*********/
+.btn-asepAzul {
+  background: #2ca7df;
+  padding: 9px 40px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  transition: all ease 0.4s;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+.btn-asepAzul:hover {
+  background: #39b44c;
+}
+/************button asepAzul*********/

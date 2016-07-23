@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>grafico-cliclogix</title>
+    <link rel="stylesheet" href="../../../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./grafico.css">
+  </head>
+  <body>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <div class="contenedor-posicionamiento">
+      <div class="row header-posicionamiento"><span class="titulo-grafico">Analisis de Posicionamiento</span><br><span class="subtitulo-grafico">(Resultados a la Fecha de Hoy)</span></div>
+      <div class="row">
+        <div class="col-md-12 col-md-7">
+          <div class="row cabezera-grafico">
+            <div class="col-md-offset-3 col-xs-12 col-md-8">
+              <div class="col-xs-5 col-sm-5 col-md-4 empresa">Empresa Editora El Comercio</div>
+              <div class="col-xs-2 col-sm-2 col-md-4 vs">vs</div>
+              <div class="col-xs-5 col-sm-5 col-md-4 region">Región / País
+                <select class="select">
+                  <option value="">Seleccione</option>
+                  <option value="grupo1">Centro América</option>
+                  <option value="pais1">&nbsp;&nbsp;&nbsp;Honduras</option>
+                  <option value="pais1">&nbsp;&nbsp;&nbsp;México</option>
+                  <option value="grupo1">América del Sur</option>
+                  <option value="pais1">&nbsp;&nbsp;&nbsp;Perú</option>
+                  <option value="pais1">&nbsp;&nbsp;&nbsp;Chile</option>
+                  <option value="pais1">&nbsp;&nbsp;&nbsp;Bolivia</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="grafico" class="grafico"></div>
+          </div>
+        </div>
+        <div class="col-md-12 col-md-5"></div>
+      </div>
+    </div>
+    <script>var grafico = new GraficoCliclogix()</script>
+    <script src="../../../../static/js/jquery.min.js"></script>
+    <script src="../../../../static/js/bootstrap.min.js"></script>
+    <script></script>
+    <script src="./grafico.js"></script>
+  </body>
+</html>

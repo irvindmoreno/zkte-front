@@ -1,0 +1,96 @@
+.breadcrumb {
+  margin-top: 1em !important;
+  font-weight: bold;
+}
+.breadcrumb a {
+  color: #0097d9 !important;
+}
+.breadcrumb>li+li:before {
+  color: #0097d9 !important;
+  content: ">" !important;
+}
+.img-idioma {
+  width: 20px;
+  margin-right: 13px;
+}
+.datos-personales {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+.bienvenido {
+  font-size: 1.3em;
+}
+.cargo {
+  font-size: 0.9em;
+}
+.empresa {
+  color: #fe5419;
+}
+.select-idioma {
+  padding-right: 3em;
+  text-align: right;
+  margin-top: 1em;
+}
+.dropdown-menu {
+  min-width: 0px;
+}
+.btn-group .btn {
+  border: none;
+}
+.bloque-gris {
+  background: #666;
+  padding: 0.6em;
+}
+.bloque-gris a {
+  color: #fff !important;
+  text-decoration: underline;
+}
+.bloque-amarillo {
+  background: #f90;
+  padding: 0.2em;
+  margin-top: 5px;
+  color: #fff !important;
+  text-align: center;
+}
+.bloque-amarillo a {
+  color: #fff !important;
+  text-decoration: underline;
+}
+.bloque-amarillo p {
+  margin: 0px;
+}
+.cambio-password {
+  text-align: left;
+  padding-left: 3em;
+}
+.cerrar-sesion {
+  text-align: right;
+  padding-right: 3em;
+}
+.icon-i {
+  text-align: right;
+  font-size: 3em;
+}
+@media (max-width: 767px) {
+  .select-idioma {
+    margin-top: 0em;
+  }
+  .cambio-password {
+    padding-left: 1.2em;
+  }
+  .cerrar-sesion {
+    padding-right: 1.2em;
+  }
+  .bloque-gris {
+    padding: 0.1em;
+  }
+  .icon-i {
+    font-size: 2em;
+  }
+}
+@media (max-width: 400px) {
+  .bloque-amarillo {
+    font-size: 12px;
+  }
+}

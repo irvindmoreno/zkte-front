@@ -1,0 +1,40 @@
+/***************input textAsep******************/
+.errorInputValidado {
+  color: #fff;
+  height: 1.5em;
+  width: 2em;
+  background: #2ca7df;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0.5em;
+  margin-left: 0.5em;
+  display: none;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.contenedorDeItemAValidar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.InputInvalidado {
+  display: none;
+  transition: all ease 0.5s;
+}
+.inputValido {
+  display: block;
+}
+.zkteInputAsep {
+  height: 2em;
+  border-radius: 3px;
+  border: 1px solid #808080;
+  padding-left: 0.5em;
+  width: 98%;
+  height: 2em;
+  outline: none;
+  background: #f7f2f2;
+}
+/***************input textAsep******************/

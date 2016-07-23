@@ -1,0 +1,71 @@
+/************* input asep************/
+.InputAsep {
+  background: colorInput;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 12px;
+  padding: 8px;
+  width: 22em;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-radius: 5px;
+  border-bottom-width: 1px;
+  border-style: solid;
+}
+.input[type="text"]:focus:invalid {
+  border: 2px solid #f00;
+}
+.error {
+  background: #f7f2f2 url("../../../imagenes/x.png") right center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-boxshadow: 0 0 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)*/
+  color: #fff;
+  display: none;
+  font-size: 14px;
+  margin-top: -30px;
+  margin-left: 170px;
+  padding: 14px;
+  position: absolute;
+}
+.errorA {
+  background: #f00;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-boxshadow: 0 0 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)*/
+  color: #fff;
+  display: none;
+  font-size: 14px;
+  margin-top: -30px;
+  margin-left: 170px;
+  padding: 6px;
+  position: absolute;
+}
+.errorB {
+  background: #f00;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-boxshadow: 0 0 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+/*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)*/
+  color: #fff;
+  display: none;
+  font-size: 14px;
+  margin-top: -30px;
+  margin-left: 170px;
+  padding: 6px;
+  position: absolute;
+}
+/************* input asep************/

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>nuevo-nuevo</title>
+    <link rel="stylesheet" href="../../../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./input.css">
+  </head>
+  <body>
+    <form>
+      <input requerid type="text" name="nombre" id="claseNombre" class="InputAsep">
+      <div id="mensajeNombreImagen" class="error"></div>
+      <div id="mensajeNombreL" class="errorA">Ingresar solo letras</div>
+      <div id="mensajeNOmbreM" class="errorB">Digitos permitidos en el campo Nombre son menores a 100</div><br>
+      <input required type="text" name="apellido" id="claseApellido" class="InputAsep">
+      <div id="mensajeApellidoImagen" class="error"></div>
+      <div id="mensajeApellidoL" class="errorA">Ingresar solo letras</div>
+      <div id="mensajeApellidoM" class="errorB">Digitos permitidos en el campo Apellido son menores a 100</div><br>
+      <input type="text" name="email" id="claseEmail" class="InputAsep">
+      <div id="mensajeEmailImagen" class="error"></div>
+      <div id="mensajeEmailA" class="errorA">Escriba un correo    </div>
+      <div id="mensajeEmail" class="errorA">Escriba un correo correcto: example@example.com   </div><br>
+      <input type="password" name="contrasenia" id="claseContrasenia" class="InputAsep">
+      <div id="mensajePasswordImagen" class="error"></div>
+      <div id="mensajePassword" class="errorA">La contrasenia no debe contener espacios</div><br>
+      <input type="text" name="dni" id="claseDNI" class="InputAsep">
+      <div id="mensajeDniImagen" class="error"></div>
+      <div id="mensajeDNI" class="errorA">Ingresar solo números</div>
+      <div id="mensajeDNI2" class="errorA">Valido 8 digitos en el campo DNI</div><br>
+      <input type="text" name="telefono" id="claseTelefono" class="InputAsep">
+      <div id="mensajeTelefono" class="errorA">Ingrese solo numeros en el campo Telefono</div>
+      <div id="mensajeTelefono2" class="errorA">Ingrese un número valido en el campo Telefono</div><br>
+      <input type="submit" value="Probar" class="classBoton">
+    </form>
+    <script src="../../../../static/js/jquery.min.js"></script>
+    <script src="../../../../static/js/bootstrap.min.js"></script>
+    <script></script>
+    <script src="./input.js"></script>
+  </body>
+</html>

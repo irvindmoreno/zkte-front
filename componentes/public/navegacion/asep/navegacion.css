@@ -1,0 +1,93 @@
+/********Navegacion asep****************/
+.img-Logo {
+  height: 4em;
+}
+@media screen and (max-width: 412px) {
+  .img-Logo {
+    height: 3em;
+  }
+}
+.Contenedor-NavegacionMenu {
+  display: flex;
+  padding: 1.5em;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navegacion-Menu {
+  display: flex;
+}
+.Navegacion-Menu ul {
+  list-style: none;
+  display: flex;
+}
+.Navegacion-Menu a {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  color: #595757;
+  transition: all ease 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Navegacion-Menu a:hover {
+  color: #2ca7df;
+}
+.Navegacion-Menu .active {
+  color: #2ca7df;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1137px) {
+  .Navegacion-Menu {
+    display: none;
+  }
+}
+.Boton-Movil {
+  display: none;
+}
+@media screen and (max-width: 1137px) {
+  .Boton-Movil {
+    display: block;
+  }
+}
+.fa-angle-double-down {
+  cursor: pointer;
+  font-size: 2em !important;
+  color: #808080;
+  transition: all ease 0.3s;
+}
+.fa-angle-double-down:hover {
+  color: #2ca7df;
+}
+.Navegacion-Menu-Movil {
+  height: 0px;
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+.Navegacion-Menu-Movil ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid #2ca7df;
+}
+.Navegacion-Menu-Movil li {
+  background: #2ca7df;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.Navegacion-Menu-Movil li:hover {
+  background: #f02228;
+}
+.Navegacion-Menu-Movil li a {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #cacfdc;
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+}
+@media screen and (max-width: 1137px) {
+  .Navegacion-Menu-Movil {
+    height: 0px;
+  }
+}
+/********Navegacion asep****************/

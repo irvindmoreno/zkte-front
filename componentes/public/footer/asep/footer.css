@@ -1,0 +1,154 @@
+/*********** Footer Aesp********/
+.Fotter-1 {
+  background: #2ca7df;
+  height: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Fotter-1-btn-HazteSocio {
+  height: 5em;
+  background: url("http://asep.pe/wp-content/themes/asep/img/btn_hazte_socio_white.png") no-repeat left;
+  width: 14em;
+  background-size: 13em;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+.Fotter-1-btn-HazteSocio:hover {
+  background: url("http://asep.pe/wp-content/themes/asep/img/btn_hazte_socio_white_selected.png") no-repeat left;
+  background-size: 13em;
+}
+.Fotter-2 {
+  background: #4c4c4c;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 0.8em;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.3em;
+}
+.Fotter-2-Colaboradores {
+  width: 60%;
+}
+.Fotter-2-Colaboradores-Img {
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+.Fotter-2-Colaboradores-Img img {
+  height: 3.5em;
+}
+@media screen and (max-width: 763px) {
+  .Fotter-2-Colaboradores-Img img {
+    height: 3em;
+  }
+}
+.Fotter-2-Sponsor-Img {
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+.Fotter-2-Sponsor-Img img {
+  height: 3.5em;
+}
+@media screen and (max-width: 763px) {
+  .Fotter-2-Sponsor-Img img {
+    height: 3em;
+  }
+}
+.Fotter-3 {
+  background: #303030;
+  height: 10em;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4em;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+@media screen and (max-width: 609px) {
+  .Fotter-3 {
+    padding-top: 2em;
+    height: 6em;
+  }
+}
+@media screen and (max-width: 997px) {
+  .Fotter-3 img {
+    display: none;
+  }
+}
+.Fotter-3-Navegacion-Menu {
+  display: flex;
+}
+@media screen and (max-width: 609px) {
+  .Fotter-3-Navegacion-Menu {
+    display: none;
+  }
+}
+.Fotter-3-Navegacion-Menu ul {
+  list-style: none;
+  display: flex;
+}
+.Fotter-3-Navegacion-Menu a {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  color: #fff;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+.Fotter-3-Navegacion-Menu a:hover {
+  color: #2ca7df;
+}
+.Fotter-3-Navegacion-Menu .active {
+  color: #2ca7df;
+  text-decoration: underline;
+}
+.Fotter-3-Letter {
+  color: #fff;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Fotter-3-Letter i {
+  color: #fff;
+}
+.Fotter-3-Letter-Span {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+.Fotter-3-Letter span {
+  margin-left: 0.3em;
+}
+.Fotter-4 {
+  background: #232323;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.Fotter-4 img {
+  height: 1.5em;
+  margin-left: 1em;
+}
+@media screen and (max-width: 671px) {
+  .Fotter-2 {
+    display: block;
+  }
+  .Fotter-2-Colaboradores {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 451px) {
+  .Fotter-2-Colaboradores-Img {
+    display: block;
+  }
+  .Fotter-2-Colaboradores-Img img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+}
+/*********** Footer Aesp********/

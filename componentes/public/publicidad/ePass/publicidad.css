@@ -1,0 +1,35 @@
+.publicidadEpass {
+  background: #757873;
+  padding: 1em 8%;
+  color: #fff;
+}
+.publicidadEpass-Texto {
+  font-size: 2.5em;
+  width: 49%;
+  text-align: right;
+}
+.publicidadEpass-Button {
+  width: 49%;
+  padding-top: 2em;
+  padding-left: 3em;
+}
+.publicidadEpass-Texto,
+.publicidadEpass-Button {
+  display: inline-block;
+  vertical-align: top;
+}
+.publicidadEpass-Button a {
+  text-decoration: none;
+  background: #fff;
+  color: #757873;
+  padding: 0.5em 1em;
+  border-radius: 16px;
+  font-size: 2.4em;
+}
+.publicidadEpass-Button i {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 2em;
+  position: relative;
+  top: 12px;
+}

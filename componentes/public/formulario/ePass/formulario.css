@@ -1,0 +1,149 @@
+body {
+  margin-top: 1em !important;
+}
+.contenedorFormularioEpass {
+  padding: 2em 1em;
+  border: 1px solid #757873;
+  border-radius: 5px;
+}
+.subContenedorFormularioEpass {
+  padding: 1em;
+  border: 1px solid #757873;
+  position: relative;
+  border-radius: 5px;
+}
+.spanEpass {
+  color: #05aadd;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.spanEncima {
+  color: #05aadd;
+  position: absolute;
+  top: -12px;
+  background: #fff;
+}
+.bloqueInput input {
+  font-size: 0.8em;
+  padding: 0.4em 1em;
+}
+.spanEpass,
+.imputEpass {
+  display: inline-block;
+  vertical-align: middle;
+}
+.bloqueInput label {
+  margin-bottom: 0px;
+  padding: 0.3em;
+}
+.form-inline {
+  padding: 1.5em 0em;
+}
+.selectpicker {
+  padding: 0.3em 0.4em;
+  background: #fff;
+  color: #757873;
+}
+.slSinMarg {
+  margin-left: -4px;
+}
+.top3em {
+  margin-top: 3em;
+}
+.cont_check {
+  padding: 0em;
+  padding-left: 2em;
+  color: #757873;
+  border: none;
+}
+.marg {
+  margin-left: 1em;
+  font-size: 0.9em;
+}
+.cont_check a {
+  font-size: 0.9em;
+  color: #757873;
+  text-decoration: underline;
+}
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn_siguientePaso {
+  text-align: center;
+  padding: 1em 0em;
+  margin-top: -2em;
+}
+.btn_siguientePaso a:hover {
+  animation: animationButton 1s infinite;
+}
+.btn_siguientePaso a {
+  text-decoration: none;
+  background: #cedf00;
+  padding: 1em 3em;
+  border-radius: 11px;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .slSinMarg {
+    margin-left: 0px;
+  }
+  .marg {
+    margin-left: 0px;
+  }
+  .span_check {
+    width: 90%;
+    margin-left: 1em;
+  }
+  .btn_siguientePaso {
+    margin-top: 1em;
+  }
+}
+@-moz-keyframes animationButton {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #2a6496;
+    color: #fff;
+  }
+  100% {
+    background: #333;
+  }
+}
+@-webkit-keyframes animationButton {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #2a6496;
+    color: #fff;
+  }
+  100% {
+    background: #333;
+  }
+}
+@-o-keyframes animationButton {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #2a6496;
+    color: #fff;
+  }
+  100% {
+    background: #333;
+  }
+}
+@keyframes animationButton {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #2a6496;
+    color: #fff;
+  }
+  100% {
+    background: #333;
+  }
+}

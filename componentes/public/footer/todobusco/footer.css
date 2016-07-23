@@ -1,0 +1,129 @@
+/************** footer todobusco **************/
+footer {
+  background: #007f4c;
+  color: #fff;
+  padding: 1em 0em;
+}
+.bg-white-fot {
+  width: 100%;
+  height: 0.75em;
+  background: #fff;
+  margin-bottom: 1.5em;
+}
+.smb {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.spb {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.cont-logo-fot {
+  text-align: center;
+  padding: 3.1em 1em;
+  border-right: 1px dashed #424242;
+}
+.cont-logo-fot img {
+  width: 13em;
+}
+.cont-fot-text {
+  text-align: center;
+  padding: 0em 1em;
+  border-right: 1px dashed #424242;
+}
+.foot-title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.foot-desc {
+  font-size: 0.8em;
+}
+.fot-redes-sociales {
+  margin-top: 2em;
+}
+.fot-sig {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+.fot-todobusco-icon-title {
+  font-size: 3em;
+  color: #fff;
+  margin-right: 1em;
+}
+.fot-twiter-awesome {
+  margin-right: 0em;
+}
+.fot-todobusco-text-white {
+  color: #fff;
+  display: inline-block;
+  padding: 0em 1em;
+  border-right: 2px solid #fff;
+  font-weight: bold;
+}
+.fot-todobusco-text-white:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.inline-block-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn-fot-ingresa {
+  color: #007f4c;
+  font-weight: bold;
+  border: none;
+  padding: 0em 1em;
+  border-radius: 1em;
+  background: #fff;
+  margin-left: 0.5em;
+}
+.fot-block-izquierda {
+  text-align: right;
+  padding: 0em 2em;
+  padding-right: 5em;
+}
+.fot-buscador-container {
+  padding: 2em 1em;
+  text-align: left;
+}
+.txt-busca {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.fot-input-buscar {
+  width: 100%;
+  padding: 0.4em 0.5em;
+  font-size: 14px;
+  border: 2px solid #ffa200;
+  border-radius: 6px;
+}
+.fot-btn-buscar {
+  background: #ffa200;
+  padding: 0.2em 1em;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-top: 0.5em;
+}
+.cont-btn-buscar-fot {
+  text-align: right;
+}
+.fot-copy {
+  text-align: center;
+  margin-top: 1em;
+}
+@media screen and (max-width: 992px) {
+  .fot-todobusco-register-text {
+    font-size: 12px;
+  }
+  .fot-block-izquierda {
+    padding: 0em 1em;
+  }
+  .fot-block-izquierda {
+    text-align: center;
+    padding-top: 1em;
+    border-top: 1px dashed #424242;
+  }
+}
+/************** footer todobusco **************/

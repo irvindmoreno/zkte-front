@@ -1,0 +1,130 @@
+.FechaConTituloContenido {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+@media screen and (max-width: 700px) {
+  .FechaConTituloContenido {
+    display: block;
+  }
+}
+.FechaConTituloContenido-Izquierda {
+  width: 47%;
+  padding-left: 1.5em;
+}
+@media screen and (max-width: 700px) {
+  .FechaConTituloContenido-Izquierda {
+    width: 100%;
+  }
+}
+.FechaConTituloContenido-Izquierda img {
+  width: 100%;
+}
+.FechaConTituloContenido-Izquierda-Texto {
+  text-align: justify;
+  color: #424242;
+  padding-top: 0.5em;
+}
+.FechaConTituloContenido-Derecha {
+  width: 47%;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #383838;
+}
+@media screen and (max-width: 700px) {
+  .FechaConTituloContenido-Derecha {
+    width: 100%;
+  }
+}
+.FechaConTituloContenido-Derecha div {
+  margin-bottom: 0.5em;
+}
+.FechaConTituloContenido-Derecha-Reloj i {
+  font-size: 2em;
+}
+.FechaConTituloContenido-Derecha-Hora {
+  font-size: 2em;
+}
+.FechaConTituloContenido-Derecha-Mapa i {
+  font-size: 2em;
+}
+.FechaConTituloContenido-Derecha-Direccion {
+  font-size: 1.4em;
+  text-align: center;
+  width: 60%;
+}
+.FechaConTituloContenido-Derecha-Numeros {
+  font-size: 3em;
+  color: #38b34b;
+}
+.FechaConTituloContenido-Derecha-CursosDisponibles {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -1em;
+}
+.FechaConTituloContenido-Derecha-InscripcionGratuita {
+  width: 40%;
+  text-align: center;
+  color: #383838;
+}
+.FechaConTituloContenido-Derecha-BtnInscribete {
+  color: #fff;
+  background: #38b34b;
+  padding: 0.4em 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.FechaConTituloContenido-Derecha-Formulario {
+  color: #383838;
+  height: 0em;
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+.FechaConTituloContenido-Derecha-Formulario td {
+  color: #383838;
+}
+.FechaConTituloContenido-Derecha-Formulario input {
+  width: 100%;
+  border: none;
+  height: 2em;
+}
+.FechaConTituloContenido-Derecha-Formulario-Enviar {
+  background: #fdaf17;
+  color: #fff;
+  width: 10em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.FechaConTituloContenido-Derecha-Formulario-EnviarClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FechaConTituloContenido-Derecha-BtnHazteSocio {
+  height: 4em;
+  background: url("rutaImagenes/btn_hazte_socio_blue.png") no-repeat left;
+  width: 12em;
+  background-size: 12em;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.FechaConTituloContenido-Derecha-BtnHazteSocio:hover {
+  height: 4em;
+  background: url("rutaImagenes/btn_hazte_socio.png") no-repeat left;
+  width: 12em;
+  background-size: 12em;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}

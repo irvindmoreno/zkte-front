@@ -1,0 +1,115 @@
+.gota-epas {
+  background: #f28b00;
+  height: 20em;
+  width: 20em;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-image: url("http://images.forbes.com/media/2010/11/10/1110_porsche-911-gt2-rs_400x400.jpg");
+  background-position-y: 4.4em;
+  background-repeat: no-repeat;
+  box-shadow: -15px 3px 0px -3px rgba(242,139,0,0.58);
+  -webkit-box-shadow: -15px 3px 0px -3px rgba(242,139,0,0.58);
+  overflow: hidden;
+}
+.gota-epas-titulo {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 3px 3px #423e3e;
+  padding: 0.4em;
+}
+.gota-epas-img {
+  text-align: center;
+  height: 17em;
+  margin-top: -1em;
+  background: rgba(242,139,0,0.42);
+}
+.gota-epas-img img {
+  height: 10em;
+  border-radius: 50%;
+}
+.gota-epas-btn {
+  text-align: center;
+}
+.gota-epas-btn a {
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid #fff;
+  padding: 0.1em 0.2em;
+  border-radius: 0.4em;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: 3px 3px #423e3e;
+  margin-top: 7.5em;
+  display: inline-block;
+}
+.gota-epas-btn a:hover {
+  animation: ahoverAnimation 1s infinite;
+}
+.gota-epas-btn i {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 0.2em;
+}
+.gota-epas-btn i,
+.gota-epas-btn span {
+  display: inline-block;
+  vertical-align: top;
+}
+@-moz-keyframes ahoverAnimation {
+  0% {
+    font-size: 1.5em;
+  }
+  50% {
+    background: #f28b00;
+    color: #464444;
+    border: 3px solid #464444;
+    text-shadow: 1px 1px #fff;
+  }
+  100% {
+    font-size: 1.5em;
+  }
+}
+@-webkit-keyframes ahoverAnimation {
+  0% {
+    font-size: 1.5em;
+  }
+  50% {
+    background: #f28b00;
+    color: #464444;
+    border: 3px solid #464444;
+    text-shadow: 1px 1px #fff;
+  }
+  100% {
+    font-size: 1.5em;
+  }
+}
+@-o-keyframes ahoverAnimation {
+  0% {
+    font-size: 1.5em;
+  }
+  50% {
+    background: #f28b00;
+    color: #464444;
+    border: 3px solid #464444;
+    text-shadow: 1px 1px #fff;
+  }
+  100% {
+    font-size: 1.5em;
+  }
+}
+@keyframes ahoverAnimation {
+  0% {
+    font-size: 1.5em;
+  }
+  50% {
+    background: #f28b00;
+    color: #464444;
+    border: 3px solid #464444;
+    text-shadow: 1px 1px #fff;
+  }
+  100% {
+    font-size: 1.5em;
+  }
+}

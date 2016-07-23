@@ -1,0 +1,75 @@
+.post-gallito-title {
+  position: relative;
+  margin-bottom: 1em;
+}
+.post-gallito-title-txt {
+  color: #3b404b;
+  font-size: 1.8em;
+  font-weight: bold;
+  display: inline-block;
+  background: #fff;
+  padding-right: 0.5em;
+}
+.smB {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.spB {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.post-gallito-title-borde {
+  border-bottom: 1px solid #404040;
+  position: absolute;
+  top: 28px;
+  width: 100%;
+  z-index: -1;
+}
+.post-gallitoB-img {
+  width: 100%;
+}
+.container-post-gallitoB {
+  padding: 2em;
+}
+.pad-to-gallitoB {
+  padding: 1em;
+}
+.container-post-gallitoB {
+  padding: 1em;
+  border-right: 1px dashed #808080;
+}
+.pad-to-gallitoB {
+  padding: 0em 2em;
+  padding-bottom: 0.5em;
+}
+.post-gallitoB-description-title {
+  font-size: 1.5em;
+  padding: 0.3em 0em;
+  font-weight: bold;
+  color: #3b404b;
+}
+.post-gallitoB-description-text {
+  font-size: 14px;
+  color: #585858;
+}
+.seguirley {
+  float: right;
+  margin-top: 1em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bg-blue-light {
+  background: #eff0f1;
+}
+.brn {
+  border-right: none;
+}
+.post-gallitoB-cont {
+  padding: 1em 3em;
+}
+@media screen and (max-width: 542px) {
+  .post-gallito-title-txt {
+    font-size: 1.1em;
+    text-align: center;
+  }
+}

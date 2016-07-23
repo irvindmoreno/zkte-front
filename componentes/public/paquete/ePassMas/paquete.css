@@ -1,0 +1,221 @@
+.soles {
+  font-size: 1.5em;
+  margin-top: 0.4em;
+  width: 7%;
+}
+.precio {
+  font-size: 2.5em;
+  font-weight: bold;
+  width: 66%;
+}
+.contenedorContenido {
+  border: 2px solid #9a9c99;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.soles,
+.precio {
+  display: inline-block;
+  vertical-align: top;
+}
+.paqueteEpass-Contenido-Recarga {
+  padding: 3.6em 3em;
+  text-align: center;
+  line-height: 2.2em;
+}
+.paqueteEpass-Contenido-bloque2,
+.paqueteEpass-Contenido-bloque3 {
+  padding: 1.5em 1em;
+  position: relative;
+  border-bottom: 2px dashed #9a9c99;
+}
+.paqueteEpass-Contenido-bloque2-Derecha {
+  position: absolute;
+  right: 1em;
+  top: 2.5em;
+}
+.paqueteEpass-Contenido-bloque1 {
+  padding: 1em;
+  border-bottom: 2px dashed #9a9c99;
+  position: relative;
+  font-size: 1.1em;
+}
+strike {
+  font-size: 0.9em;
+}
+.specialPrice {
+  font-size: 1.4em;
+  animation: specialPriceAnimation 2s infinite;
+}
+.pad {
+  padding-top: 0.25em;
+  animation: specialPriceAnimation 2s infinite;
+}
+.paqueteEpass-Contenido-bloque2 {
+  font-size: 1.2em;
+}
+.saldo-monto {
+  position: absolute;
+  right: 16px;
+}
+.paqueteEpass-Contenido-Recarga span {
+  font-size: 1.7em;
+  color: #464846;
+  border-radius: 5px;
+}
+.paqueteEpass-Contenido-Recarga a {
+  font-size: 1.7em;
+  color: #464846;
+  text-decoration: underline;
+}
+.top0 {
+  top: 0;
+}
+.tachado {
+  top: 0;
+  color: #e0333d;
+}
+.paqueteEpass {
+  width: 19em;
+}
+.relative {
+  position: relative;
+}
+.paqueteEpass-Titulo {
+  color: #fff;
+  background: #9a9c99;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+  height: 1.6em;
+  font-size: 1.9em;
+  font-weight: bold;
+  border-top-right-radius: 0.7em;
+}
+.paqueteEpass-Contenido-Precio {
+  background: #9a9c99;
+  height: 6em;
+  padding-top: 0.8em;
+  color: #fff;
+  text-align: center;
+  border-radius: 19em/6em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.paqueteEpass-Contenido-VerMas {
+  text-align: center;
+  padding: 0.5em 1.2em;
+  font-size: 2em;
+  color: #9a9c99;
+  font-weight: bold;
+  border-top: 2px solid rgba(154,156,153,0.57);
+  background: rgba(154,156,153,0.21);
+}
+.paqueteEpass-Contenido-VerMas i {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 1.8em;
+  vertical-align: middle;
+}
+.paqueteEpass-Contenido-VerMas span {
+  display: inline-block;
+  vertical-align: middle;
+  background: #9a9c99;
+  color: #fff;
+  padding: 0.3em 1em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.paqueteEpass-Contenido-VerMas span:hover {
+  animation: animationButton 1s infinite;
+}
+.sinDashed {
+  border-bottom: none;
+}
+@-moz-keyframes specialPriceAnimation {
+  0% {
+    color: #333;
+  }
+  50% {
+    color: #2a6496;
+  }
+  100% {
+    color: #333;
+  }
+}
+@-webkit-keyframes specialPriceAnimation {
+  0% {
+    color: #333;
+  }
+  50% {
+    color: #2a6496;
+  }
+  100% {
+    color: #333;
+  }
+}
+@-o-keyframes specialPriceAnimation {
+  0% {
+    color: #333;
+  }
+  50% {
+    color: #2a6496;
+  }
+  100% {
+    color: #333;
+  }
+}
+@keyframes specialPriceAnimation {
+  0% {
+    color: #333;
+  }
+  50% {
+    color: #2a6496;
+  }
+  100% {
+    color: #333;
+  }
+}
+@-moz-keyframes animationButton {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #2a6496;
+  }
+  100% {
+    background: #333;
+  }
+}
+@-webkit-keyframes animationButton {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #2a6496;
+  }
+  100% {
+    background: #333;
+  }
+}
+@-o-keyframes animationButton {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #2a6496;
+  }
+  100% {
+    background: #333;
+  }
+}
+@keyframes animationButton {
+  0% {
+    background: #333;
+  }
+  50% {
+    background: #2a6496;
+  }
+  100% {
+    background: #333;
+  }
+}

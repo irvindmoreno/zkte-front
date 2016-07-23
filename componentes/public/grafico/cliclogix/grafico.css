@@ -1,0 +1,42 @@
+.contenedor-posicionamiento {
+  border: 3px solid #465d43;
+}
+.header-posicionamiento {
+  background: #465d43;
+  padding: 0.5em;
+  text-align: center;
+  color: #fff;
+}
+.titulo-grafico {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.subtitulo-grafico {
+  font-size: 0.9em;
+}
+.cabezera-grafico {
+  padding: 2em 2em 2em 0em;
+}
+.region {
+  font-weight: bold;
+}
+.vs {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+}
+.empresa {
+  font-weight: bold;
+}
+.grafico {
+  height: 300px;
+}
+.icon-grafico {
+  font-size: 3em;
+  color: #0097d9;
+}
+@media (max-width: 767px) {
+  .contenedor-posicionamiento {
+    border: none;
+  }
+}

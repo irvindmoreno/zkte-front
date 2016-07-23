@@ -1,0 +1,14 @@
+/************* redesSociales asep*************/
+.Redes-Sociales-Finish {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.Redes-Sociales-Finish i {
+  font-size: 3em;
+  display: inline-block;
+  margin-left: 0.5em;
+  color: #6b6767;
+}
+/************* redesSociales asep*************/

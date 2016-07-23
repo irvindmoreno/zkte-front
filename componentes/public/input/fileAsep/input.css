@@ -1,0 +1,32 @@
+/*************** input File Asep ****************/
+input[type="file"] {
+  z-index: 999;
+  line-height: 0;
+  font-size: 50px;
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+.cargar {
+  text-align: center;
+  background-color: #fff;
+  color: #4e4444;
+  border: 1px solid #4e4444;
+  display: block;
+  border-radius: 3px;
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
+  float: left;
+  line-height: 1.6em;
+  cursor: pointer;
+}
+input[type="text"] {
+  float: left;
+  border: 1px solid #808080;
+  background: #dedede;
+  height: 26px;
+}
+/*************** input File Asep ****************/

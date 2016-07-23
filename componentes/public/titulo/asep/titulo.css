@@ -1,0 +1,19 @@
+/************titulo asep*****************/
+.TituloAsep {
+  background: #2ca7df;
+  width: 100%;
+  padding: 0.5em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 453px) {
+  .TituloAsep {
+    font-size: 2em;
+  }
+}
+/************titulo asep*****************/

@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "scfly";
+  src: url("../../fonts/scfly/scfly.eot") format("embedded-opentype"), url("../../fonts/scfly/scfly.woff") format("woff"), url("../../fonts/scfly/scfly.ttf") format("truetype");
+}
+@-moz-keyframes animationButton {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #bbdefb;
+    color: #1976d2;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes animationButton {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #bbdefb;
+    color: #1976d2;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes animationButton {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #bbdefb;
+    color: #1976d2;
+  }
+  100% {
+    background: #fff;
+  }
+}
+header {
+  background: #1976d2;
+  height: 5em;
+}
+.componentes {
+  background: #2196f3;
+}
+.componentes-title {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  font-size: 2em;
+  color: #fff;
+}
+.componentes-links {
+  padding: 1em;
+}
+.componenteClassLink {
+  color: #fff;
+  font-size: 1.3em;
+  display: inline-block;
+  border-right: 2px solid #ffa200;
+  padding: 0em 0.5em;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.link-componente-iframe {
+  color: #fff;
+  background: #ffa200;
+  padding: 0.2em 1em;
+  border-radius: 6px;
+  margin-right: 1em;
+  margin-top: 1em;
+  display: inline-block;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.link-componente-iframe:hover {
+  color: #1976d2;
+}
+#header-todobusco {
+  font-family: scfly;
+}
+#idIframe {
+  width: 100%;
+  height: 20em;
+  border: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.relative {
+  position: relative;
+}
+.inline-block-top {
+  display: inline-block;
+  vertical-align: top;
+}
+.inline-block-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.todobusco-icon {
+  position: absolute;
+  left: 1em;
+  top: 0.2em;
+  font-size: 3em;
+}
+.todobusco-register-container {
+  position: absolute;
+  right: 1em;
+  top: 1.5em;
+}
+.todobusco-icon-title {
+  color: #fff;
+}
+.todobusco-icon-title-2 {
+  color: #ffa200;
+}
+.todobusco-icon-com {
+  color: #fff;
+}
+.todobusco-register-botton input {
+  background: #fff;
+  color: #ffa200;
+  border: #ffdead;
+  outline: none;
+  -webkit-appearance: none;
+  padding: 0.1em 1em;
+  font-size: 1.4em;
+  border-radius: 10px;
+}
+.todobusco-register-botton input:hover {
+  animation: animationButton 1s infinite;
+}
+.todobusco-text-blue {
+  font-weight: bold;
+  color: #52749a;
+  transition: all ease 0.3s;
+}
+.todobusco-text-white {
+  color: #fff;
+  transition: all ease 0.3s;
+  font-size: 1.4em;
+  padding: 0em 1em;
+  border-right: 2px solid #ffa200;
+  border-radius: 2px;
+}
+.todobusco-register-text {
+  margin-left: 1em;
+}
+.todobusco-text-blue:hover {
+  color: #e26a39;
+}
+.todobusco-text-white:hover {
+  color: #ffa200;
+}
+.todobusco-register-botton {
+  padding: 0em 1em;
+}
+@media screen and (max-width: 800px) {
+  .todobusco-icon,
+  .todobusco-register-container {
+    position: initial;
+    text-align: center;
+  }
+  header {
+    height: inherit;
+    padding: 0.5em;
+    font-size: 12px;
+  }
+  .todobusco-register-text {
+    margin-left: 0em;
+  }
+  .todobusco-text-white {
+    width: 10em;
+    display: inline-block;
+    text-align: center;
+    padding: 0em;
+  }
+  .todobusco-register-text {
+    text-align: left;
+  }
+  .todobusco-register-botton {
+    padding: 0em 2.5em;
+    width: 15em;
+  }
+  .todobusco-register-botton input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 671px) {
+  .todobusco-text-white {
+    width: 50%;
+    border-radius: inherit;
+  }
+  .todobusco-register-botton {
+    width: 49%;
+  }
+  .sbmobile {
+    border-right: none;
+  }
+}
+.componenteSeleccionado {
+  color: #ffa200;
+  text-decoration: underline;
+  font-style: italic;
+}
+.text-view {
+  font-size: 1.5em;
+  color: #ff5722;
+  display: inline-block;
+}
+.nombreComponenteSeleccionado {
+  background: #1976d2;
+  color: #bbdefb;
+}
+.nombreComponenteSeleccionado:hover {
+  color: #fff;
+}
+.text-preview {
+  padding: 0.5em 1em;
+}
+.text-gray {
+  color: #565656;
+}
+.text-view-color {
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+@-moz-keyframes animationButton {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #bbdefb;
+    color: #1976d2;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-webkit-keyframes animationButton {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #bbdefb;
+    color: #1976d2;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@-o-keyframes animationButton {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #bbdefb;
+    color: #1976d2;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes animationButton {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #bbdefb;
+    color: #1976d2;
+  }
+  100% {
+    background: #fff;
+  }
+}
