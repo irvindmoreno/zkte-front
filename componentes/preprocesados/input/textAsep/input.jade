@@ -1,0 +1,12 @@
+// input textAsep
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    //EmailValidar,NombreValidar,ApellidoValidar,ContraseniaValidar,DniValidar,TelefonoValidar,RucValidar
+    - tipoDeInput="EmailValidar"
+    - placeholder="Email"
+    - tipo="text"
+    div(class="contenedorDeItemAValidar")
+        input(type=tipo placeholder=placeholder class="zkteInputAsep "+tipoDeInput)
+        span(class='errorInputValidado') X
+// input textAsep

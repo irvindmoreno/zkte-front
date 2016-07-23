@@ -1,0 +1,188 @@
+//************** slider gallitoB **************//
+.owl-carousel
+  display none
+  position relative
+  width 100%
+  -ms-touch-action pan-y
+  .owl-wrapper
+    display none
+    position relative
+    -webkit-transform translate3d(0px, 0px, 0px)
+    &:after
+      content "."
+      display block
+      clear both
+      visibility hidden
+      line-height 0
+      height 0
+  .owl-wrapper-outer
+    overflow hidden
+    position relative
+    width 100%
+    &.autoHeight
+      -webkit-transition height 500ms ease-in-out
+      -moz-transition height 500ms ease-in-out
+      -ms-transition height 500ms ease-in-out
+      -o-transition height 500ms ease-in-out
+      transition height 500ms ease-in-out
+  .owl-item
+    float left
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div
+  cursor pointer
+
+.owl-controls
+  -webkit-user-select none
+  -khtml-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  user-select none
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+
+.grabbing
+  cursor url(grabbing.png) 8 8, move
+
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item
+  -webkit-backface-visibility hidden
+  -moz-backface-visibility hidden
+  -ms-backface-visibility hidden
+  -webkit-transform translate3d(0,0,0)
+  -moz-transform translate3d(0,0,0)
+  -ms-transform translate3d(0,0,0)
+
+#owl-slider_3
+  .item
+    background #616161
+    margin 10px
+    color #FFF
+    -webkit-border-radius 3px
+    -moz-border-radius 3px
+    border-radius 3px
+    text-align center
+
+.customNavigation
+  text-align center
+  a
+    -webkit-user-select none
+    -khtml-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+    -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+.contenedor-post-gallito
+    border-top: 1px solid gray;
+    padding: 1em 0em;
+.post-gallito-title
+    position relative
+    margin-bottom 1em
+.post-gallito-title-txt
+    color: #3b404b;
+    font-size: 1.8em;
+    font-weight: bold
+    display: inline-block;
+    background: white;
+    padding-right 0.5em
+.post-gallito-title-borde
+    border-bottom: 1px solid #404040;
+    position: absolute;
+    top: 28px;
+    width: 100%;
+    z-index: -1;
+.smB
+    margin-left 0px
+    margin-right 0px
+#slider_3_demo
+    position relative
+.arrow-prev
+    position: absolute;
+    top: 38%;
+    left: 3em;
+.arrow-prev i,.arrow-next i
+    font-size: 3.2em;
+    font-weight: bold;
+    color: #afb8c2;
+    cursor pointer
+    transition all ease 0.3s
+.arrow-next
+    position: absolute;
+    top: 38%;
+    right: 3em;
+.item-gallitoB
+    position relative
+.imagen-slider-empresa
+    width 100%
+    cursor pointer
+    transition all ease 0.5s
+.imagen-slider-empresa:hover
+    opacity 0
+.slider-hover-title
+    padding 1em
+    font-weight bold
+.slider-hover-description
+    padding: 0em 1em;
+    font-style: italic;
+.container-slider-empresa-img,.container-slider-empresa-title
+    display inline-block
+    vertical-align top
+.container-slider-empresa-img img
+    width 74%
+.container-slider-empresa-img
+    height 5em
+    font-size 14px
+.container-slider-empresa-title
+    height: 5em;
+    text-align: left;
+    font-size: 14px;
+    text-align center
+.slider-empresa-nombre,.ofertas-laborales-text-slider
+    color: #585858;
+    padding-top: 1em;
+.ofertas-laborales-text-slider
+    line-height 0
+.container-slider-empresa-img
+    border-bottom: 2px solid #c5c5c5;
+    border-top: none;
+    border-left: 2px solid #c5c5c5;
+.container-slider-empresa-title
+    border 2px solid #c5c5c5;
+    border-top: none;
+.spB
+    padding-right: 0px;
+    padding-left: 0px;
+.cont-hver-desc-slider
+    height 0px
+.owl-pagination
+    display: block;
+    height: 1em;
+    text-align: center;
+    padding 1em
+.owl-page
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background: #5e7397;
+    border-radius: 50%;
+    margin-right 0.5em
+.owl-page.active
+    background #976e5e
+.owl-buttons
+    display none
+.owl-pagination
+    display none
+.arrow-next i:hover,.arrow-next i:hover
+    color #5e7397
+@media screen and (max-width: 600px)
+    .owl-pagination
+        display block
+@media screen and (max-width: 542px)
+    .post-gallito-title-txt
+        font-size 1.1em
+        text-align center
+    .post-gallito-title
+        margin-bottom 0em
+    .contenedor-post-gallito
+        border-top: 1px solid #808080;
+        padding: 1em 0em 0em 0em
+//************** slider gallitoB **************//

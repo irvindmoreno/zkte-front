@@ -1,0 +1,147 @@
+//************** slider dgalli **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="bloque-contactanos")
+        div(class="contanctanos-text") 
+            span(class="fwBold") INSCRÍBETE 
+            span AQUÍ
+        div(class="contacatanos-redes contacatanos-redes-face")
+            a(href="http://facebook.com" class="tooltip" title="Síguenos en Facebook")
+                i(class="fa fa-facebook" aria-hidden="true")
+        div(class="contacatanos-redes contacatanos-redes-youtube")
+            a(href="http://facebook.com" class="tooltip" title="Suscribete a nuestro canal de Youtube")
+                i(class="fa fa-youtube" aria-hidden="true")
+        div(class="contacatanos-redes contacatanos-redes-search")
+            a(href="http://facebook.com" class="tooltip" title="Siguenes en Instagram")
+                i(class="fa fa-instagram" aria-hidden="true")
+    div(class="contenidoMenuDesplegable")
+        div(class="cerrar-MenuDesplegable") X
+        div(class="bloque-flecha hideDiv")
+            div(class="bloque-flecha-flecha inlineMiddle")
+            div(class="bloque-flecha-intra inlineMiddle")
+                a(href="#") INTRANET
+                a(href="#") CORREO INSTITUCUINAL
+            div(class="bloque-flecha-idioma inlineMiddle")
+                div(class="language-text") 
+                    a(href="#") Fr
+                div(class="language-borde")
+                div(class="language-text") 
+                    a(href="#") Es
+        div(class="contenedor-cuerpoDesplegable")
+            div(class="bloque-Cerrar-con-logo inlineMiddle")
+            div(class="bloque-nosotros inlineMiddle hideDiv")
+                ul
+                    li
+                        a(href="#" class="selected") Nosotros
+                    li
+                        a(href="#") Carreras y Programas
+                    li
+                        a(href="#") Modalidades de Admisión
+                    li
+                        a(href="#") Contáctanos
+                    li
+                        a(href="#") Blog
+                div(class="language-borde")
+                div(class="contenedor-descarga")
+                    span DESCARGA NUESTROS BROCHRES AQUÍ
+                    span
+                        i(class="fa fa-download" aria-hidden="true")
+
+    div(class="menuDesplegableDegallia")
+        div(class="contenedor-img-logo")
+            img(src=rutaImagenes+"/logo_degallia.svg")
+        div(class="btn-menuDesplegable-logo")
+            i(class="fa fa-bars" aria-hidden="true")
+    div(id="demo")
+          div(class="span12")
+            div(id="owl-demo" class="owl-carousel")
+              div(class="item")
+                img(src="http://www.publivisionweb.com/inicio/images/sliders/full_slider/slide2.jpg" alt='img01')
+                div(class="contenedor-silder-texto")
+                    div(class="contenedor-relativo")
+                        div(class="slider-texto")
+                            span(class="slider-texto-bold").
+                                EL ARTE DE CONVERTIR UNA RECETA EN UN RECETA 
+                            span EN UN PLATO EXCEPCIONAL
+                        div(class="slider-tecto-subrayado")
+                            div(class="borde-medio inlineMiddle")
+                            span(class="texto-borde inlineMiddle") CARRERA DE COCINA
+                        div(class="btn-red")
+                            span CONOCE MÁS
+                            span(class="flecha-btn-red")
+                                i(class="fa fa-angle-right" aria-hidden="true")
+                        div(class="slider-cuadro")
+              div(class="item")
+                img(src="http://www.publivisionweb.com/inicio/images/sliders/full_slider/slide1.jpg"  alt='img02')
+                div(class="contenedor-silder-texto")
+                    div(class="contenedor-relativo")
+                        div(class="slider-texto")
+                            span(class="slider-texto-bold").
+                                EL ARTE DE CONVERTIR UNA RECETA EN UN RECETA 
+                            span EN UN PLATO EXCEPCIONAL
+                        div(class="slider-tecto-subrayado")
+                            div(class="borde-medio inlineMiddle")
+                            span(class="texto-borde inlineMiddle") CARRERA DE COCINA
+                        div(class="btn-red")
+                            span CONOCE MÁS
+                            span(class="flecha-btn-red")
+                                i(class="fa fa-angle-right" aria-hidden="true")
+                        div(class="slider-cuadro")
+              div(class="item")
+                img(src="http://www.publivisionweb.com/inicio/images/sliders/full_slider/slide2.jpg" alt='img03')
+                div(class="contenedor-silder-texto")
+                    div(class="contenedor-relativo")
+                        div(class="slider-texto")
+                            span(class="slider-texto-bold").
+                                EL ARTE DE CONVERTIR UNA RECETA EN UN RECETA 
+                            span EN UN PLATO EXCEPCIONAL
+                        div(class="slider-tecto-subrayado")
+                            div(class="borde-medio inlineMiddle")
+                            span(class="texto-borde inlineMiddle") CARRERA DE COCINA
+                        div(class="btn-red")
+                            span CONOCE MÁS
+                            span(class="flecha-btn-red")
+                                i(class="fa fa-angle-right" aria-hidden="true")
+                        div(class="slider-cuadro")
+              div(class="item")
+                img(src="http://www.publivisionweb.com/inicio/images/sliders/full_slider/slide3.jpg" alt='img04')
+                div(class="contenedor-silder-texto")
+                    div(class="contenedor-relativo")
+                        div(class="slider-texto")
+                            span(class="slider-texto-bold").
+                                EL ARTE DE CONVERTIR UNA RECETA EN UN RECETA 
+                            span EN UN PLATO EXCEPCIONAL
+                        div(class="slider-tecto-subrayado")
+                            div(class="borde-medio inlineMiddle")
+                            span(class="texto-borde inlineMiddle") CARRERA DE COCINA
+                        div(class="btn-red")
+                            span CONOCE MÁS
+                            span(class="flecha-btn-red")
+                                i(class="fa fa-angle-right" aria-hidden="true")
+                        div(class="slider-cuadro")
+              div(class="item")
+                img(src="http://www.publivisionweb.com/inicio/images/sliders/full_slider/slide4.jpg" alt='img05')
+                div(class="contenedor-silder-texto")
+                    div(class="contenedor-relativo")
+                        div(class="slider-texto")
+                            span(class="slider-texto-bold").
+                                EL ARTE DE CONVERTIR UNA RECETA EN UN RECETA 
+                            span EN UN PLATO EXCEPCIONAL
+                        div(class="slider-tecto-subrayado")
+                            div(class="borde-medio inlineMiddle")
+                            span(class="texto-borde inlineMiddle") CARRERA DE COCINA
+                        div(class="btn-red")
+                            span CONOCE MÁS
+                            span(class="flecha-btn-red")
+                                i(class="fa fa-angle-right" aria-hidden="true")
+                        div(class="slider-cuadro")       
+            div(class="customNavigation")
+                a(class="btn top btn-slider-degalli")
+                    i(class="fa fa-angle-left" aria-hidden="true")           
+                a(class="btn prev btn-slider-degalli")
+                    i(class="fa fa-angle-left" aria-hidden="true")                
+                a(class="btn next btn-slider-degalli")
+                    i(class="fa fa-angle-right" aria-hidden="true")
+
+//************** slider dgalli **************//

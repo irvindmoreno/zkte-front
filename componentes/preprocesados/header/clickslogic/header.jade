@@ -1,0 +1,57 @@
+//************** header clickslogic **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    - pestaniaUno='Afiliate'
+    - pestaniaDos='Recarga'
+    - pestaniaTres='Descargar Comprobante'
+    - pestaniaCuatro='Personas'
+    - pestaniaCinco='Empresas'
+    - pestaniaSeis='Inciar Sesión'
+    div(class="Contenedor-NavegacionMenu")
+        div(class="sinPaddinBosstrap")
+            div(class="col-xs-6 col-sm-6 col-md-6 sinPaddinBosstrap")
+                div(class="MTS-header inline-block")
+                    img(src="http://scorecard.cliclogix.com/static/imagenes/logoMTS.svg" class="imagen-mts")
+                    div(class="text-logo-mts") Media
+                        br
+                        span Transformation
+                        br 
+                        span Scorecard
+            div(class="col-xs-6 col-sm-6 col-md-6 sinPaddinBosstrap")
+                div(class="cuadro-orange")
+                    div(class="img-clicks-logic")                   
+                        img(src="http://scorecard.cliclogix.com/static/imagenes/cliclogixlogo.svg")
+        //A navegacion menu ponle display block para tener tu navegacion
+        nav(class="Navegacion-Menu")
+            ul
+                li(class="li-active")
+                    a(class="active" href="/nosotros")=pestaniaUno
+                li 
+                    a=pestaniaDos
+                li 
+                    a=pestaniaTres
+                li 
+                    a=pestaniaCuatro
+                li 
+                    a=pestaniaCinco
+                li 
+                    a=pestaniaSeis
+        // A Boton-Movil ponle display block
+        div(class="Boton-Movil")
+            i(class="fa fa-angle-double-down")
+    nav(class="Navegacion-Menu-Movil")
+        ul
+                li 
+                    a=pestaniaUno
+                li 
+                    a=pestaniaDos
+                li 
+                    a=pestaniaTres
+                li 
+                    a=pestaniaCuatro
+                li 
+                    a=pestaniaCinco
+                li 
+                    a=pestaniaSeis
+//************** header clickslogic **************//

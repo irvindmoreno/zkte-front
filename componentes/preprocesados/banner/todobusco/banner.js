@@ -1,0 +1,6 @@
+class BannerTodobusco{
+	constructor()
+	{
+
+	}
+}

@@ -1,0 +1,14 @@
+//************** banner todobusco **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="contenedor-banner-todobusco")
+        div(class="contenedor-img-todobusco")
+            img(src="http://dev.todobusco.com/img/todobusco/home/logo_todo_busco.svg" class="img-banner-todobusco")
+        div(class="contenedor-buscador")
+            div(class="buscador-txt").
+                Busca entre más de 84,000 avisos
+            div(class="conteneodr-buscador-input")
+                input(class="buscador-input" placeholder="Buscar por distrito, descripción o código")
+                button(class="buton-buscador") Buscar
+//************** banner todobusco **************//

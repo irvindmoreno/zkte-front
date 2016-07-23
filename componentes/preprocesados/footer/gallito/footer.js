@@ -1,0 +1,6 @@
+class FooterGallito{
+	constructor()
+	{
+
+	}
+}

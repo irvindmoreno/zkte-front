@@ -1,0 +1,46 @@
+//************** header ePass **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    - pestaniaUno='Afiliate'
+    - pestaniaDos='Recarga'
+    - pestaniaTres='Descargar Comprobante'
+    - pestaniaCuatro='Personas'
+    - pestaniaCinco='Empresas'
+    - pestaniaSeis='Inciar Sesión'
+    div(class="Contenedor-NavegacionMenu")
+        a(href="/"): img(src="https://storage.googleapis.com/epass-prod/static/img/logo.svg" class="img-Logo" alt="Logo")
+        nav(class="Navegacion-Menu")
+            ul
+                li(class="li-active")
+                    a(class="active" href="/nosotros")=pestaniaUno
+                li 
+                    a=pestaniaDos
+                li 
+                    a=pestaniaTres
+                li 
+                    a=pestaniaCuatro
+                li 
+                    a=pestaniaCinco
+                li 
+                    a=pestaniaSeis
+        div(class="Boton-Movil")
+            i(class="fa fa-angle-double-down")
+    nav(class="Navegacion-Menu-Movil")
+        ul
+                li 
+                    a=pestaniaUno
+                li 
+                    a=pestaniaDos
+                li 
+                    a=pestaniaTres
+                li 
+                    a=pestaniaCuatro
+                li 
+                    a=pestaniaCinco
+                li 
+                    a=pestaniaSeis
+
+    script.
+        var obj = new HeaderEPass();
+//************** header ePass **************//

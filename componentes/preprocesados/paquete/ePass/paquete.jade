@@ -1,0 +1,33 @@
+//************** paquete ePass **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="paqueteEpass")
+        div(class="paqueteEpass-Titulo")
+            span Paquete 1
+        div(class="contenedorContenido")
+            div(class="paqueteEpass-Contenido")
+                div(class="paqueteEpass-Contenido-Precio")
+                    span(class="soles") S/.
+                    div(class="precio")
+                        span 50.00 
+                        span  *
+                div(class="paqueteEpass-Contenido-Recarga")
+                    span Recarga + TAG
+                div(class="paqueteEpass-Contenido-bloque1")
+                    span Saldo para uso
+                    span(class="saldo-monto") S/. 33.0
+                div(class="paqueteEpass-Contenido-bloque2")
+                    div(class="relative")
+                        div Costo TAG
+                        div(class="saldo-monto tachado") 
+                            strike (S/.20.00) 
+                    div(class="relative")
+                        div(class="pad") Promo Verano
+                        div(class="saldo-monto top0 specialPrice") S/.15.00             
+                div(class="paqueteEpass-Contenido-bloque3 sinDashed")
+                    span Tasa Recarga
+                    span(class="saldo-monto")  S/.2.00
+                div(class="paqueteEpass-Contenido-VerMas")
+                    span Afíliate
+//************** paquete ePass **************//

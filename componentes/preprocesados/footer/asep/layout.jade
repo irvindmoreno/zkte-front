@@ -1,0 +1,19 @@
+- rutaStatic ='../../../../static'
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, user-scalable=no')
+        block title
+            title footer-asep
+        block link
+            link(rel='stylesheet' href=rutaStatic+'/css/bootstrap.min.css')
+            link(rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+            link(rel='stylesheet' type='text/css' href='./footer.css')
+    body
+        block content
+        block script
+            script(src=rutaStatic+'/js/jquery.min.js')
+            script(src=rutaStatic+'/js/bootstrap.min.js')
+            script()
+            script(src='./footer.js')

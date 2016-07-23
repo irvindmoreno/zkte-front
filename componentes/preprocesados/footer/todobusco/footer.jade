@@ -1,0 +1,37 @@
+//************** footer todobusco **************//
+- rutaImagenes ='../../../imagenes'
+extends ./layout.jade
+block content
+	footer
+		div(class="bg-white-fot")
+		div(class="row smb")
+			div(class="col-sm-6 col-md-3 spb cont-logo-fot")
+				img(src="http://dev.todobusco.com/img/todobusco/home/logo_footer.sgv.svg")
+			div(class="col-sm-6 col-md-3 spb cont-fot-text")
+				div(class="foot-title") ¿Qué es todobusco?
+				div(class="foot-desc").
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+				div(class="fot-redes-sociales")
+					div(class="fot-sig") Síguenos
+					a(href="#")
+						span(class="fot-todobusco-icon-title") 
+							i(class="fa fa-facebook" aria-hidden="true")
+					a(href="#")
+						span(class="fot-todobusco-icon-title fot-twiter-awesome")
+							i(class="fa fa-twitter" aria-hidden="true")
+			div(class="col-sm-12 col-md-6 spb fot-block-izquierda")
+				div(class="fot-todobusco-register-text inline-block-middle")
+					a(class="fot-todobusco-text-white" href="#") Suscribete
+					a(class="fot-todobusco-text-white sbmobile" href="#") Publica tu aviso
+					a(class="fot-todobusco-text-white" href="#") Registrate
+					div(class="todobusco-register-botton inline-block-middle")
+						input(class="btn-fot-ingresa" type="button" value="Ingresa")
+				div(class="fot-buscador-container")
+					div(class="txt-busca") Busca entre más de 84,000 avisos
+					input( class="fot-input-buscar" placeholder="Buscar por distrito, descripción o código")
+					div(class="cont-btn-buscar-fot")
+						button(class="fot-btn-buscar") Buscar
+		div(class="fot-copy")
+			i(class="fa fa-copyright" aria-hidden="true")
+			span Copyright 2016 - All Rights Reservered
+//************** footer todobusco **************//

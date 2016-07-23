@@ -1,0 +1,6 @@
+class PublicidadEpassFlecha{
+	constructor()
+	{
+
+	}
+}

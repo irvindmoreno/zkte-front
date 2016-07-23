@@ -1,0 +1,39 @@
+//************** menu clickslogic **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    - rutaImagenes ='../../../imagenes'
+        div(class="row")
+            div.hidden-xs.hidden-sm.col-md-3
+                ol.breadcrumb
+                    li
+                        a(href='#') Inicio
+                    li
+                        a(href='#') Library
+            div.col-xs-9.col-sm-9.col-md-6
+                span.datos-personales.bienvenido Hola Matthew
+                span.hidden-xs.datos-personales.cargo (Analista de Marketing)
+                span.hidden-xs.datos-personales.empresa Empresa Editora El Comercio
+            div.col-xs-3.col-sm-3.col-md-3.select-idioma
+                .btn-group
+                    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                        img(class="img-idioma" src=rutaImagenes+"/spanish.png")                     
+                        span.caret
+                    ul.dropdown-menu
+                        li
+                            a(href='#')
+                                img(class="img-idioma" src=rutaImagenes+"/english.png")
+        div.row.bloque-gris
+            div.col-xs-6.col-sm-6.col-md-6.cambio-password
+                a Cambiar Contraseña
+            div.col-xs-6.col-sm-6.col-md-6.cerrar-sesion
+                a Cerrar Sesión
+        div.row.bloque-amarillo
+            div.col-xs-1.col-sm-1.col-md-1.icon-i
+                i.fa.fa-info-circle
+            div.col-xs-11.col-sm-11.col-md-11 
+                p Recuerda que debes de completar la encuesta para que podamos ofrecerte un mejor diagnóstico para tu empresa. 
+                p Sólo deberás hacer click en el siguiente enlace: 
+                    a Realizar encuesta de Preguntas
+
+//************** menu clickslogic **************//

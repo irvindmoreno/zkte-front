@@ -1,0 +1,22 @@
+//************** posit scorecard **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="posit-Epass-Container")
+        div(class="posit-Epass-Consulta-Oculta")
+            div(class="bloques-ocultos bloque-oculto-izquierda")
+                i(class="fa fa-angle-left" aria-hidden="true")
+            div(class="bloques-ocultos bloque-oculto-derecha")
+                i(class="fa fa-pencil-square-o" aria-hidden="true")
+        div(class="posit-Epass")
+            div(class="posit-Epass-Consulta") 
+                div(class="posit-Epass-Titulo posit-Epass-titulo-Flecha")
+                    i(class="fa fa-angle-right" aria-hidden="true")
+                div(class="posit-Epass-MisSaldos")              
+                    div(class="posit-Epass-MisSaldos-Contenido")
+                        span(class="ePass-flecha")
+                            i(class="fa fa-pencil-square-o" aria-hidden="true")
+                        div(class="ContenidoTextoScorcard")
+                            div(class="texto-scorecard") Nuevo
+                            div(class="texto-scorecard") Scorecard
+//************** posit scorecard **************//

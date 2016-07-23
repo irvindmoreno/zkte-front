@@ -1,0 +1,43 @@
+// navegacion asep
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    - pestaniaUno='Nosotros'
+    - pestaniaDos='Directorio'
+    - pestaniaTres='Actividades'
+    - pestaniaCuatro='Noticias'
+    - pestaniaCinco='Beneficios'
+    - pestaniaSeis='Pregúntanos'
+    div(class="Contenedor-NavegacionMenu")
+        a(href="/"): img(src=rutaImagenes+"/logo.png" class="img-Logo")
+        nav(class="Navegacion-Menu")
+            ul
+                li(class="li-active")
+                    a(class="active" href="/nosotros")=pestaniaUno
+                li 
+                    a=pestaniaDos
+                li 
+                    a=pestaniaTres
+                li 
+                    a=pestaniaCuatro
+                li 
+                    a=pestaniaCinco
+                li 
+                    a=pestaniaSeis
+        div(class="Boton-Movil")
+            i(class="fa fa-angle-double-down")
+    nav(class="Navegacion-Menu-Movil")
+        ul
+                li 
+                    a=pestaniaUno
+                li 
+                    a=pestaniaDos
+                li 
+                    a=pestaniaTres
+                li 
+                    a=pestaniaCuatro
+                li 
+                    a=pestaniaCinco
+                li 
+                    a=pestaniaSeis
+// navegacion asep

@@ -1,0 +1,59 @@
+/************** Select Asep ********/
+rutaImagen="../../../imagenes/"
+colorDeX=white
+backgroundDeX=#2ca7df
+marginLeftSpanX=0.5em
+colorBordeInput=gray
+imagenFlecha="flecha.png"
+backgroundSelect=#F7F2F2
+tamanioLetraSelect=16px
+paddingSelect=8px
+borderRadiusSelect=5px
+anchoSelect=98%
+.SelectAsep
+	background: backgroundSelect url(rutaImagen+"/"+imagenFlecha) no-repeat right center
+	-moz-appearance: none
+	-webkit-appearance: none
+	appearance: none
+	outline none
+	width anchoSelect
+	cursor pointer
+	border-radius borderRadiusSelect
+	height alturaSelect
+	padding-left paddingLeftSelect
+	text-align center
+.Dia 
+	font-size: tamanioLetraSelect
+	padding: paddingSelect
+	width: tamanioSelectDia
+	border-top-width: 1px
+	border-left-width: 1px
+	border-right-width: 1px
+	border-radius: borderRadiusSelect
+	border-bottom-width: 1px
+	border-style: solid
+.errorInputValidado
+	color colorDeX
+	height 1.5em
+	width 2em
+	background backgroundDeX
+	display inline-block
+	vertical-align top
+	border-radius 50%
+	font-weight bold
+	text-align center
+	padding-top 0.5em
+	margin-left marginLeftSpanX
+	display none
+	transition all ease 0.5s
+	cursor pointer
+.contenedorDeItemAValidar
+	display flex
+	align-items center
+	width 100%
+.InputInvalidado
+	display none
+	transition all ease 0.5s
+.inputValido
+	display block
+/************** Select Asep ********/

@@ -1,0 +1,37 @@
+// inscripcion asep
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="FechaConTituloContenido")
+        div(class="FechaConTituloContenido-Izquierda")
+            img(src=rutaImagenes+"/evento.jpg")
+            div(class="FechaConTituloContenido-Izquierda-Texto")
+                p.
+                    Aliquam accumsan elementum ante vel efficitur. Nunc laoreet diam vitae ex ultrices molestie. Morbi ac tellus tellus. Nullam eget vestibulum magna. Fusce consectetur est a nulla molestie feugiat. Nullam accumsan ultricies tortor, ac ornare dui iaculis sit amet. Ut tincidunt tincidunt elit faucibus vestibulum.
+        div(class="FechaConTituloContenido-Derecha")
+            div(class="FechaConTituloContenido-Derecha-Reloj")
+                i(class="fa fa-clock-o")
+            div(class="FechaConTituloContenido-Derecha-Hora") 09:30
+            div(class="FechaConTituloContenido-Derecha-Mapa")
+                i(class="fa fa-map-marker")
+            div(class="FechaConTituloContenido-Derecha-Direccion") Av. Guardia Civil 834 piso 7 San Isidro
+            div(class="FechaConTituloContenido-Derecha-Numeros") 31/80
+            div(class="FechaConTituloContenido-Derecha-CursosDisponibles") Cursos Disponibles
+            div(class="FechaConTituloContenido-Derecha-InscripcionGratuita") Inscripción Gratuita Exclusivo para Socios
+            div(class="FechaConTituloContenido-Derecha-BtnInscribete") INSCRÍBETE
+            div(class="FechaConTituloContenido-Derecha-Formulario")
+                table
+                    tr
+                        td Usuario:
+                        td
+                            input
+                    tr
+                        td Contraseña:
+                        td
+                            input
+                    tr
+                        td(colspan="2" class="FechaConTituloContenido-Derecha-Formulario-EnviarClass")
+                            div(class="FechaConTituloContenido-Derecha-Formulario-Enviar") ENVIAR
+
+            div(class="FechaConTituloContenido-Derecha-BtnHazteSocio")
+// inscripcion asep

@@ -1,0 +1,36 @@
+//************** slider gallito **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="contenedor-silder")
+        div(id="demo")
+            div
+              div(class="span12")            
+                div(id="owl-demo" class="owl-carousel")              
+                  div(class="item")
+                    div(class="contendor-img relative")
+                        img( class="lazyload" src="http://cds.dev.gallito.clickslatam.com/tg/imagenes/slider_1.jpg")                    
+                  div(class="item")
+                    div(class="contendor-img relative")
+                        img( class="lazyload" src="http://cds.dev.gallito.clickslatam.com/tg/imagenes/slider_2.jpg")                    
+                  div(class="item")
+                    div(class="contendor-img relative")
+                        img( class="lazyload" src="http://cds.dev.gallito.clickslatam.com/tg/imagenes/slider_3.jpg")                    
+                div(class="preload-img")
+                    div(class="sk-cube-grid")
+                        div(class="sk-cube sk-cube1")
+                        div(class="sk-cube sk-cube2")
+                        div(class="sk-cube sk-cube3")
+                        div(class="sk-cube sk-cube4")
+                        div(class="sk-cube sk-cube5")
+                        div(class="sk-cube sk-cube6")
+                        div(class="sk-cube sk-cube7")
+                        div(class="sk-cube sk-cube8")
+                        div(class="sk-cube sk-cube9")
+                div(class="contenedor-buscador")
+                    div(class="buscador-txt").
+                        Hay más de 10.560 ofertas laborales
+                    div(class="conteneodr-buscador-input")
+                        input(class="buscador-input" placeholder="Buscar puesto o palabra clave")
+                        button(class="buton-buscador") Buscar
+//************** slider gallito **************//

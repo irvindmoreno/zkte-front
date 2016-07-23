@@ -1,0 +1,124 @@
+/*********** Footer Aesp********/
+rutaImagenes="../../../imagenes"
+imagenFooter1="http://asep.pe/wp-content/themes/asep/img/btn_hazte_socio_white.png"
+imagenFooter1Hover="http://asep.pe/wp-content/themes/asep/img/btn_hazte_socio_white_selected.png"
+celeste=#2ca7df
+negro1=#4c4c4c
+negro2=#303030
+negro3=#232323
+
+.Fotter
+	&-1
+		background celeste;
+		height 7em
+		display flex
+		justify-content center
+		align-items center
+		&-btn-HazteSocio
+			height 5em
+			background url(imagenFooter1) no-repeat left
+			width 14em
+			background-size 13em
+			transition all ease 0.2s
+			cursor pointer
+			&:hover								
+				background url(imagenFooter1Hover) no-repeat left
+				background-size 13em
+	&-2
+		background negro1
+		padding-left 8%
+		padding-right 8%
+		padding-top 0.8em
+		padding-bottom 0.5em	
+		display flex
+		justify-content space-between
+		color white
+		font-size 1.3em
+		&-Colaboradores
+			width 60%			
+			&-Img
+				padding-top 2em
+				display flex
+				justify-content space-around
+				
+				& img
+					height 3.5em
+					@media screen and (max-width: 763px)
+						height 3em
+		&-Sponsor			
+			&-Img
+				padding-top 2em
+				display flex
+				justify-content space-around
+				& img
+					height 3.5em
+					@media screen and (max-width: 763px)
+						height 3em	
+	&-3
+		background negro2
+		height 10em
+		display flex
+		justify-content space-around
+		padding-top 4em
+		padding-right 5%
+		padding-left 5%
+		@media screen and (max-width: 609px)
+			padding-top 2em
+			height 6em
+		& img
+			@media screen and (max-width: 997px)
+				display none
+		&-Navegacion-Menu
+			display flex
+			@media screen and (max-width: 609px)
+				display none
+			& ul
+				list-style none
+				display flex
+			& a
+				padding-left 0.4em
+				padding-right 0.4em
+				color white
+				transition all ease 0.4s
+				cursor pointer
+				&:hover
+					color celeste
+			.active
+				color celeste
+				text-decoration underline
+		&-Letter
+			color white
+			font-size 0.8em
+			display flex
+			align-items center
+			justify-content center
+			& i
+				color white
+			&-Span
+				display inline-block
+				margin-right 1.5em
+			span
+				margin-left 0.3em
+	&-4
+		background negro3
+		height 3em
+		display flex
+		justify-content center
+		align-items center
+		color white
+		& img
+			height 1.5em
+			margin-left 1em
+@media screen and (max-width: 671px)
+	.Fotter-2
+		display block
+	.Fotter-2-Colaboradores
+		width 100%
+@media screen and (max-width: 451px)
+	.Fotter-2-Colaboradores-Img
+		display block
+	.Fotter-2-Colaboradores-Img img
+		display block
+		margin 0 auto
+		margin-bottom 1em
+/*********** Footer Aesp********/

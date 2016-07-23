@@ -1,0 +1,176 @@
+//************** formulario reclamacionesEpass **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="contenedorFormularioEpass")
+        div(class="subContenedorFormularioEpass")
+            span(class="spanEncima") Identificación del consumidor reclamante
+            div(class="contenedorInputsEpass row")
+                div(class="form-inline moverAquiLosRadios")
+                    div(class="col-xs-12 col-sm-12 col-md-2")
+                        input(type="radio" value="radioPersonaNatural" class="radioPersonaNatural radioSelectedCliente" name="dePrueba") 
+                        span(class="spanRadio") Persona Natural
+                    div(class="col-xs-12 col-sm-12 col-md-2")
+                        input(type="radio" value="radioEmpresa" class="radioEmpresa radioSelectedCliente" name="dePrueba")
+                        span(class="spanRadio") Empresa                
+                        div(class="col-xs-12 col-sm-12 col-md-2")
+                        div(class="col-xs-12 col-sm-12 col-md-2")
+                        div(class="col-xs-12 col-sm-12 col-md-2")
+                        div(class="col-xs-12 col-sm-12 col-md-2")
+                    div(class="formularioEmpresa")
+                        div(class="form-inline")
+                            div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones") *
+                            div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")
+                                label(for="correo" class="spanEpass col-xs-12 col-sm-12 col-md-2") Empresa :
+                                input(id="correo" class="slSinMarg imputEpass col-xs-12 col-sm-12 col-md-10 selectpicker" placeholder="Ingrese nombre de empresa")
+                        div(class="form-inline")
+                            div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones") *
+                            div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")
+                                label(for="correo" class="spanEpass col-xs-12 col-sm-12 col-md-2") Razón Social :
+                                input(id="correo" class="slSinMarg imputEpass col-xs-12 col-sm-12 col-md-10 selectpicker" placeholder="Ingrese razón social")
+                        div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad") *
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="nombre" class="spanEpass col-xs-12 col-sm-12 col-md-4") Ruc :
+                                    input(id="nombre" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese número de documento")
+                    div(class="formularioPersonaNatural")
+                        div(class="formularioPersonaNaturalAOcultar")
+                            div(class="form-inline clear")                                        
+                                div(class="col-xs-12 col-sm-6 col-md-6")
+                                    div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad") *
+                                    div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                        label(for="nombre" class="spanEpass col-xs-12 col-sm-12 col-md-4") Nombre Completo :
+                                        input(id="nombre" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese nombre completo")
+                                div(class="col-xs-12 col-sm-6 col-md-6")
+                                    div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad") *
+                                    div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                        label(for="apellidos" class="spanEpass col-xs-12 col-sm-12 col-md-4") Apellidos completos :
+                                        input(id="apellidos" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese apellidos completos")
+                            div(class="form-inline")
+                                div(class="col-xs-12 col-sm-6 col-md-6")
+                                    div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad") *
+                                    div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                        label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Tipo de Documento :
+                                        select(id="docunento" class="imputEpass col-xs-12 col-sm-12 col-md-8 selectpicker" placeholder="Ingrese nombre completo")
+                                            option seleccione
+                                            option DNI
+                                            option RUC
+                                div(class="col-xs-12 col-sm-6 col-md-6")
+                                    div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad") *
+                                    div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                        label(for="nro_documento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Nro Documento :
+                                        input(id="nro_documento" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese numero documento")
+
+                         div(class="form-inline clear")
+                            div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad ") *
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="nombre" class="spanEpass col-xs-12 col-sm-12 col-md-4") Teléfono fijo :
+                                    input(id="nombre" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese teléfono fijo")
+                            div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad ") *
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="nombre" class="spanEpass col-xs-12 col-sm-12 col-md-4") Celular :
+                                    input(id="nombre" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese celular")
+                        div(class="form-inline")
+                            div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones") *
+                            div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")
+                                label(for="correo" class="spanEpass col-xs-12 col-sm-12 col-md-2") Correo :
+                                input(id="correo" class="slSinMarg imputEpass col-xs-12 col-sm-12 col-md-10 selectpicker" placeholder="Ingrese correo")
+                        div(class="form-inline")
+                            div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad ") *            
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Departamento :
+                                    select(id="docunento" class="imputEpass col-xs-12 col-sm-12 col-md-8 selectpicker" placeholder="Ingrese nombre completo")
+                                        option seleccione
+                                        option DNI
+                                        option RUC
+                            div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad ") *
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Provincia :
+                                    select(id="docunento" class="imputEpass col-xs-12 col-sm-12 col-md-8 selectpicker" placeholder="Ingrese nombre completo")
+                                        option seleccione
+                                        option DNI
+                                        option RUC
+                        div(class="form-inline")
+                            div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad ") *
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Distrito :
+                                    select(id="docunento" class="imputEpass col-xs-12 col-sm-12 col-md-8 selectpicker" placeholder="Ingrese nombre completo")
+                                        option seleccione
+                                        option DNI
+                                        option RUC
+                            div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad ") *
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="nombre" class="spanEpass col-xs-12 col-sm-12 col-md-4") Calle/ Av/ Jr :
+                                    input(id="nombre" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese Calle/ Av/ Jr")
+                        div(class="form-inline")
+                            div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad ") *
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="nombre" class="spanEpass col-xs-12 col-sm-12 col-md-4") Número
+                                    input(id="nombre" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese número")
+                            div(class="col-xs-12 col-sm-6 col-md-6")
+                                div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones sinpad ") *
+                                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group sinpad")
+                                    label(for="nombre" class="spanEpass col-xs-12 col-sm-12 col-md-4") Dpto/ Int
+                                    input(id="nombre" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese Dpt. Int.")
+                        div(class="form-inline")
+                            div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones") *
+                            div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")
+                                label(for="correo" class="spanEpass col-xs-12 col-sm-12 col-md-2") Urbanización :
+                                input(id="correo" class="slSinMarg imputEpass col-xs-12 col-sm-12 col-md-10 selectpicker" placeholder="Ingrese urbanización")
+                        div(class="form-inline") 
+                            div(class="col-xs-12 col-sm-12 col-md-12 asteridcoValidaciones") *                       
+                            div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")
+                                label(for="correo" class="spanEpass col-xs-12 col-sm-12 col-md-2") Referencia :
+                                textarea(id="correo" class="slSinMarg imputEpass col-xs-12 col-sm-12 col-md-10 selectpicker" placeholder="Ingrese una referencia")
+        div(class="subContenedorFormularioEpass top3em")
+            span(class="spanEncima") Datos del Reclamación
+            div(class="contenedorInputsEpass row")          
+                div(class="form-inline")
+                    div(class="bloqueInput")
+                        div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group") 
+                            span(class="colorCeleste") Tipo
+                            div(class="contenedorRadioReclamacion top10px")
+                                input(type="radio" class="blockTop")
+                                div(class="inline-blockTop spanCheck marg1")
+                                    span(class=" colorCeleste") Reclamo
+                                    span(class="marg1 colorCeleste letraChica").
+                                        (Disconformidad relacionada a los productos y/o servicio)
+                            div(class="contenedorRadioReclamacion")
+                                input(type="radio" class="blockTop")
+                                div(class="inline-blockTop spanCheck marg1")
+                                    span(class=" colorCeleste") Queja
+                                    span(class="marg1 colorCeleste letraChica").
+                                        (Disconformidad no relacionada a los productos y/o servicios o malestar o descontento a la atención al público)
+                div(class="form-inline")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group paddingTD")
+                        span(class="colorCeleste") Area de Atención:
+                        span(class="marg1") Area de Atención:
+                div(class="form-inline")
+                    div(class="col-xs-12 col-sm-12 col-md-12 relative35") *
+                    div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")
+                        label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-12") Descripción del servicio :
+                        textarea(placeholder="Ingrese una descripción" class="textarea col-xs-12 col-sm-12 col-md-12")
+                div(class="form-inline")
+                    div(class="col-xs-12 col-sm-12 col-md-12 relative35") *
+                    div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")
+                        label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-12") Detalle de reclamo o queja :
+                        textarea(placeholder="Ingrese el detalle de reclamo o queja" class="textarea col-xs-12 col-sm-12 col-md-12")
+                div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")                         
+                            div(class="contenedorRadioReclamacion top10px")
+                                input(type="checkbox" class="inline-blockTop")
+                                span(class="marg1 colorCeleste inline-blockTop spanCheck").
+                                    Declaro ser el usuario del servicio y acepto el contenido del presente formulario manifetando bajo declaración jurada la veracidad de los hechos descritos                            
+                            div(class="contenedorRadioReclamacion")
+                                input(type="checkbox" class="inline-blockTop")
+                                span(class="marg1 colorCeleste inline-blockTop spanCheck").
+                                    No soy un robot
+        div(class="btn_siguientePaso")
+            a(href="#") Enviar
+//************** formulario reclamacionesEpass **************//

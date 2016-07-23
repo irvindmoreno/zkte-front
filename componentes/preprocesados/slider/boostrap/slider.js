@@ -1,0 +1,6 @@
+class BoostrapSlider{
+	constructor()
+	{
+
+	}
+}

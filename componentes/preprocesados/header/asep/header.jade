@@ -1,0 +1,18 @@
+// header asep
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    - pestaniaUno='Login'
+    - iconoUno='http://asep.pe/wp-content/themes/asep/img/socio_icon.png'
+    - pestaniaDos='Hazte Socio'
+    - iconoDos='http://asep.pe/wp-content/themes/asep/img/login_icon.png'
+    header
+        div
+            a
+                img(class="img-header" src=iconoUno)
+                span=pestaniaUno
+        div
+            a
+                img(class="img-header" src=iconoDos)
+                span=pestaniaDos
+// header asep

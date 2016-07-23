@@ -1,0 +1,20 @@
+//************** header todobusco **************//
+extends ./layout.jade
+block content
+	- rutaImagenes ='../../../imagenes'
+	header(class="relative" id="header-todobusco")
+		div(class="todobusco-icon")
+			a(href="#")
+				span(class="todobusco-icon-title") 
+					i(class="fa fa-facebook" aria-hidden="true")
+			a(href="#")
+				span(class="todobusco-icon-com")
+					i(class="fa fa-twitter" aria-hidden="true")
+		div(class="todobusco-register-container")		
+			div(class="todobusco-register-text inline-block-middle")
+				a(class="todobusco-text-white" href="#") Suscribete
+				a(class="todobusco-text-white sbmobile" href="#") Publica tu aviso
+				a(class="todobusco-text-white" href="#") Registrate
+				div(class="todobusco-register-botton inline-block-middle")
+					input(type="button" value="Ingresa")
+//************** header todobusco **************//

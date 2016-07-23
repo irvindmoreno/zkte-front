@@ -1,0 +1,6 @@
+class ButtonAsepAzul{
+	constructor()
+	{
+
+	}
+}

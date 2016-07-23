@@ -1,0 +1,30 @@
+// tabs asep
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    - pestaniaUno="Sobre ti"
+    - contenidoUno="Queremos conocerte y saber cuáles son tus necesidades para emprender"
+    - pestaniaDos="Sobre tu empresa"
+    - contenidoDos="¿has fundado algún emprendimiento? Cuéntanos lo que haces"
+    - pestaniaTres="Necesitamos de tu ayuda"
+    - contenidoTres="Es la única forma de que hagamos de Perú el mejor lugar para emprender."
+    - pestanias={1:pestaniaUno,2:pestaniaDos,3:pestaniaTres}
+    - pestaniasContenido=[contenidoUno,contenidoDos,contenidoTres]
+    div(class="TabsAsep")
+        each pestania,index in pestanias
+            div(class="TabsAsep-Pestania" data=index)
+                div(class="TabsAsep-Pestania-Ttulo")
+                    div(class="TabsAsep-Pestania-Ttulo-Numero")=index
+                    div(class="TabsAsep-Pestania-Bloque2")
+                        div(class="TabsAsep-Pestania-Ttulo-Texto")=pestania
+                        div(class="TabsAsep-Pestania-Contenido")=pestaniasContenido[index-1]
+    div(class="TabsAsepMovil")
+        each pestania,index in pestanias
+            div(class="TabsAsepMovil-Pestania" data=index)
+                span(class="TabsAsepMovil-Pestania-Numero")=index
+                span(class="TabsAsepMovil-Pestania-Titulo")=pestania
+    div(class="pestaniasPadre")
+        div(class="pest") UNO
+        div(class="pest") DOS
+        div(class="pest") TRES
+// tabs asep

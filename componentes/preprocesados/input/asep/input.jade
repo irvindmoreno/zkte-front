@@ -1,0 +1,36 @@
+// input asep
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    form
+        input(requerid type="text" name="nombre" id="claseNombre" class="InputAsep")
+        div(id="mensajeNombreImagen" class="error")
+        div(id="mensajeNombreL" class="errorA") Ingresar solo letras
+        div(id="mensajeNOmbreM" class="errorB") Digitos permitidos en el campo Nombre son menores a 100
+        br
+        input(required type="text" name="apellido" id="claseApellido" class="InputAsep")
+        div(id="mensajeApellidoImagen" class="error")
+        div(id="mensajeApellidoL" class="errorA") Ingresar solo letras
+        div(id="mensajeApellidoM" class="errorB") Digitos permitidos en el campo Apellido son menores a 100
+        br
+        input(type="text" name="email" id="claseEmail" class="InputAsep")
+        div(id="mensajeEmailImagen" class="error")
+        div(id="mensajeEmailA" class="errorA") Escriba un correo    
+        div(id="mensajeEmail" class="errorA") Escriba un correo correcto: example@example.com   
+        br
+        input(type="password" name="contrasenia" id="claseContrasenia" class="InputAsep")
+        div(id="mensajePasswordImagen" class="error")
+        div(id="mensajePassword" class="errorA") La contrasenia no debe contener espacios
+        br
+        input(type="text" name="dni" id="claseDNI" class="InputAsep")
+        div(id="mensajeDniImagen" class="error")
+        div(id="mensajeDNI" class="errorA") Ingresar solo números
+        div(id="mensajeDNI2" class="errorA") Valido 8 digitos en el campo DNI
+        br
+        input(type="text" name="telefono" id="claseTelefono" class="InputAsep")
+        div(id="mensajeTelefono" class="errorA") Ingrese solo numeros en el campo Telefono
+        div(id="mensajeTelefono2" class="errorA") Ingrese un número valido en el campo Telefono
+        br
+        input(type="submit" value="Probar" class="classBoton")
+
+// input asep

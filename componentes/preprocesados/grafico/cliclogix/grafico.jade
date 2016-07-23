@@ -1,0 +1,33 @@
+//************** grafico cliclogix **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    script(src="https://code.highcharts.com/highcharts.js")
+    script(src="https://code.highcharts.com/modules/exporting.js")
+    div(class="contenedor-posicionamiento")
+        div.row.header-posicionamiento
+            span.titulo-grafico Analisis de Posicionamiento
+            br
+            span.subtitulo-grafico (Resultados a la Fecha de Hoy)
+        div.row
+            div.col-md-12.col-md-7
+                div.row.cabezera-grafico
+                    div.col-md-offset-3.col-xs-12.col-md-8
+                        div.col-xs-5.col-sm-5.col-md-4.empresa Empresa Editora El Comercio
+                        div.col-xs-2.col-sm-2.col-md-4.vs vs
+                        div.col-xs-5.col-sm-5.col-md-4.region Región / País
+                            select.select
+                                option(value="") Seleccione
+                                option(value="grupo1") Centro América
+                                option(value="pais1") &nbsp;&nbsp;&nbsp;Honduras
+                                option(value="pais1") &nbsp;&nbsp;&nbsp;México
+                                option(value="grupo1") América del Sur
+                                option(value="pais1") &nbsp;&nbsp;&nbsp;Perú
+                                option(value="pais1") &nbsp;&nbsp;&nbsp;Chile
+                                option(value="pais1") &nbsp;&nbsp;&nbsp;Bolivia
+                div.row
+                    div(id="grafico" class="grafico")
+            div.col-md-12.col-md-5
+    script.
+        var grafico = new GraficoCliclogix()
+//************** grafico cliclogix **************//

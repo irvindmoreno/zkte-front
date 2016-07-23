@@ -1,0 +1,89 @@
+//************** formulario ePass **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="contenedorFormularioEpass")
+        div(class="subContenedorFormularioEpass")
+            span(class="spanEncima") Datos Personales
+            div(class="contenedorInputsEpass row")
+                div(class="form-inline")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="nombre" class="spanEpass col-xs-12 col-sm-12 col-md-4") Nombre de Titular :
+                        input(id="nombre" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese nombre completo")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="apellidos" class="spanEpass col-xs-12 col-sm-12 col-md-4") Apellidos del Titular :
+                        input(id="apellidos" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese apellidos completos")
+                div(class="form-inline")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Tipo de Documento :
+                        select(id="docunento" class="imputEpass col-xs-12 col-sm-12 col-md-8 selectpicker" placeholder="Ingrese nombre completo")
+                            option seleccione
+                            option DNI
+                            option RUC
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="nro_documento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Nro Documento :
+                        input(id="nro_documento" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese numero documento")
+                div(class="form-inline")
+                    div(class="bloqueInput col-xs-12 col-sm-12 col-md-12 form-group")
+                        label(for="correo" class="spanEpass col-xs-12 col-sm-12 col-md-2") Correo :
+                        input(id="correo" class="slSinMarg imputEpass col-xs-12 col-sm-12 col-md-10 selectpicker" placeholder="Ingrese correo")
+                div(class="form-inline")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="contrasenia" class="spanEpass col-xs-12 col-sm-12 col-md-4") Contraseña :
+                        input(id="contrasenia" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese contraseña segura")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="confirmar_contrasenia" class="spanEpass col-xs-12 col-sm-12 col-md-4") Confirmar Contraseña :
+                        input(id="confirmar_contrasenia" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Repita contraseña")
+        div(class="subContenedorFormularioEpass top3em")
+            span(class="spanEncima") Datos del Vehículo
+            div(class="contenedorInputsEpass row")          
+                div(class="form-inline")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Tipo de Documento :
+                        select(id="docunento" class="imputEpass col-xs-12 col-sm-12 col-md-8 selectpicker" placeholder="Ingrese nombre completo")
+                            option seleccione
+                            option DNI
+                            option RUC
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Tipo de Documento :
+                        select(id="docunento" class="imputEpass col-xs-12 col-sm-12 col-md-8 selectpicker" placeholder="Ingrese nombre completo")
+                            option seleccione
+                            option DNI
+                            option RUC
+        
+                div(class="form-inline")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="contrasenia" class="spanEpass col-xs-12 col-sm-12 col-md-4") Contraseña :
+                        input(id="contrasenia" type="text" class="imputEpass col-xs-12 col-sm-12 col-md-8" placeholder="Ingrese contraseña segura")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        label(for="docunento" class="spanEpass col-xs-12 col-sm-12 col-md-4") Tipo de Documento :
+                        select(id="docunento" class="imputEpass col-xs-12 col-sm-12 col-md-8 selectpicker" placeholder="Ingrese nombre completo")
+                            option seleccione
+                            option DNI
+                            option RUC
+        div(class="subContenedorFormularioEpass top3em")
+            span(class="spanEncima") Forma de Entrega
+            div(class="contenedorInputsEpass row")                      
+                div(class="form-inline")
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        input(id="contrasenia" type="radio" class="imputEpass" placeholder="Ingrese contraseña segura")
+                        label(for="contrasenia" class="spanEpass") Retiro en punto de Venta                 
+                    div(class="bloqueInput col-xs-12 col-sm-6 col-md-6 form-group")
+                        input(id="contrasenia" type="radio" class="imputEpass" placeholder="Ingrese contraseña segura")
+                        label(for="contrasenia" class="spanEpass") Envio a Domicilio
+        div(class="subContenedorFormularioEpass cont_check")        
+            div(class="contenedorInputsEpass row")                      
+                div(class="form-inline")
+                    div(class="camp_checkbox col-xs-12 col-sm-6 col-md-6")
+                        div
+                            input(class="inline-block" type="checkbox")
+                            span(class="inline-block span_check" )
+                                span(class="inline-block marg") Acepto los &nbsp;
+                                a(href="#") términos y condiciones
+                                span &nbsp; del servicio
+                        div
+                            input(class="inline-block" type="checkbox")
+                            span(class="inline-block marg span_check") Quiero recibir novedades de e-pass
+                div(class="btn_siguientePaso col-xs-12 col-sm-6 col-md-6")
+                    a(href="#") Siguiente Paso
+//************** formulario ePass **************//

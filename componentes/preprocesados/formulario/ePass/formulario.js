@@ -1,0 +1,6 @@
+class FormularioEPass{
+	constructor()
+	{
+
+	}
+}
