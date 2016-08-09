@@ -67,6 +67,7 @@ class FormularioGallito{
     {
     	//$("#owl-slider_3").trigger('remove.owl.carousel');
     	nroDeSlider=nroDeSlider+1;
+    	$(".arrow-transale-pagination i").removeClass("disabled-arrow")
     	$(".pagination-formulario").removeClass("active-pagination");
     	//aparesco las felchas de traslado
     		$(".arrow-transale-pagination").removeClass("hideDiv");
@@ -1763,7 +1764,6 @@ class FormularioGallito{
 	}
 
 }
-var obj = new FormularioGallito ();
 class FooterGallito{
 	constructor()
 	{

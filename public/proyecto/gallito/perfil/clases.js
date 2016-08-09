@@ -73,6 +73,7 @@ var FormularioGallito = function () {
 				value: function addEstudio() {
 						//$("#owl-slider_3").trigger('remove.owl.carousel');
 						nroDeSlider = nroDeSlider + 1;
+						$(".arrow-transale-pagination i").removeClass("disabled-arrow");
 						$(".pagination-formulario").removeClass("active-pagination");
 						//aparesco las felchas de traslado
 						$(".arrow-transale-pagination").removeClass("hideDiv");
@@ -1663,8 +1664,6 @@ var FormularioGallito = function () {
 
 		return FormularioGallito;
 }();
-
-var obj = new FormularioGallito();
 
 var FooterGallito = function FooterGallito() {
 		_classCallCheck(this, FooterGallito);

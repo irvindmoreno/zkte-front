@@ -476,7 +476,7 @@ body {
     margin-top: 0em;
   }
   .cont-file {
-    padding: 0em;
+    padding: 0.5em 0em;
   }
   .contenedor-paginacion {
     padding: 0em 1em;
@@ -933,6 +933,9 @@ label.error {
 }
 .content-btn-form {
   margin-top: 1em;
+}
+.disabled-arrow {
+  color: #808080 !important;
 }
 @media screen and (max-width: 1239px) {
   .contenedor-all-circle-gallitoPerfil-icon {

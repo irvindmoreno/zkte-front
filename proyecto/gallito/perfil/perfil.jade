@@ -1,18 +1,6 @@
 extends ../layout/layout.jade
 block head
     link(href='./perfil.css' rel='stylesheet')
-block header
-    header(class="relative headerDashboard")
-        div(class="gallito-icon")
-            a(href="#")
-                span(class="gallito-icon-title") gallito
-                span(class="gallito-icon-com") .com
-            span(class="borde-left-white") Postulante
-        div(class="gallito-register-container")
-            span(class="text-welcome") Bienvenido(a): Carla Paola
-            div(class="gallito-register-text inline-block-middle")
-                a(class="gallito-text-blue" href="#") Cerrar Sesión
-                a(class="gallito-text-white" href="#")  Soy una empresa
 block navegacion    
 block contenido
     div(class="row smb")
@@ -125,7 +113,7 @@ block contenido
                             a(href="#" class="link-subcat") Cambio de clave
                         div(class="block-dashed filtro-subcat")
                             a(href="#" class="link-subcat") Mis alertas
-            //************** filtro gallito **************//
+        //************** filtro gallito **************//
         div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto spb")
             //************** icons gallitoPerfil **************//
             div(class="contenedor-icon-gallito-perfil")
@@ -250,66 +238,22 @@ block contenido
                         div(class="row smb")
                             div(class="col-sm-2 col-md-2 spb")
                             div(class="col-sm-7 col-md-7 spb align-middle contenedor-paginacion")
-                                div(class="arrow-prev arrow-transale-pagination hideDiv")
-                                    i(class="fa fa-caret-left" aria-hidden="true")
+                                div(class="arrow-prev arrow-transale-pagination ")
+                                    i(class="fa fa-caret-left disabled-arrow" aria-hidden="true")
                                 span(class="content-pagination")
                                     input(type="button" class="pagination-formulario active-pagination " value="1")
-                                div(class="arrow-next arrow-transale-pagination hideDiv")
-                                    i(class="fa fa-caret-right" aria-hidden="true")
+                                div(class="arrow-next arrow-transale-pagination ")
+                                    i(class="fa fa-caret-right disabled-arrow" aria-hidden="true")
             div(class="content-btn-form")
                 button(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
                 button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
             //************** formulario gallito **************//
-block footer
-    //************** footer gallito **************//
-    footer
-        div(class="row footer-gallit-block-1 smb")
-            div(class="col-xs-6 col-sm-6 col-md-4 bloq-foot bloq-foot-left pad-mob-foot simr-dashed-1")
-                div(class="footer-gallito-title") Trabajo.gallito.com.uy
-                div(class="leter-footer-gallito") Preguntas Frecuentes
-                div(class="leter-footer-gallito") Términos y Condiciones
-                div(class="leter-footer-gallito") &nbsp;
-            div(class="col-xs-6 col-sm-6 col-md-2 bloq-foot pad-mob-foot  simr-dashed-2")
-                div(class="footer-gallito-title") Postulantes
-                div(class="leter-footer-gallito") Busca Trabajo
-                div(class="leter-footer-gallito") Crea tu cuenta
-                div(class="leter-footer-gallito") Ingresa
-            div(class="col-xs-6 col-sm-6 col-md-2 bloq-foot bloq-foot-3-1 pad-mob-foot simr-dashed-3")
-                div(class="footer-gallito-title") Empresa
-                div(class="leter-footer-gallito") Publica tu aviso
-                div(class="leter-footer-gallito") Crea tu cuenta
-                div(class="leter-footer-gallito") Ingresa
-            div(class="col-xs-6 col-sm-6 col-md-4 bloq-foot pad-mob-foot simrdashed")
-                div(class="footer-gallito-title") Central de ayuda
-                div(class="leter-footer-gallito") (01)311-6707 - Opción 3
-                div(class="leter-footer-gallito") Lunes a viernes de 8:00am a 6:00pm
-                div(class="leter-footer-gallito")
-                    i(class="fa fa-copyright" aria-hidden="true")
-                    span Todos los derechos reservados - 2016
-        div(class="row footer-gallit-block-2 smb")
-            div(class="col-xs-12 col-sm-3 col-md-2 block-2-letter")
-                div(class="logo-footer-galito")
-                    span(class="gallito-letter-logo-footer-first") gallito.
-                    span(class="gallito-letter-logo-footer-last") com
-            div(class="col-xs-12 col-sm-6 col-md-6 block-2-letter")
-                div
-                    strong.
-                        El Libro de los Clasificados - Zelmar Michelini 1287, Montevideo - 11100 Uruguay
-                div(class="text-gray-suave") CLASITELEFONO 131
-                div(class="text-gray-suave") Fundada el 30/10/1983 por: Carlos E. Scheck, Eduardo Scheck y Daniel Scheck
-            div(class="col-xs-12 col-sm-3 col-md-3 block-2-letter")
-                div(class="redes-sociales-footer-gallito")
-                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
-                        div(class="icon-mensaje")
-                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
-                        div(class="icon-linkedin")
-                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
-                        div(class="icon-youtube")
-                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
-                        div(class="icon-twiter")
-                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
-                        div(class="icon-facebook")
-    //************** footer gallito **************//
+block script
+    script(src=rutaStatic+'/js/jquery.min.js')
+    script(src=rutaStatic+'/js/bootstrap.min.js')
+    script(src=rutaStatic+'/js/jquery.validate.min.js')
+    script(src=rutaStatic+'/js/jquery.message_es.js')
+    script(src='./clases.js')
     script(src='./perfil.js')
 
 
