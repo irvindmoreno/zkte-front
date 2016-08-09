@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>gallito-formulario</title>
+    <link rel="stylesheet" href="../../../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./formulario.css">
+    <link rel="stylesheet" href="../../../../static/imagenes/sprite/gallito/sprite.css">
+  </head>
+  <body>
+    <div class="contenedor-slider-todobusco">
+      <form method="post" action="" class="formulario-gallito-slider">
+        <div id="slider_3_demo">
+          <div class="row smb">
+            <div class="span12">
+              <div id="owl-slider_3" class="owl-carousel">
+                <div class="item">           
+                  <div class="contenedor-formulario-gallito">
+                    <div class="contenedor-icon-gallito-perfil">
+                      <div class="contenedor-title-borde"><span class="title-text-borde">Estudios(1)</span>
+                        <div class="borde-inferior-titulo"></div>
+                      </div>
+                    </div>
+                    <div class="row smb cont-file">
+                      <div class="col-md-12 spb">
+                        <label for="check_no_tengo_estudios" class="label-form-gallito">No tengo Estudios</label>
+                        <input type="checkbox" id="check_no_tengo_estudios">
+                      </div>
+                    </div>
+                    <div class="row smb cont-file">
+                      <div class="col-sm-2 col-md-1 spb"><span class="text-2-line">Nombre de la institución (*)</span></div>
+                      <div class="col-sm-7 col-md-8 spb align-middle">
+                        <input type="text" name="nombreInstitucional" placeholder="Ingrese nombre de la institución" class="input_form_perfil">
+                      </div>
+                      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                        <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                        <div class="error-format text-2-line-error"></div>
+                      </div>
+                    </div>
+                    <div class="row smb cont-file">
+                      <div class="col-sm-2 col-md-1 spb align-middle-text"><span class="text-2-line ">Carrera (*)</span></div>
+                      <div class="col-sm-7 col-md-8 spb align-middle">
+                        <select name="select_carrera" class="input_form_perfil select_color">
+                          <option value="">Seleccione</option>
+                          <option value="1">Informática</option>
+                          <option value="2">Sistemas</option>
+                          <option value="3">Idiomas</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                        <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                        <div class="error-format text-2-line-error"></div>
+                      </div>
+                    </div>
+                    <div class="row smb cont-file">
+                      <div class="col-sm-2 col-md-1 spb"><span class="text-2-line">Tipo de carrera (*)</span></div>
+                      <div class="col-sm-7 col-md-8 spb">
+                        <select name="select_tipo_carrera" class="input_form_perfil select_color">
+                          <option value="">Seleccione</option>
+                          <option value="1">Informática</option>
+                          <option value="2">Sistemas</option>
+                          <option value="3">Idiomas</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                        <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                        <div class="error-format text-2-line-error "></div>
+                      </div>
+                    </div>
+                    <div class="row smb cont-file">
+                      <div class="col-sm-2 col-md-1 spb align-middle-text"><span>Nivel (*)</span></div>
+                      <div class="col-sm-7 col-md-8 spb">
+                        <select name="select_nivel" class="input_form_perfil select_color">
+                          <option value="">Seleccione</option>
+                          <option value="1">Informática</option>
+                          <option value="2">Sistemas</option>
+                          <option value="3">Idiomas</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                        <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                        <div class="error-format text-2-line-error"></div>
+                      </div>
+                    </div>
+                    <div class="row smb cont-file">
+                      <div class="col-sm-2 col-md-1 spb align-middle-text"><span>Inicio (*)</span></div>
+                      <div class="col-sm-7 col-md-8 spb">
+                        <div class="col-sm-6 col-md-6 spb slecet-izquieda">
+                          <select name="select_inicio" value="select_two" class="input_form_perfil select_color">
+                            <option value="">Seleccione</option>
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-6 col-md-6 spb slecet-derecha">
+                          <select name="select_mes" value="select_two" class="input_form_perfil select_color">
+                            <option value="">Seleccione</option>
+                            <option value="1">2016</option>
+                            <option value="2">2015</option>
+                            <option value="3">2014</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                        <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                        <div class="error-format text-2-line-error"></div>
+                      </div>
+                    </div>
+                    <div class="row smb cont-file pad-last-check">
+                      <div class="col-sm-2 col-md-1 spb"></div>
+                      <div class="col-sm-7 col-md-8 spb align-middle">
+                        <input type="checkbox" id="check_estudiando">
+                        <label for="check_estudiando" class="label-form-gallito">Actualmente estudiando</label>
+                      </div>
+                      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="row smb">
+        <div class="col-sm-2 col-md-1 spb"></div>
+        <div class="col-sm-7 col-md-8 spb align-middle contenedor-paginacion">
+          <div class="arrow-prev arrow-transale-pagination hideDiv"><i aria-hidden="true" class="fa fa-caret-left"></i></div><span class="content-pagination">
+            <input type="button" value="1" class="pagination-formulario active-pagination "></span>
+          <div class="arrow-next arrow-transale-pagination hideDiv"><i aria-hidden="true" class="fa fa-caret-right"></i></div>
+        </div>
+      </div>
+      <div class="content-btn-form">
+        <button id="addEstudio" class="btn-form-gallito btn-gallit-ligth">Añadir otro estudio</button>
+        <button id="btn-guardarDatos-finta" class="btn-form-gallito btn-gallit-green">Guardar cambios</button>
+      </div>
+    </div>
+    <script src="../../../../static/js/jquery.min.js"></script>
+    <script src="../../../../static/js/bootstrap.min.js"></script>
+    <script src="../../../../static/js/jquery.validate.min.js"></script>
+    <script src="../../../../static/js/jquery.message_es.js"></script>
+    <script src="./formulario.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "calibri";
+  src: url("../../../fonts/calibri/calibri.eot") format("embedded-opentype"), url("../../../fonts/calibri/calibri.woff") format("woff"), url("../../../fonts/calibri/calibri.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.contenedor-title-borde {
+  position: relative;
+  font-family: calibri;
+}
+.title-text-borde {
+  font-weight: bold;
+  color: #353e4a;
+  font-size: 1.3em;
+  padding-right: 0.5em;
+  background: #fff;
+  display: inline-block;
+}
+.borde-inferior-titulo {
+  background: #353e4a;
+  height: 0.1em;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  z-index: -1;
+}
+.circle-sup {
+  display: inline-block;
+  height: 4.8em;
+  width: 4.8em;
+  border-radius: 50%;
+  padding: 0.1em;
+}
+.circle-interno {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+}
+.contenedor-icon-img-fallitoPerfil {
+  cursor: pointer;
+  display: inline-block;
+  width: 14%;
+  min-width: 7em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.contenedor-all-circle-gallitoPerfil-icon {
+  padding: 1.5em 1em;
+  text-align: center;
+}
+.circle-text {
+  font-family: calibri;
+  color: #353e4a;
+  font-weight: bold;
+  margin-top: 0.3em;
+  transition: all ease 0.3s;
+}
+.check-icon-view {
+  margin: 0 auto;
+  margin-top: -0.8em;
+  transition: all ease 0.4s;
+}
+.transalate-icon-efect {
+  transform: translate(0, 6px);
+}
+.transalate-icon-check {
+  transform: translate(0, -70px);
+}
+.bg-yellow {
+  background: #fc3;
+}
+.bg-green {
+  background: #093;
+}
+.bg-red {
+  background: #c00;
+}
+.margin-icon-estudios {
+  padding-top: 0.8em;
+}
+.margin-icon-idomas {
+  padding-top: 0.6em;
+}
+.margin-icon-referencias {
+  padding-top: 0.7em;
+}
+.margin-icon-datos_personales {
+  padding-top: 1.2em;
+}
+.margin-icon-estudios_cv {
+  padding-top: 0.8em;
+}

@@ -1,7 +1,7 @@
 /******no tocar linea 1,2 y 3********/
-var proyecto='slider';
-var vista='zkte';
-var tipo='componente';
+var proyecto='gallito';
+var vista='perfil';
+var tipo='proyecto';
 /*librerias requeridas para correr gulp*/
 
 var gulp = require('gulp'),
@@ -12,16 +12,24 @@ var gulp = require('gulp'),
     babel = require('gulp-babel'),
     livereload = require('gulp-livereload'),
     connect = require('gulp-connect'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    buffer = require('vinyl-buffer'),
+    spritesmith=require('gulp.spritesmith');// para realizar un sprite de las imagenes 
 if(tipo=="proyecto")
 {
     var rutaOrigen=['proyecto/'+proyecto+'/'+vista];
     var rutaDestinoVista="public/proyecto/"+proyecto+"/"+vista;
+    var rutaImagenOrigen="static/imagenes/individuales/"+proyecto;
+    var rutaImagenDestino="static/imagenes/sprite/"+proyecto;
+    
 }
 else if(tipo=="componente")
 {
     var rutaOrigen=['componentes/preprocesados/'+proyecto+'/'+vista];
     var rutaDestinoVista="componentes/public/"+proyecto+"/"+vista;
+    var rutaImagenOrigen="static/imagenes/individuales/"+vista;
+    var rutaImagenDestino="static/imagenes/sprite/"+vista;
+    var rutaImagenCssDestino="componentes/preprocesados/"+proyecto+'/'+vista;
 }
 
 gulp.task("css-reload",function(){
@@ -71,18 +79,6 @@ gulp.task("jade",function(){
             .pipe(rename({extname:'.html'}))
             .pipe(gulp.dest(rutaDestinoVista))
             .pipe(connect.reload());
-    /*
-    if(tipo=="componente")
-    {
-        console.log("concatenando")
-        setTimeout(function(){
-            gulp.src(['./componentes/public/'+proyecto+'/'+vista+'/estrcutura.html', './componentes/public/'+proyecto+'/'+vista+'/'+proyecto+'.html'])
-            .pipe(concat('resultado.html'))
-            .pipe(gulp.dest("componentes/public/"+proyecto+"/"+vista+"/"))
-            .pipe(connect.reload())
-        }, 2000);
-        
-    }*/
 })
 gulp.task('connect', function() {
     connect.server({
@@ -101,6 +97,7 @@ function compile(watch) {
         gulp.watch(rutaOrigen+"/*.styl",['css']);
         gulp.watch(rutaOrigen+"/*.js",['js']);
         gulp.watch(rutaOrigen+"/*.jade",['jade']);
+        gulp.watch(rutaImagenOrigen+"/*.*",['sprite']);
     }
     rebundle();
 }
@@ -112,6 +109,26 @@ gulp.task('concatenarComponente', function () {
 
 });
 
+gulp.task('sprite', function() {
+    
+    var spriteData = gulp.src(rutaImagenOrigen+'/*.*') // source path of the sprite images
+            .pipe(buffer())
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.css'
+            }));
+
+   return spriteData.pipe(gulp.dest(rutaImagenDestino)); // output path for the sprite
+    //spriteData.css.pipe(gulp.dest(rutaImagenDestino)); // output path for the CSS
+
+
+/*
+    var spriteData = gulp.src(rutaImagenOrigen+'/*.*').pipe(spritesmith({
+            imgName: 'sprite.png',
+            cssName: 'sprite.css'
+        }));
+    return spriteData.pipe(gulp.dest(rutaImagenDestino));*/
+});
 
 gulp.task("watch",function(){
     
@@ -119,7 +136,7 @@ gulp.task("watch",function(){
 })
 
 gulp.task("default",["css-reload","js-reload","jade-reload","watch","connect"])
-gulp.task("componente",["css","js","jade","watch","connect"])
+gulp.task("componente",["css","js","jade","sprite","watch","connect"])
 gulp.task("subirComponente",function()
 {
     /*aqui pondras los componentes que subiras a gh pages*/

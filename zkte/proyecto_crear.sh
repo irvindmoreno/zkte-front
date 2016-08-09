@@ -28,22 +28,22 @@ guardarRutaDelPoryectoEnConf()
 {
 	nombreDelProyecto=$1
 	rutaZkte="$(pwd)"
-	
-	rutaProyecto="$(pwd)/proyecto/$nombreDelProyecto"	
-	rutaConfigRutas="$(pwd)/config/Rutas"
-	configProyecto="$(pwd)/config/Proyecto"
-	#Creando el archivo Proyecto.conf
-		sudo touch  $rutaConfigRutas"/Proyecto.conf"
-		sudo chmod 777 $rutaConfigRutas/Proyecto.conf
-		echo "$rutaProyecto">> $rutaConfigRutas/Proyecto.conf
-	#Creando el archivo Rutas.conf
-		sudo touch  $rutaConfigRutas"/Rutas.conf"
-		sudo chmod 777 $rutaConfigRutas/Rutas.conf
-		echo "$rutaConfigRutas">> $rutaConfigRutas/Rutas.conf
-	#Creando el archivo Rutas.conf
-		sudo touch  $configProyecto"/Nombre.conf"
-		sudo chmod 777 $configProyecto/Nombre.conf
-		echo "$nombreDelProyecto">> $configProyecto/Nombre.conf
+	rutaProyectoEnConfig="config/proyecto/$nombreDelProyecto"
+	if [ -d $rutaProyectoEnConfig ];
+		then
+			"Ya existe un proyecto con el mismo nombre"
+		else
+			mkdir "config/proyecto/$nombreDelProyecto"
+			mkdir "config/proyecto/$nombreDelProyecto/Vistas"
+			touch "config/proyecto/$nombreDelProyecto/Vistas/vistas.conf"
+			mkdir "config/proyecto/$nombreDelProyecto/Ruta"
+			mkdir "config/proyecto/$nombreDelProyecto/Nombre"
+			archivoNombreProyecto="config/proyecto/$nombreDelProyecto/Nombre/Proyecto.conf"
+			sudo touch  $archivoNombreProyecto
+			sudo chmod 777 $archivoNombreProyecto
+			echo "$nombreDelProyecto">> $archivoNombreProyecto
+			echo "$nombreDelProyecto">> "config/proyecto_use.conf"
+	fi
 }
 crearLayout()
 {
@@ -76,7 +76,13 @@ crearLayout()
 }
 crearProyecto()
 {
-	
+	rutaProyecto="proyecto/$nombreDelProyecto"
+	if [ -d "proyecto" ];
+		then
+			echo ""
+		else
+			mkdir proyecto
+	fi
 	if [ -d $rutaProyecto ];
 		then	
 			echo "Ya Existe un proyecto con este nombre"			
@@ -91,7 +97,7 @@ crearProyecto()
 						fi
 				#creamos el layout
 					crearLayout															
-		fi
+	fi
 }
 
 inicio()

@@ -1,0 +1,102 @@
+//************** formulario gallito **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+        div(class="contenedor-slider-todobusco")
+            form(class="formulario-gallito-slider" method="post" action="")
+                div(id="slider_3_demo")
+                    div(class="row smb")
+                      div(class="span12")
+                        div(id="owl-slider_3" class="owl-carousel")
+                            div(class="item")            
+                                div(class="contenedor-formulario-gallito")
+                                    div(class="contenedor-icon-gallito-perfil")
+                                        div(class="contenedor-title-borde")
+                                            span(class="title-text-borde") Estudios(1)
+                                            div(class="borde-inferior-titulo")
+                                    div(class="row smb cont-file")
+                                        div(class="col-md-12 spb")
+                                            label(for="check_no_tengo_estudios" class="label-form-gallito") No tengo Estudios
+                                            input(type="checkbox" id="check_no_tengo_estudios")
+                                    div(class="row smb cont-file")
+                                        div(class="col-sm-2 col-md-1 spb")
+                                            span(class="text-2-line") Nombre de la institución (*)
+                                        div(class="col-sm-7 col-md-8 spb align-middle")
+                                            input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+                                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                            div(class="error-format text-2-line-error")
+                                    div(class="row smb cont-file")
+                                        div(class="col-sm-2 col-md-1 spb align-middle-text")
+                                            span(class="text-2-line ") Carrera (*)
+                                        div(class="col-sm-7 col-md-8 spb align-middle")
+                                            select(class="input_form_perfil select_color" name="select_carrera")
+                                                option(value="") Seleccione
+                                                option(value="1") Informática
+                                                option(value="2") Sistemas
+                                                option(value="3") Idiomas
+                                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                            div(class="error-format text-2-line-error")
+                                    div(class="row smb cont-file")
+                                        div(class="col-sm-2 col-md-1 spb")
+                                            span(class="text-2-line") Tipo de carrera (*)
+                                        div(class="col-sm-7 col-md-8 spb")
+                                            select(class="input_form_perfil select_color" name="select_tipo_carrera")
+                                                option(value="") Seleccione
+                                                option(value="1") Informática
+                                                option(value="2") Sistemas
+                                                option(value="3") Idiomas
+                                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                            div(class="error-format text-2-line-error ")
+                                    div(class="row smb cont-file")
+                                        div(class="col-sm-2 col-md-1 spb align-middle-text")
+                                            span(class="") Nivel (*)
+                                        div(class="col-sm-7 col-md-8 spb")
+                                            select(class="input_form_perfil select_color" name="select_nivel")
+                                                option(value="") Seleccione
+                                                option(value="1") Informática
+                                                option(value="2") Sistemas
+                                                option(value="3") Idiomas
+                                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                            div(class="error-format text-2-line-error")
+                                    div(class="row smb cont-file")
+                                        div(class="col-sm-2 col-md-1 spb align-middle-text")
+                                            span(class="") Inicio (*)
+                                        div(class="col-sm-7 col-md-8 spb")
+                                            div(class="col-sm-6 col-md-6 spb slecet-izquieda")
+                                                select(class="input_form_perfil select_color" name="select_inicio" value="select_two")
+                                                    option(value="") Seleccione
+                                                    option(value="1") Enero
+                                                    option(value="2") Febrero
+                                                    option(value="3") Marzo
+                                            div(class="col-sm-6 col-md-6 spb slecet-derecha")
+                                                select(class="input_form_perfil select_color" name="select_mes" value="select_two")
+                                                    option(value="") Seleccione
+                                                    option(value="1") 2016
+                                                    option(value="2") 2015
+                                                    option(value="3") 2014
+                                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                            div(class="error-format text-2-line-error")
+                                    div(class="row smb cont-file pad-last-check")
+                                        div(class="col-sm-2 col-md-1 spb")
+                                        div(class="col-sm-7 col-md-8 spb align-middle")
+                                            input(type="checkbox" id="check_estudiando")
+                                            label(for="check_estudiando" class="label-form-gallito") Actualmente estudiando
+                                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+            div(class="row smb")
+                div(class="col-sm-2 col-md-1 spb")
+                div(class="col-sm-7 col-md-8 spb align-middle contenedor-paginacion")
+                    div(class="arrow-prev arrow-transale-pagination hideDiv")
+                        i(class="fa fa-caret-left" aria-hidden="true")
+                    span(class="content-pagination")
+                        input(type="button" class="pagination-formulario active-pagination " value="1")
+                    div(class="arrow-next arrow-transale-pagination hideDiv")
+                        i(class="fa fa-caret-right" aria-hidden="true")
+            div(class="content-btn-form")
+                button(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
+                button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
+//************** formulario gallito **************//

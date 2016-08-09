@@ -27,7 +27,9 @@
     "gulp-livereload": "^3.8.1",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.5.0",
-    "rupture": "^0.6.1"
+    "gulp.spritesmith": "^6.2.1",
+    "rupture": "^0.6.1",
+    "vinyl-buffer": "^1.0.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.6",

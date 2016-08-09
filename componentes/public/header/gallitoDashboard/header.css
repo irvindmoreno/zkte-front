@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "calisto";
+  src: url("../../../fonts/calisto/calisto.eot") format("embedded-opentype"), url("../../../fonts/calisto/calisto.woff") format("woff"), url("../../../fonts/calisto/calisto.ttf") format("truetype");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../../../fonts/calibri/calibri.eot") format("embedded-opentype"), url("../../../fonts/calibri/calibri.woff") format("woff"), url("../../../fonts/calibri/calibri.ttf") format("truetype");
+}
+@-moz-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+@-webkit-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+@-o-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+header {
+  background: #353e4a;
+  height: 5em;
+}
+a:hover {
+  text-decoration: none;
+}
+.headerDashboard {
+  font-family: calibri;
+}
+.relative {
+  position: relative;
+}
+.inline-block-top {
+  display: inline-block;
+  vertical-align: top;
+}
+.inline-block-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.gallito-icon {
+  position: absolute;
+  left: 1em;
+  top: 0.2em;
+  font-size: 2.4em;
+}
+.gallito-register-container {
+  position: absolute;
+  right: 1em;
+  top: 1.7em;
+}
+.gallito-icon-title {
+  color: #fff;
+  font-family: calisto;
+}
+.gallito-icon-com {
+  color: #93b4d9;
+  font-family: calisto;
+}
+.gallito-register-botton input {
+  background: #52749a;
+  color: #fff;
+  border: #ffdead;
+  outline: none;
+  -webkit-appearance: none;
+  padding: 0.3em 1em;
+}
+.gallito-register-botton input:hover {
+  animation: animationButton 1.5s infinite;
+}
+.gallito-text-blue {
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding-right: 0.8em;
+  font-size: 1.1em;
+  transition: all ease 0.3s;
+}
+.gallito-text-white {
+  color: #93b4d9;
+  padding: 0em 0.5em;
+  transition: all ease 0.3s;
+}
+.gallito-register-text {
+  margin-left: 0.5em;
+}
+.gallito-text-blue:hover {
+  color: #e26a39;
+}
+.gallito-text-white:hover {
+  color: #e26a39;
+}
+.borde-left-white {
+  font-family: calibri;
+  color: #fff;
+  padding: 0em 0.4em;
+  margin-left: 0.4em;
+  border-left: 1px solid #fff;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.text-welcome {
+  color: #fff;
+  font-size: 1.3em;
+  border-right: 1px solid #fff;
+  padding: 0em 0.5em 0em 0em;
+}
+@media screen and (max-width: 761px) {
+  .gallito-icon,
+  .gallito-register-container {
+    position: initial;
+    text-align: center;
+  }
+  header {
+    height: inherit;
+    padding: 0.5em;
+  }
+}
+@media screen and (max-width: 439px) {
+  .text-welcome {
+    border-right: none;
+  }
+}
+@-moz-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+@-webkit-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+@-o-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+@keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}

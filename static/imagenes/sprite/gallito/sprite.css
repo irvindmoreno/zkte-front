@@ -1,0 +1,144 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-alert {
+  background-image: url(sprite.png);
+  background-position: -121px -105px;
+  width: 16px;
+  height: 15px;
+}
+.icon-check {
+  background-image: url(sprite.png);
+  background-position: -42px -105px;
+  width: 21px;
+  height: 20px;
+}
+.icon-cv_circulo {
+  background-image: url(sprite.png);
+  background-position: -126px -41px;
+  width: 28px;
+  height: 41px;
+}
+.icon-datos_personales {
+  background-image: url(sprite.png);
+  background-position: -47px -75px;
+  width: 45px;
+  height: 27px;
+}
+.icon-estudios {
+  background-image: url(sprite.png);
+  background-position: -89px 0px;
+  width: 37px;
+  height: 41px;
+}
+.icon-experiencia {
+  background-image: url(sprite.png);
+  background-position: 0px -41px;
+  width: 46px;
+  height: 34px;
+}
+.icon-facebook {
+  background-image: url(sprite.png);
+  background-position: -21px -105px;
+  width: 21px;
+  height: 21px;
+}
+.icon-home {
+  background-image: url(sprite.png);
+  background-position: -126px -82px;
+  width: 24px;
+  height: 21px;
+}
+.icon-idiomas {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 45px;
+  height: 41px;
+}
+.icon-linkedin {
+  background-image: url(sprite.png);
+  background-position: -89px -41px;
+  width: 22px;
+  height: 22px;
+}
+.icon-mensaje {
+  background-image: url(sprite.png);
+  background-position: -46px -41px;
+  width: 21px;
+  height: 22px;
+}
+.icon-mi_cv {
+  background-image: url(sprite.png);
+  background-position: -111px -41px;
+  width: 14px;
+  height: 21px;
+}
+.icon-mi_perfil {
+  background-image: url(sprite.png);
+  background-position: -92px -75px;
+  width: 22px;
+  height: 21px;
+}
+.icon-mis_notificaciones {
+  background-image: url(sprite.png);
+  background-position: -63px -105px;
+  width: 19px;
+  height: 20px;
+}
+.icon-mis_postulaciones {
+  background-image: url(sprite.png);
+  background-position: -82px -105px;
+  width: 19px;
+  height: 19px;
+}
+.icon-otros estudios {
+  background-image: url(sprite.png);
+  background-position: -126px 0px;
+  width: 28px;
+  height: 41px;
+}
+.icon-otros_estudios {
+  background-image: url(sprite.png);
+  background-position: 0px -75px;
+  width: 47px;
+  height: 30px;
+}
+.icon-referencias {
+  background-image: url(sprite.png);
+  background-position: -45px 0px;
+  width: 44px;
+  height: 41px;
+}
+.icon-twiter {
+  background-image: url(sprite.png);
+  background-position: 0px -105px;
+  width: 21px;
+  height: 22px;
+}
+.icon-ver_avisos {
+  background-image: url(sprite.png);
+  background-position: -101px -105px;
+  width: 20px;
+  height: 17px;
+}
+.icon-youtube {
+  background-image: url(sprite.png);
+  background-position: -67px -41px;
+  width: 21px;
+  height: 22px;
+}

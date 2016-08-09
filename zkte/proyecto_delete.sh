@@ -48,17 +48,31 @@ eliminarConfiguracionVistasUse()
 		echo "....."
 	fi
 }
+eliminarConfig()
+{
+	rutaZkte=$(pwd)	
+	if [ -d "$(pwd)/config/proyecto/$nombreProyecto" ];
+		then
+			cd "$(pwd)/config/proyecto"			
+			sudo rm -R $nombreProyecto
+			echo "....."
+	else
+		echo "....."
+	fi
+	cd $rutaZkte
+}
 eliminarCarpetaProyecto()
 {
-	
-	if [ -d "$(pwd)"/proyecto/$1 ];
+	nombreProyecto=$1
+	if [ -d "$(pwd)"/proyecto/$nombreProyecto ];
 		then
-			sudo rm -R "$(pwd)"/proyecto/$1
-			eliminarConfiguracionProyectoNombre
-			eliminarConfiguracionRutaProyecto
-			eliminarConfiguracionRutaRuta
-			eliminarConfiguracionVistasVistas
-			eliminarConfiguracionVistasUse
+			sudo rm -R "$(pwd)"/proyecto/$nombreProyecto
+			eliminarConfig
+			#eliminarConfiguracionProyectoNombre
+			#eliminarConfiguracionRutaProyecto
+			#eliminarConfiguracionRutaRuta
+			#eliminarConfiguracionVistasVistas
+			#eliminarConfiguracionVistasUse
 			echo "Se ah eliminado el proyecto $1 correctamente"
 	else
 		echo "no existe este proyecto"

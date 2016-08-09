@@ -15,10 +15,9 @@ cadena='
 	alias comp.import="'$rutazkte'/zkte/component_import.sh"
 	alias comp.compile="'$rutazkte'/zkte/component_compile.sh"
 	alias rut.zkte.front="cd '$rutazkte'"
-	alias subl.zkte.front.jquery="subl '$HOME'/Carrera/FrontEnd/zkte"
+	alias subl.zkte.front="subl '$HOME'/Carrera/FrontEnd/zkte-front"
 #FIN Del Zkte-front'
 echo "$cadena" >> ~/.zshrc
 npm install
-cd componentes
 git fetch origin gh-pages:gh-pages
 git checkout gh-pages

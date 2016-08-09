@@ -32,7 +32,7 @@ creamosLosArchivosEnPublic()
 	
 	if [ -d "$(pwd)/componentes/public/$componenteTipo/$componenteNombre" ];
 		then
-			echo "Se ah cambiado al componente $componenteTipo => $componenteNombre con éxito"			
+			echo "Se ah cambiado al componente $componenteTipo => $componenteNombre con éxito"
 			abrirNavegador
 			gulp componente
 			#gulp concatenarComponente
