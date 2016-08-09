@@ -1,0 +1,315 @@
+extends ../layout/layout.jade
+block head
+    link(href='./perfil.css' rel='stylesheet')
+block header
+    header(class="relative headerDashboard")
+        div(class="gallito-icon")
+            a(href="#")
+                span(class="gallito-icon-title") gallito
+                span(class="gallito-icon-com") .com
+            span(class="borde-left-white") Postulante
+        div(class="gallito-register-container")
+            span(class="text-welcome") Bienvenido(a): Carla Paola
+            div(class="gallito-register-text inline-block-middle")
+                a(class="gallito-text-blue" href="#") Cerrar Sesión
+                a(class="gallito-text-white" href="#")  Soy una empresa
+block navegacion    
+block contenido
+    div(class="row smb")
+        div(class="col-sm-3 col-md-3 spb contenedor-project-filter")
+            //************** filtro gallito **************//
+            div(class="contenedor-filtro-gallito")
+                div(class="bloque-filtro")
+                    i(class="icon-home icon-inline icon-pointer")
+                    a(href="#" class="title-block-filtro") Inicio
+                div(class="bloque-filtro")
+                    i(class="icon-ver_avisos icon-inline icon-pointer")
+                    a(href="#" class="title-block-filtro avisos-left") Ver Avisos
+                div(class="block-desplegable")
+                    div(class="block-desplegable-rectangle")
+                        i(class="icon-mi_perfil icon-inline")
+                        span(class="title-block-filtro cl-white") Mi Perfil
+                        i(class="fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="hideDiv fa fa-angle-down icon-down-filter" aria-hidden="true")
+                    div(class="contenedor-desplegado")
+                        div(class="block-dashed block-dashed-title") Perfil profesional
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Experiencia
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Estudios
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Idiomas
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Otros estudios
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Referencias
+                        div(class="block-dashed block-dashed-title") Datos
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Datos Personales
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Cambio de clave
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Mis alertas
+                div(class="block-desplegable")
+                    div(class="block-desplegable-rectangle bg-blue")
+                        i(class="icon-mis_postulaciones icon-inline")
+                        span(class="title-block-filtro cl-white") Mis postulaciones
+                        i(class="hideDiv fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="fa fa-angle-down icon-down-filter" aria-hidden="true")
+                    div(class="contenedor-desplegado hideDiv")
+                        div(class="block-dashed block-dashed-title") Perfil profesional
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Experiencia
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Estudios
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Idiomas
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Otros estudios
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Referencias
+                        div(class="block-dashed block-dashed-title") Datos
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Datos Personales
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Cambio de clave
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Mis alertas
+                div(class="block-desplegable")
+                    div(class="block-desplegable-rectangle bg-blue")
+                        i(class="icon-mis_notificaciones icon-inline")
+                        span(class="title-block-filtro cl-white") Mis notificaciones
+                        i(class="hideDiv fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="fa fa-angle-down icon-down-filter" aria-hidden="true")
+                    div(class="contenedor-desplegado hideDiv")
+                        div(class="block-dashed block-dashed-title") Perfil profesional
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Experiencia
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Estudios
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Idiomas
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Otros estudios
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Referencias
+                        div(class="block-dashed block-dashed-title") Datos
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Datos Personales
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Cambio de clave
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Mis alertas
+                div(class="block-desplegable")
+                    div(class="block-desplegable-rectangle bg-blue")
+                        i(class="icon-mi_cv icon-inline")
+                        span(class="title-block-filtro cl-white") Mis curriculum
+                        i(class="hideDiv fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="fa fa-angle-down icon-down-filter" aria-hidden="true")
+                    div(class="contenedor-desplegado hideDiv")
+                        div(class="block-dashed block-dashed-title") Perfil profesional
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Experiencia
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Estudios
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Idiomas
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Otros estudios
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Referencias
+                        div(class="block-dashed block-dashed-title") Datos
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Datos Personales
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Cambio de clave
+                        div(class="block-dashed filtro-subcat")
+                            a(href="#" class="link-subcat") Mis alertas
+            //************** filtro gallito **************//
+        div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto spb")
+            //************** icons gallitoPerfil **************//
+            div(class="contenedor-icon-gallito-perfil")
+                div(class="contenedor-title-borde")
+                    span(class="title-text-borde") Mi Pefil
+                    div(class="borde-inferior-titulo")
+                div(class="contenedor-all-circle-gallitoPerfil-icon")
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-green")
+                            div(class="circle-interno bg-green")
+                                div(class="icon-experiencia icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Experiencia
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-yellow")
+                            div(class="circle-interno bg-yellow margin-icon-estudios")
+                                div(class="icon-estudios icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Estudios
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-yellow")
+                            div(class="circle-interno bg-yellow margin-icon-idomas")
+                                div(class="icon-idiomas icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Idiomas
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-green")
+                            div(class="circle-interno bg-green margin-icon-estudios_otros_estudios")
+                                div(class="icon-otros_estudios icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Otros Estudios
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-red")
+                            div(class="circle-interno bg-red margin-icon-referencias")
+                                div(class="icon-referencias icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Referencias
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-green")
+                            div(class="circle-interno bg-green margin-icon-datos_personales")
+                                div(class="icon-datos_personales icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Datos Personales
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-red")
+                            div(class="circle-interno bg-red margin-icon-estudios_cv")
+                                div(class="icon-cv_circulo icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") CV
+            //************** icons gallitoPerfil **************//
+            //************** formulario gallito **************//
+            div(class="contenedor-slider-todobusco")
+                form(class="formulario-gallito-slider" method="post" action="")
+                    div(id="slider_3_demo")
+                        div(class="row smb")
+                            div(class="span12")
+                                div(id="owl-slider_3" class="owl-carousel")
+                                    div(class="item")            
+                                        div(class="contenedor-formulario-gallito")
+                                            div(class="contenedor-icon-gallito-perfil")
+                                                div(class="contenedor-title-borde")
+                                                    span(class="title-text-borde-2") Estudios(1)
+                                                    div(class="borde-inferior-titulo")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-md-12 spb")
+                                                        label(for="check_no_tengo_estudios" class="label-form-gallito") No tengo Estudios
+                                                        input(type="checkbox" id="check_no_tengo_estudios")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="text-2-line") Nombre de la institución (*)
+                                                    div(class="col-sm-10 col-md-10 spb align-middle cont-msj-relative")
+                                                        input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                                        span(class="text-2-line ") Carrera (*)
+                                                    div(class="col-sm-10 col-md-10 spb align-middle cont-msj-relative")
+                                                        select(class="input_form_perfil select_color" name="select_carrera")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="text-2-line") Tipo de carrera (*)
+                                                    div(class="col-sm-10 col-md-10 spb cont-msj-relative")
+                                                        select(class="input_form_perfil select_color" name="select_tipo_carrera")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                                        span(class="") Nivel (*)
+                                                    div(class="col-sm-10 col-md-10 spb cont-msj-relative")
+                                                        select(class="input_form_perfil select_color" name="select_nivel")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                                        span(class="") Inicio (*)
+                                                    div(class="col-sm-10 col-md-10 spb")
+                                                        div(class="col-sm-6 col-md-6 spb slecet-izquieda cont-msj-relative")
+                                                            select(class="input_form_perfil select_color" name="select_inicio" value="select_two")
+                                                                option(value="") Seleccione
+                                                                option(value="1") Enero
+                                                                option(value="2") Febrero
+                                                                option(value="3") Marzo
+                                                        div(class="col-sm-6 col-md-6 spb slecet-derecha cont-msj-relative")
+                                                            select(class="input_form_perfil select_color" name="select_mes" value="select_two")
+                                                                option(value="") Seleccione
+                                                                option(value="1") 2016
+                                                                option(value="2") 2015
+                                                                option(value="3") 2014
+                                        div(class="row smb cont-file pad-last-check")
+                                            div(class="col-sm-2 col-md-2 spb")
+                                            div(class="col-sm-7 col-md-10 spb align-middle")
+                                                input(type="checkbox" id="check_estudiando")
+                                                label(for="check_estudiando" class="label-form-gallito") Actualmente estudiando
+                                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                        div(class="row smb")
+                            div(class="col-sm-2 col-md-2 spb")
+                            div(class="col-sm-7 col-md-7 spb align-middle contenedor-paginacion")
+                                div(class="arrow-prev arrow-transale-pagination hideDiv")
+                                    i(class="fa fa-caret-left" aria-hidden="true")
+                                span(class="content-pagination")
+                                    input(type="button" class="pagination-formulario active-pagination " value="1")
+                                div(class="arrow-next arrow-transale-pagination hideDiv")
+                                    i(class="fa fa-caret-right" aria-hidden="true")
+            div(class="content-btn-form")
+                button(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
+                button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
+            //************** formulario gallito **************//
+block footer
+    //************** footer gallito **************//
+    footer
+        div(class="row footer-gallit-block-1 smb")
+            div(class="col-xs-6 col-sm-6 col-md-4 bloq-foot bloq-foot-left pad-mob-foot simr-dashed-1")
+                div(class="footer-gallito-title") Trabajo.gallito.com.uy
+                div(class="leter-footer-gallito") Preguntas Frecuentes
+                div(class="leter-footer-gallito") Términos y Condiciones
+                div(class="leter-footer-gallito") &nbsp;
+            div(class="col-xs-6 col-sm-6 col-md-2 bloq-foot pad-mob-foot  simr-dashed-2")
+                div(class="footer-gallito-title") Postulantes
+                div(class="leter-footer-gallito") Busca Trabajo
+                div(class="leter-footer-gallito") Crea tu cuenta
+                div(class="leter-footer-gallito") Ingresa
+            div(class="col-xs-6 col-sm-6 col-md-2 bloq-foot bloq-foot-3-1 pad-mob-foot simr-dashed-3")
+                div(class="footer-gallito-title") Empresa
+                div(class="leter-footer-gallito") Publica tu aviso
+                div(class="leter-footer-gallito") Crea tu cuenta
+                div(class="leter-footer-gallito") Ingresa
+            div(class="col-xs-6 col-sm-6 col-md-4 bloq-foot pad-mob-foot simrdashed")
+                div(class="footer-gallito-title") Central de ayuda
+                div(class="leter-footer-gallito") (01)311-6707 - Opción 3
+                div(class="leter-footer-gallito") Lunes a viernes de 8:00am a 6:00pm
+                div(class="leter-footer-gallito")
+                    i(class="fa fa-copyright" aria-hidden="true")
+                    span Todos los derechos reservados - 2016
+        div(class="row footer-gallit-block-2 smb")
+            div(class="col-xs-12 col-sm-3 col-md-2 block-2-letter")
+                div(class="logo-footer-galito")
+                    span(class="gallito-letter-logo-footer-first") gallito.
+                    span(class="gallito-letter-logo-footer-last") com
+            div(class="col-xs-12 col-sm-6 col-md-6 block-2-letter")
+                div
+                    strong.
+                        El Libro de los Clasificados - Zelmar Michelini 1287, Montevideo - 11100 Uruguay
+                div(class="text-gray-suave") CLASITELEFONO 131
+                div(class="text-gray-suave") Fundada el 30/10/1983 por: Carlos E. Scheck, Eduardo Scheck y Daniel Scheck
+            div(class="col-xs-12 col-sm-3 col-md-3 block-2-letter")
+                div(class="redes-sociales-footer-gallito")
+                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
+                        div(class="icon-mensaje")
+                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
+                        div(class="icon-linkedin")
+                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
+                        div(class="icon-youtube")
+                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
+                        div(class="icon-twiter")
+                    a(href="#" class="inline-block link-redes-sociales-gallito-footer")
+                        div(class="icon-facebook")
+    //************** footer gallito **************//
+    script(src='./perfil.js')
+
+
