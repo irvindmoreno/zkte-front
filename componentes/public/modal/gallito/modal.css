@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../../../fonts/calibri/calibri.eot") format("embedded-opentype"), url("../../../fonts/calibri/calibri.woff") format("woff"), url("../../../fonts/calibri/calibri.ttf") format("truetype");
+}
+#modal-gallito .modal-content {
+  border-radius: 0;
+  font-family: calibri;
+}
+#modal-gallito .modal-header {
+  background: #353f49;
+  color: #fff;
+  text-align: left;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border: 0;
+}
+#modal-gallito .modal-footer {
+  border: 0;
+}
+#modal-gallito .modal-body {
+  font-size: 0.9em;
+  text-align: left;
+}
+#modal-gallito .btn-password {
+  border-radius: 0;
+  background: #0cb570;
+  color: #fff;
+  font-size: 1em;
+  padding: 0.3em 1em;
+}
+#modal-gallito .enlace-volver {
+  color: #527494;
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+#modal-gallito .close-modal-gallito {
+  opacity: 1;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  outline: none;
+  font-size: 1.4em;
+  text-shadow: none;
+  background: #fff;
+  color: #353f49;
+}
+#modal-gallito .form-control {
+  width: 100% !important;
+  border-radius: 0;
+  border-color: #555;
+}
+#modal-gallito .modal-label {
+  text-align: left;
+  padding-right: 0;
+}

@@ -1,0 +1,26 @@
+//************** modal gallito **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    button.btn.btn-primary gallito
+    #modal-gallito.modal.fade(role='dialog')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            button.close.close-modal-gallito(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+            h4.modal-title Recupera tu clave
+          .modal-body
+            p
+              | Ingrese su dirección de e-mail y le enviaremos tu nueva contraseña de verificación.
+              br
+              |             Una vez que haya recibido la contraseña,podrá elegir una nueva para su cuenta.
+            form#form-recuperar-clave.form-horizontal
+                .form-group
+                    label.col-sm-3.control-label.modal-label Correo electrónico (*)
+                    .col-sm-9
+                        input.form-control(type='text' name="correo" placeholder='Ingrese correo.')
+                .modal-footer
+                    a.enlace-volver(type='button', data-dismiss='modal') Volver al login
+                    button#confirm-form.btn.btn-password(type='submit') Cambiar Contraseña    
+//************** modal gallito **************//
