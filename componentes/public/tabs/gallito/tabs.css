@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+@font-face {
+  font-family: "calisto";
+  src: url("../../../fonts/calisto/calisto.eot") format("embedded-opentype"), url("../../../fonts/calisto/calisto.woff") format("woff"), url("../../../fonts/calisto/calisto.ttf") format("truetype");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../../../fonts/calibri/calibri.eot") format("embedded-opentype"), url("../../../fonts/calibri/calibri.woff") format("woff"), url("../../../fonts/calibri/calibri.ttf") format("truetype");
+}
+.contenedor-tab-gallito {
+  font-family: calibri;
+}
+.desactivarTab {
+  background: #b4b4b4 !important;
+}
+.desactivarTab:hover {
+  background: #dee0e2 !important;
+}
+.activarTab {
+  background: #dee0e2 !important;
+}
+.TabsAsep {
+  display: block;
+}
+.TabsAsep a {
+  text-decoration: none;
+}
+.TabsAsep-Pestania {
+  height: inherit;
+  padding: 0.6em 0.5em;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  text-align: center;
+}
+.TabsAsep-Pestania-Bloque2 {
+  margin-top: 0.4em;
+  text-align: left;
+}
+.TabsAsep-Pestania-Ttulo {
+  color: #3a7e6d;
+}
+.TabsAsep-Pestania-Ttulo-Numero {
+  background: #3a7e6d;
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+  color: #fff;
+  margin-right: 0.3em;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 0.1em;
+  text-align: center;
+}
+.TabsAsep-Pestania-Contenido {
+  color: #35344a;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+.TabsAsep-Pestania-1 .TabsAsep-Pestania-Ttulo-Numero {
+  background: #0cb570;
+}
+.TabsAsep-Pestania-Ttulo-Texto {
+  font-size: 1.4em;
+  color: #353e4a;
+  line-height: 0.8;
+}
+.smb {
+  margin-right: 0em;
+  margin-left: 0em;
+}
+.spb {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+.TabsAsep-Pestania-Ttulo-Numero,
+.TabsAsep-Pestania-Bloque2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.TabsAsep-Pestania-1 .TabsAsep-Pestania-Contenido {
+  border-bottom: 4px solid #0cb570;
+}
+.TabsAsep-Pestania-2 .TabsAsep-Pestania-Ttulo-Texto,
+.TabsAsep-Pestania-2 .TabsAsep-Pestania-Contenido,
+.TabsAsep-Pestania-3 .TabsAsep-Pestania-Ttulo-Texto,
+.TabsAsep-Pestania-3 .TabsAsep-Pestania-Contenido {
+  color: #929497;
+}
+@media screen and (max-width: 1100px) {
+  .contenedor-tab-gallito {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 942px) {
+  .contenedor-tab-gallito {
+    font-size: 13px;
+  }
+  .TabsAsep-Pestania-Contenido {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 785px) {
+  .contenedor-tab-gallito {
+    font-size: 12px;
+  }
+  .TabsAsep-Pestania-Contenido {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 726px) {
+  .TabsAsep-Pestania-Bloque2 {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 408px) {
+  .TabsAsep-Pestania-Contenido {
+    font-size: 0.9em;
+  }
+  .TabsAsep-Pestania-Ttulo-Texto {
+    font-size: 1.2em;
+  }
+}

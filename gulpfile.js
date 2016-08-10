@@ -1,7 +1,7 @@
 /******no tocar linea 1,2 y 3********/
-var proyecto='gallito';
-var vista='perfil';
-var tipo='proyecto';
+var proyecto='formulario';
+var vista='gallitoRegistro';
+var tipo='componente';
 /*librerias requeridas para correr gulp*/
 
 var gulp = require('gulp'),

@@ -1,0 +1,22 @@
+//************** tabs gallito **************//
+extends ./layout.jade
+block content
+    - pestaniaUno="Primer paso"
+    - contenidoUno="INGRESE EL AVISO WEB"
+    - pestaniaDos="Segudno paso"
+    - contenidoDos="INGRESE EL AVISO IMPRESO"
+    - pestaniaTres="Tercer paso"
+    - contenidoTres="PUBLICAR"
+    - pestanias={1:pestaniaUno,2:pestaniaDos,3:pestaniaTres}
+    - pestaniasContenido=[contenidoUno,contenidoDos,contenidoTres]
+    div(class="contenedor-tab-gallito")
+        div(class="TabsAsep row smb")
+            each pestania,index in pestanias
+                div(class="col-xs-4 col-sm-4 col-md-4 spb")
+                    div(class="TabsAsep-Pestania TabsAsep-Pestania-"+index data=index)
+                        div(class="TabsAsep-Pestania-Ttulo")
+                            div(class="TabsAsep-Pestania-Ttulo-Numero")=index
+                            div(class="TabsAsep-Pestania-Bloque2")
+                                div(class="TabsAsep-Pestania-Ttulo-Texto")=pestania
+                                div(class="TabsAsep-Pestania-Contenido")=pestaniasContenido[index-1]
+//************** tabs gallito **************//

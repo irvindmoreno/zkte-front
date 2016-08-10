@@ -1,0 +1,171 @@
+//************** formulario gallitoRegistro **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    div(class="contenedor-formulario-gallito")
+        div(class="contenedor-icon-gallito-perfil")
+            div(class="contenedor-title-borde")
+                span(class="title-text-borde") Datos del cargo
+        div(class="contenedor-datos-cargo")
+            div(class="row smb cont-file")
+                div(class="col-md-12 spb")
+                    span(class="color-error") (*) Campos Obligatorios
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb")
+                    span(class="text-1-line") Titulo del aviso (*)
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb")
+                    span(class="text-1-line") Tipo de cargo (*)
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb")
+                    span(class="text-2-line") Nombre de la empresa en aviso
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+            div(class="row smb cont-file pad-last-check")
+                div(class="col-sm-2 col-md-2 spb")
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    input(type="checkbox" id="check_estudiando")
+                    label(for="check_estudiando" class="label-form-gallito") Mostrar otro nombre
+                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb")
+                    span(class="text-2-line") Funciones (*)
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    textarea(type="text" class="input_form_perfil textarea-form-gallito" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb")
+                    span(class="text-2-line") Responsabilidades (*)
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    textarea(type="text" class="input_form_perfil textarea-form-gallito" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb align-middle-text")
+                    span(class="text-2-line ") Salario
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    select(class="input_form_perfil select_color" name="select_carrera")
+                        option(value="") Seleccione
+                        option(value="1") Informática
+                        option(value="2") Sistemas
+                        option(value="3") Idiomas
+            div(class="row smb cont-file pad-last-check")
+                div(class="col-sm-2 col-md-2 spb")
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    input(type="checkbox" id="check_estudiando")
+                    label(for="check_estudiando" class="label-form-gallito") Mostrar en el aviso
+                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+            div(class="row smb subtitle-form-gallito-registro") Ubicación del puesto
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb align-middle-text")
+                    span(class="text-2-line ") Departamento (*)
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    select(class="input_form_perfil select_color" name="select_carrera")
+                        option(value="") Seleccione
+                        option(value="1") Informática
+                        option(value="2") Sistemas
+                        option(value="3") Idiomas
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb align-middle-text")
+                    span(class="text-2-line ") Localidad / Barrio (*)
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    select(class="input_form_perfil select_color" name="select_carrera")
+                        option(value="") Seleccione
+                        option(value="1") Informática
+                        option(value="2") Sistemas
+                        option(value="3") Idiomas
+            div(class="row smb subtitle-form-gallito-registro") Logo de la empresa
+            div(class="row smb cont-file")
+                div(class="col-sm-2 col-md-2 spb align-middle-text")
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    div(class="spb col-md-4")
+                        label(class="cargar")
+                            span Seleccionar archivo
+                                input(type="file" id="archivo" name="archivo")
+                        div(class="text-img-warning")
+                            i(class="fa fa-exclamation-triangle" aria-hidden="true")
+                            span(class="span-text-warning") Formatos permitidos: JPG, PNG.
+                        div(class="text-img-warning")
+                            i(class="fa fa-exclamation-triangle" aria-hidden="true")
+                            span(class="span-text-warning") Tamaño máximo: 500kb.
+                    div(class="spb col-md-8 align-right")
+                        div(class="contenedor-img-upload")
+                            span(class="text-gallito-img-upload") gallito.com
+                            img(id="image_upload_preview")
+        div(class="contenedor-slider-todobusco")
+            div(class="contenedor-icon-gallito-perfil")
+                div(class="contenedor-title-borde")
+                    span(class="title-text-borde") Estudios(1)
+                    div(class="borde-inferior-titulo")
+            div(class="contenedor-datos-cargo")
+                div(class="row smb cont-file")
+                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                        span(class="text-2-line ") Carrera (*)
+                    div(class="col-sm-7 col-md-7 spb align-middle")
+                        select(class="input_form_perfil select_color" name="select_carrera")
+                            option(value="") Seleccione
+                            option(value="1") Informática
+                            option(value="2") Sistemas
+                            option(value="3") Idiomas
+                div(class="row smb cont-file")
+                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                        span(class="text-2-line ") Tipo de carrera (*)
+                    div(class="col-sm-7 col-md-7 spb align-middle")
+                        select(class="input_form_perfil select_color" name="select_carrera")
+                            option(value="") Seleccione
+                            option(value="1") Informática
+                            option(value="2") Sistemas
+                            option(value="3") Idiomas
+                div(class="row smb cont-file")
+                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                        span(class="text-2-line ") Nivel (*)
+                    div(class="col-sm-7 col-md-7 spb align-middle")
+                        select(class="input_form_perfil select_color" name="select_carrera")
+                            option(value="") Seleccione
+                            option(value="1") Informática
+                            option(value="2") Sistemas
+                            option(value="3") Idiomas
+            div(class="row smb contenedor-paginacion align-right")
+                div(class="col-sm-2 col-md-2 spb")
+                div(class="col-sm-7 col-md-7 spb align-middle")
+                    button(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
+        div(class="contenedor-slider-todobusco")
+            div(class="item")
+                div(class="contenedor-icon-gallito-perfil")
+                    div(class="contenedor-title-borde")
+                        span(class="title-text-borde") Estudios(1)
+                        div(class="borde-inferior-titulo")
+                div(class="contenedor-datos-cargo")
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb align-middle-text")
+                            span(class="text-2-line ") Carrera (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            select(class="input_form_perfil select_color" name="select_carrera")
+                                option(value="") Seleccione
+                                option(value="1") Informática
+                                option(value="2") Sistemas
+                                option(value="3") Idiomas
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb align-middle-text")
+                            span(class="text-2-line ") Tipo de carrera (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            select(class="input_form_perfil select_color" name="select_carrera")
+                                option(value="") Seleccione
+                                option(value="1") Informática
+                                option(value="2") Sistemas
+                                option(value="3") Idiomas
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb align-middle-text")
+                            span(class="text-2-line ") Nivel (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            select(class="input_form_perfil select_color" name="select_carrera")
+                                option(value="") Seleccione
+                                option(value="1") Informática
+                                option(value="2") Sistemas
+                                option(value="3") Idiomas
+            div(class="content-btn-form")
+                button(id="addRegistro" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
+                button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
+//************** formulario gallitoRegistro **************//

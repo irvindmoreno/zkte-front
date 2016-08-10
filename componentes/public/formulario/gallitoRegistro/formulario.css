@@ -1,0 +1,571 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../../../fonts/calibri/calibri.eot") format("embedded-opentype"), url("../../../fonts/calibri/calibri.woff") format("woff"), url("../../../fonts/calibri/calibri.ttf") format("truetype");
+}
+.icon-inline {
+  display: inline-block;
+  vertical-align: top;
+}
+.smb {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.spb {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.contenedor-title-borde {
+  position: relative;
+  font-family: calibri;
+}
+.title-text-borde {
+  color: #fff;
+  font-size: 1.3em;
+  padding: 0.2em 0.8em;
+  display: inline-block;
+}
+.borde-inferior-titulo {
+  background: #527494;
+  height: 0.05em;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  z-index: -1;
+}
+.label-form-gallito {
+  font-weight: normal;
+  cursor: pointer;
+}
+.label-form-gallito,
+#check_no_tengo_estudios {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0px;
+}
+#check_no_tengo_estudios {
+  margin-top: 1px;
+  margin-left: 0.5em;
+}
+.cont-file {
+  padding: 0.5em 0em;
+  position: relative;
+}
+.contenedor-formulario-gallito {
+  font-family: calibri;
+}
+.input_form_perfil {
+  width: 100%;
+  outline: none;
+  padding: 0.4em 0.8em;
+  border: 1px solid #808080;
+  background: #fff;
+}
+.align-middle-text {
+  margin-top: 0.5em;
+}
+.error-format {
+  color: #ad3a3a;
+  margin-left: 0.2em;
+}
+.icon-alert-left {
+  margin-left: 0.5em;
+}
+.cont-file {
+  color: #353e4a;
+}
+.text-2-line {
+  width: 9em;
+  display: inline-block;
+  line-height: 1;
+}
+.text-2-line-error {
+  display: inline-block;
+  min-width: 6em;
+}
+.select_color {
+  color: #808080;
+  cursor: pointer;
+}
+.slecet-izquieda {
+  padding-right: 1em;
+}
+.slecet-derecha {
+  padding-left: 1em;
+}
+.pad-last-check {
+  padding-top: 0em;
+}
+.btn-form-gallito {
+  border: none;
+  padding: 0.4em 3em;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1em;
+  cursor: pointer;
+}
+.btn-gallit-ligth {
+  background: #527494;
+  margin-bottom: 1em;
+}
+.btn-gallit-green {
+  background: #0cb570;
+}
+.content-btn-form {
+  text-align: right;
+  padding-right: 3em;
+}
+.textarea-form-gallito {
+  resize: none;
+  height: 6em;
+}
+.subtitle-form-gallito-registro {
+  color: #4d8ac8;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 768px) {
+  .text-2-line {
+    width: 100%;
+  }
+  .slecet-derecha {
+    margin-top: 0.5em;
+    padding-left: 0em;
+  }
+  .slecet-izquieda {
+    padding-right: 0em;
+  }
+  .cont-module-error {
+    margin-top: 0em;
+  }
+  .icon-alert-left {
+    margin-left: 0em;
+  }
+  .contenedor-formulario-gallito {
+    padding: 0em 1em;
+  }
+  .align-middle-text {
+    margin-top: 0em;
+  }
+  .cont-file {
+    padding: 0em;
+  }
+  .contenedor-paginacion {
+    padding: 0em 1em;
+  }
+}
+@media screen and (max-width: 573px) {
+  .content-btn-form {
+    text-align: center;
+  }
+  #btn-guardarDatos-finta,
+  #addEstudio {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0.3em;
+  }
+  .btn-form-gallito {
+    margin-left: 0em;
+  }
+  .content-btn-form {
+    padding-right: 0em;
+  }
+}
+/*******************slider form gallito*********/
+.owl-carousel {
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+}
+.owl-carousel position relative {
+  width: 100%;
+}
+.owl-carousel position relative.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.grabbing {
+  cursor: url("grabbing.png") 8 8, move;
+}
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+#slider_estudios_carrusel .item {
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.customNavigation {
+  text-align: center;
+}
+.customNavigation a {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.smB {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#slider_estudios {
+  position: relative;
+}
+.arrow-prev i,
+.arrow-next i {
+  font-size: 2em;
+  font-weight: bold;
+  color: #afb8c2;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.arrow-transale-pagination {
+  display: inline-block;
+  vertical-align: middle;
+}
+.arrow-transale-pagination i {
+  color: #366599;
+}
+.pagination-formulario {
+  padding: 0.2em 0.6em;
+  border: none;
+  outline: none;
+  margin-left: 0.5em;
+}
+.pagination-formulario:first-child {
+  margin-left: 0em;
+}
+.hideDiv {
+  display: none;
+}
+.active-pagination {
+  background: #0cb570;
+  color: #fff;
+}
+.item-gallitoB {
+  position: relative;
+}
+.imagen-slider-empresa {
+  width: 100%;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.error-validacion {
+  border: 1px solid #ad3a3a;
+}
+.error {
+  font-weight: normal;
+}
+.slider-hover-title {
+  padding: 1em;
+  font-weight: bold;
+}
+.slider-hover-description {
+  padding: 0em 1em;
+  font-style: italic;
+}
+.container-slider-empresa-img,
+.container-slider-empresa-title {
+  display: inline-block;
+  vertical-align: top;
+}
+.container-slider-empresa-img img {
+  width: 74%;
+}
+.container-slider-empresa-img {
+  height: 5em;
+  font-size: 14px;
+}
+.container-slider-empresa-title {
+  height: 5em;
+  text-align: left;
+  font-size: 14px;
+  text-align: center;
+}
+.ofertas-laborales-text-slider {
+  line-height: 0;
+}
+.container-slider-empresa-img {
+  border-bottom: 2px solid #c5c5c5;
+  border-top: none;
+  border-left: 2px solid #c5c5c5;
+}
+.container-slider-empresa-title {
+  border: 2px solid #c5c5c5;
+  border-top: none;
+}
+.spB {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.cont-hver-desc-slider {
+  height: 0px;
+}
+.owl-pagination {
+  display: block;
+  height: 1em;
+  text-align: center;
+  padding: 1em;
+}
+.owl-page {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background: #5e7397;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+.owl-page.active {
+  background: #976e5e;
+}
+.owl-buttons {
+  display: none;
+}
+.owl-pagination {
+  display: none;
+}
+.arrow-next i:hover {
+  color: #5e7397;
+}
+.container-btn-green {
+  color: #fff;
+  background: #007f4c;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.2em;
+  font-size: 1.5em;
+  border-radius: 0.2em;
+  margin-bottom: 2em;
+}
+.cuadro-todobusco-slider-casabusco {
+  border: 6px solid #ffa200;
+  border-radius: 21px;
+  overflow: hidden;
+  height: 12.8em;
+}
+.icon-todobusco-slider {
+  position: absolute;
+  left: -1px;
+  top: 6px;
+  height: 17%;
+}
+.bl-slider {
+  border-right: 3px solid #ffa200;
+  position: absolute;
+  top: 24px;
+  height: 5em;
+  width: 1em;
+  right: 8px;
+}
+.br-slider {
+  border-right: 3px solid #ffa200;
+  position: absolute;
+  top: 129px;
+  height: 5em;
+  width: 1em;
+  left: -5px;
+}
+.title-slider-todobusco {
+  color: #007f4c;
+  padding: 0.5em;
+  font-weight: bold;
+}
+.text-slider-todobusco {
+  color: #424242;
+}
+.precio-slider {
+  background: #007f4c;
+  padding: 0.1em 1em;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.item-gallitoB {
+  padding: 1em;
+  display: inline-block;
+  transition: all ease 0.3s;
+}
+.item-gallitoB:hover {
+  transform: scale(1.1);
+}
+.bgred-todobusco {
+  background: #d12626;
+}
+.borderojo-todobusco {
+  border: 6px solid #d12626;
+}
+.br-slider-red {
+  border-right: 3px solid #d12626;
+}
+.borde-azul-todobusco {
+  border: 6px solid #0e5682;
+}
+.br-slider-azul {
+  border-right: 3px solid #0e5682;
+}
+.borde-green-todobusco {
+  border: 6px solid #b9bd33;
+}
+.br-slider-green {
+  border-right: 3px solid #b9bd33;
+}
+.contenedor-icon-gallito-perfil {
+  background: #353e4a;
+  color: #fff;
+}
+.color-error {
+  color: #ad3a3a;
+}
+.contenedor-datos-cargo {
+  padding: 1em 10%;
+}
+.contenedor-paginacion {
+  padding: 0em 10%;
+}
+.text-1-line {
+  margin-top: 0.5em;
+  display: inline-block;
+}
+input[type="file"] {
+  z-index: 999;
+  line-height: 0;
+  font-size: 50px;
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+.cargar {
+  text-align: center;
+  background-color: #4d8ac8;
+  color: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 1em;
+  line-height: 1.6em;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 0.2em 1em;
+}
+#image_upload_preview {
+  width: 100%;
+}
+.text-img-warning {
+  color: #6d6e70;
+  font-size: 0.9em;
+}
+.span-text-warning {
+  margin-left: 0.5em;
+}
+.contenedor-img-upload {
+  background: #e6e7e8;
+  border: 1px solid #696969;
+  height: 10em;
+  width: 15em;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 0em;
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.text-gallito-img-upload {
+  font-family: calisto;
+  font-size: 2em;
+  padding-top: 1.6em;
+  display: inline-block;
+}
+.hideDiv {
+  display: none;
+}
+.align-right {
+  text-align: right;
+}
+@media screen and (max-width: 600px) {
+  .imagen-slider-empresa {
+    height: 100%;
+  }
+  .cuadro-todobusco-slider-casabusco {
+    background: #efb762;
+  }
+  .borde-azul-todobusco {
+    background: #337dab;
+  }
+  .borde-green-todobusco {
+    background: #ccd06b;
+  }
+  .borderojo-todobusco {
+    background: #d8a3a3;
+  }
+}
+@media screen and (max-width: 542px) {
+  .post-gallito-title-txt {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .post-gallito-title {
+    margin-bottom: 0em;
+  }
+  .contenedor-post-gallito {
+    border-top: 1px solid #808080;
+    padding: 1em 0em 0em 0em;
+  }
+}
+@media screen and (max-width: 390px) {
+  .imagen-slider-empresa {
+    height: initial;
+  }
+}
