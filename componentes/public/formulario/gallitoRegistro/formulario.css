@@ -6,6 +6,10 @@ body {
   font-family: "calibri";
   src: url("../../../fonts/calibri/calibri.eot") format("embedded-opentype"), url("../../../fonts/calibri/calibri.woff") format("woff"), url("../../../fonts/calibri/calibri.ttf") format("truetype");
 }
+@font-face {
+  font-family: "scfly";
+  src: url("../../../fonts/scfly/scfly.eot") format("embedded-opentype"), url("../../../fonts/scfly/scfly.woff") format("woff"), url("../../../fonts/scfly/scfly.ttf") format("truetype");
+}
 .icon-inline {
   display: inline-block;
   vertical-align: top;
@@ -110,6 +114,7 @@ body {
 .btn-gallit-ligth {
   background: #527494;
   margin-bottom: 1em;
+  display: inline-block;
 }
 .btn-gallit-green {
   background: #0cb570;
@@ -127,6 +132,29 @@ body {
   font-weight: bold;
   margin-bottom: 0.3em;
   font-size: 1.2em;
+}
+.cuadro-item {
+  display: inline-block;
+  background: #4d8ac8;
+  color: #fff;
+  padding: 0.2em 1em;
+  padding-right: 1.5em;
+  border-radius: 5px;
+  font-family: scfly;
+  font-size: 1.1em;
+  position: relative;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+.close-hability {
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+#id_pregunta_candidato {
+  height: 10em;
 }
 @media screen and (max-width: 768px) {
   .text-2-line {
