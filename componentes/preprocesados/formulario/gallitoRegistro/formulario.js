@@ -36,6 +36,10 @@ function Programa(programaText,programaVal,nivelText,nivelVal)
 	this.nivelText=nivelText;
 	this.nivelVal=nivelVal;
 }
+function Pregunta(preguntaText)
+{
+	this.preguntaText=preguntaText;
+}
 class FormularioGallitoRegistro{
     constructor()
     {
@@ -45,13 +49,32 @@ class FormularioGallitoRegistro{
     	this.arrayExperiencia=[];
     	this.arrayIdioma=[];
     	this.arrayPrograma=[];
+    	this.arrayPregunta=[];
     	this.iniciarValidate();
-    	$("#addEstudio").on("click",{obj:this },this.addEstudio)
-    	$("#addExperiancia").on("click",{obj:this },this.addExperiancia)
-    	$("#addIdioma").on("click",{obj:this },this.addIdioma)
-    	$("#addPrograma").on("click",{obj:this },this.addPrograma)
-    	$("#addPregunta").on("click",{obj:this },this.addPregunta)
-    	$("#btn-guardarDatos-finta").on("click",this.simularSubmit)
+    	$("#addEstudio").on("click",{obj:this },this.addEstudio);
+    	$("#addExperiancia").on("click",{obj:this },this.addExperiancia);
+    	$("#addIdioma").on("click",{obj:this },this.addIdioma);
+    	$("#addPrograma").on("click",{obj:this },this.addPrograma);
+    	$("#addPregunta").on("click",{obj:this },this.addPregunta);
+    	$("#btn-guardarDatos-finta").on("click",this.simularSubmit);
+    	$(".block-desplegable-rectangle").on("click",this.desplegarForm)
+    }
+    desplegarForm()
+    {
+    	$(this).siblings(".contenedor-desplegado").slideToggle("fast");
+    	if($(this).find(".icon-down-filter").hasClass("hideDiv"))
+    	{
+    		$(this).addClass("bg-blue");
+    		$(this).find(".icon-down-filter").removeClass("hideDiv");
+    		$(this).find(".icon-up-filter").addClass("hideDiv");
+    		
+    	}
+    	else
+    	{
+    		$(this).find(".icon-up-filter").removeClass("hideDiv");
+    		$(this).find(".icon-down-filter").addClass("hideDiv");    		
+    		$(this).removeClass("bg-blue");
+    	}
     }
     previwIMage()
     {
@@ -71,24 +94,35 @@ class FormularioGallitoRegistro{
     }
     drawTamplateAddHability(idTemplate,contenido,nroId,tipo)
     {
+    	var idCuadroFade="contenedor-fade-in-"+tipo+nroId;
     	var template=
-    	`<div class="cuadro-item">
+    	`<div class="cuadro-item cuatro-item-created" id="${idCuadroFade}">
     		<span>${contenido}</span>
-    		<i class="fa fa-times close-hability" id="${tipo}-${nroId}" value="${nroId}" tipo="${tipo}" aria-hidden="true"></i>
+    		<i class="fa fa-times close-hability style-close" id="${tipo}-${nroId}" value="${nroId}" tipo="${tipo}" aria-hidden="true"></i>
     	</div>`;
     	$(idTemplate).append(template);
+    	$("#"+idCuadroFade).fadeIn( "slow" ).css("display","inline-block");;
     	$(".close-hability").off("click");
     	$(".close-hability").on("click",{obj:this },this.deleteItem);
     }
-    drawPregunta()
+    drawPregunta(idTemplate,contenido,nroId,tipo)
     {
-    	/*
+    	var idCuadroFade="contenedor-fade-in-"+tipo+nroId;
     	var template=
-    	`<div class="cuadro-item">
-    		<span>${contenido}</span>
-    		<i class="fa fa-times close-hability" id="${tipo}-${nroId}" value="${nroId}" tipo="${tipo}" aria-hidden="true"></i>
+    	`<div class="row spb cuatro-item-created" id="${idCuadroFade}">
+    		<div class="col-md-2 spb"></div>
+	    	<div class="contenedor-pregunta col-md-7 spb">
+			  <div class="row smb"><span class="Text-Pregunta  spb col-xs-11 col-sm-11 col-md-11">${contenido}</span>
+			    <div class="contenedor-Btn-edit spb col-xs-1 col-sm-1 col-md-1">
+			    	<i aria-hidden="true" class="fa fa-times close-hability" id="${tipo}-${nroId}" value="${nroId}" tipo="${tipo}"></i>
+			    </div>
+			  </div>
+			</div>
     	</div>`;
-    	$(idTemplate).append(template);*/
+    	$(idTemplate).append(template);
+    	$("#"+idCuadroFade).fadeIn( "slow" );
+    	$(".close-hability").off("click");
+    	$(".close-hability").on("click",{obj:this },this.deleteItem);
     }
     deleteItem(event)
     {
@@ -98,37 +132,73 @@ class FormularioGallitoRegistro{
 		    case "estudios":
 		        delete event.data.obj.arrayEstudios[idABorrar];
     			console.log(event.data.obj.arrayEstudios);
+    			$(this).parent().fadeOut()
 		        break;
 		    case "experiencia":
 		        delete event.data.obj.arrayExperiencia[idABorrar];
     			console.log(event.data.obj.arrayExperiencia);
+    			$(this).parent().fadeOut()
 		        break;
 		    case "idioma":
 		        delete event.data.obj.arrayIdioma[idABorrar];
     			console.log(event.data.obj.arrayIdioma);
+    			$(this).parent().fadeOut()
 		        break;
 		    case "programa":
 		        delete event.data.obj.arrayPrograma[idABorrar];
     			console.log(event.data.obj.arrayPrograma);
+    			$(this).parent().fadeOut()
+		        break;
+		    case "pregunta":
+		        delete event.data.obj.arrayPregunta[idABorrar];
+    			console.log(event.data.obj.arrayPregunta);
+    			$(this).parent().parent().parent().fadeOut();
+    			$(".text-saldo-preguntas").removeClass("hideDiv");
+    			$(".text-sin-preguntas").addClass("hideDiv");
+    			var numeroPreguntas=parseInt($("#text-number-queda").html());
+    			$("#text-number-queda").html(numeroPreguntas+1);
 		        break;
 		}
     	
-    	$(this).parent().remove()
+    	
     }
     limpiarFormulario(div)
     {
     	$(div+" select").each(function (index) 
         { 
             var idSelect=$(this).attr("id");
-            console.log(idSelect);
             $("#"+idSelect).prop('selectedIndex',0);
             $("#"+idSelect).trigger("change");
+        })
+        $(div+" textarea").each(function (index) 
+        { 
+            var idSelect=$(this).attr("id");
+            $("#"+idSelect).val("");
         })
     }
     addPregunta(event)
     {
-    	nroSliderPregunta=nroSliderPregunta+1;
-    	//event.data.obj.drawPregunta("#cont-programa-add",programaText,nroSliderPrograma,"programa");
+    	var validateIdioma=$("#formulario-registro-1").validate().element("#id_pregunta_candidato");
+    	var numeroPreguntas=parseInt($("#text-number-queda").html());
+    	if(validateIdioma && numeroPreguntas>0)
+    	{
+    		var preguntaText=$("#id_pregunta_candidato").val();
+    		var pregunta = new Pregunta(preguntaText);
+    		event.data.obj.drawPregunta("#contenedor-preguntas-add",preguntaText,nroSliderPregunta,"pregunta");
+    		event.data.obj.limpiarFormulario(".content-textarea-pregunta");
+			// Creamos un arreglo para almacenarlos
+			event.data.obj.arrayPregunta.push(pregunta);
+			nroSliderPregunta=nroSliderPregunta+1;
+			$("#text-number-queda").html(numeroPreguntas-1);
+			console.log(event.data.obj.arrayPregunta)
+			if(numeroPreguntas==1)
+	    	{
+	    		$(".text-saldo-preguntas").addClass("hideDiv")
+	    		$(".text-sin-preguntas").removeClass("hideDiv")
+	    		
+	    	}
+    	}
+    	
     }
 
     addPrograma(event)
@@ -277,6 +347,10 @@ class FormularioGallitoRegistro{
                 	required:true
                 },
                 select_nivel_programa:
+                {
+                	required:true
+                },
+                pregunta_candidato:
                 {
                 	required:true
                 }

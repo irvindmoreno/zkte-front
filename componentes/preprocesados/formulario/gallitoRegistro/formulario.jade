@@ -4,338 +4,358 @@ block content
     - rutaImagenes ='../../../imagenes'
     form(id="formulario-registro-1" method="post" action="#")
         div(class="contenedor-formulario-gallito")
-            div(class="contenedor-icon-gallito-perfil")
+            div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
                 div(class="contenedor-title-borde")
                     span(class="title-text-borde") Datos del cargo
-            div(class="contenedor-datos-cargo")
-                div(class="row smb cont-file")
-                    div(class="col-md-12 spb")
-                        span(class="color-error") (*) Campos Obligatorios
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb")
-                        span(class="text-1-line") Titulo del aviso (*)
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        input(type="text" class="input_form_perfil" name="titulo_aviso" placeholder="Ingrese nombre de la institución")
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb")
-                        span(class="text-1-line") Tipo de cargo (*)
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb")
-                        span(class="text-2-line") Nombre de la empresa en aviso
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb cont-file pad-last-check")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        input(type="checkbox" id="check_estudiando")
-                        label(for="check_estudiando" class="label-form-gallito") Mostrar otro nombre
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb")
-                        span(class="text-2-line") Funciones (*)
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        textarea(type="text" class="input_form_perfil textarea-form-gallito" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb")
-                        span(class="text-2-line") Responsabilidades (*)
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        textarea(type="text" class="input_form_perfil textarea-form-gallito" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb align-middle-text")
-                        span(class="text-2-line ") Salario
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        select(class="input_form_perfil select_color" name="select_carrera")
-                            option(value="") Seleccione
-                            option(value="1") Informática
-                            option(value="2") Sistemas
-                            option(value="3") Idiomas
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb cont-file pad-last-check")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        input(type="checkbox" id="check_estudiando")
-                        label(for="check_estudiando" class="label-form-gallito") Mostrar en el aviso
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb subtitle-form-gallito-registro") Ubicación del puesto
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb align-middle-text")
-                        span(class="text-2-line ") Departamento (*)
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        select(class="input_form_perfil select_color" name="select_carrera")
-                            option(value="") Seleccione
-                            option(value="1") Informática
-                            option(value="2") Sistemas
-                            option(value="3") Idiomas
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb align-middle-text")
-                        span(class="text-2-line ") Localidad / Barrio (*)
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        select(class="input_form_perfil select_color" name="select_carrera")
-                            option(value="") Seleccione
-                            option(value="1") Informática
-                            option(value="2") Sistemas
-                            option(value="3") Idiomas
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-                div(class="row smb subtitle-form-gallito-registro") Logo de la empresa
-                div(class="row smb cont-file")
-                    div(class="col-sm-2 col-md-2 spb align-middle-text")
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        div(class="spb col-md-4")
-                            label(class="cargar")
-                                span Seleccionar archivo
-                                    input(type="file" id="archivo" name="archivo")
-                            div(class="text-img-warning")
-                                i(class="fa fa-exclamation-triangle" aria-hidden="true")
-                                span(class="span-text-warning") Formatos permitidos: JPG, PNG.
-                            div(class="text-img-warning")
-                                i(class="fa fa-exclamation-triangle" aria-hidden="true")
-                                span(class="span-text-warning") Tamaño máximo: 500kb.
-                        div(class="spb col-md-8 align-right")
-                            div(class="contenedor-img-upload")
-                                span(class="text-gallito-img-upload") gallito.com
-                                img(id="image_upload_preview")
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
+                    i(class="fa fa-angle-up icon-up-filter" aria-hidden="true")
+                    i(class="hideDiv fa fa-angle-down icon-down-filter" aria-hidden="true")
+            div(class="contenedor-desplegado")
+                div(class="contenedor-datos-cargo")
+                    div(class="row smb cont-file")
+                        div(class="col-md-12 spb")
+                            span(class="color-error") (*) Campos Obligatorios
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb")
+                            span(class="text-1-line") Titulo del aviso (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            input(type="text" class="input_form_perfil" name="titulo_aviso" placeholder="Ingrese nombre de la institución")
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb")
+                            span(class="text-1-line") Tipo de cargo (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb")
+                            span(class="text-2-line") Nombre de la empresa en aviso
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb cont-file pad-last-check")
+                        div(class="col-sm-2 col-md-2 spb")
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            input(type="checkbox" id="check_estudiando")
+                            label(for="check_estudiando" class="label-form-gallito") Mostrar otro nombre
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb")
+                            span(class="text-2-line") Funciones (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            textarea(type="text" class="input_form_perfil textarea-form-gallito" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb")
+                            span(class="text-2-line") Responsabilidades (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            textarea(type="text" class="input_form_perfil textarea-form-gallito" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb align-middle-text")
+                            span(class="text-2-line ") Salario
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            select(class="input_form_perfil select_color" name="select_carrera")
+                                option(value="") Seleccione
+                                option(value="1") Informática
+                                option(value="2") Sistemas
+                                option(value="3") Idiomas
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb cont-file pad-last-check")
+                        div(class="col-sm-2 col-md-2 spb")
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            input(type="checkbox" id="check_estudiando")
+                            label(for="check_estudiando" class="label-form-gallito") Mostrar en el aviso
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb subtitle-form-gallito-registro") Ubicación del puesto
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb align-middle-text")
+                            span(class="text-2-line ") Departamento (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            select(class="input_form_perfil select_color" name="select_carrera")
+                                option(value="") Seleccione
+                                option(value="1") Informática
+                                option(value="2") Sistemas
+                                option(value="3") Idiomas
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb align-middle-text")
+                            span(class="text-2-line ") Localidad / Barrio (*)
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            select(class="input_form_perfil select_color" name="select_carrera")
+                                option(value="") Seleccione
+                                option(value="1") Informática
+                                option(value="2") Sistemas
+                                option(value="3") Idiomas
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
+                    div(class="row smb subtitle-form-gallito-registro") Logo de la empresa
+                    div(class="row smb cont-file")
+                        div(class="col-sm-2 col-md-2 spb align-middle-text")
+                        div(class="col-sm-7 col-md-7 spb align-middle")
+                            div(class="spb col-md-4")
+                                label(class="cargar")
+                                    span Seleccionar archivo
+                                        input(type="file" id="archivo" name="archivo")
+                                div(class="text-img-warning")
+                                    i(class="fa fa-exclamation-triangle" aria-hidden="true")
+                                    span(class="span-text-warning") Formatos permitidos: JPG, PNG.
+                                div(class="text-img-warning")
+                                    i(class="fa fa-exclamation-triangle" aria-hidden="true")
+                                    span(class="span-text-warning") Tamaño máximo: 500kb.
+                            div(class="spb col-md-8 align-right")
+                                div(class="contenedor-img-upload")
+                                    span(class="text-gallito-img-upload") gallito.com
+                                    img(id="image_upload_preview")
+                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                            div(class="error-format text-2-line-error")
             div(class="contenedor-slider-todobusco cont-input-estudios")
-                div(class="contenedor-icon-gallito-perfil")
+                div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
                     div(class="contenedor-title-borde")
                         span(class="title-text-borde") Estudios
-                        div(class="borde-inferior-titulo")
-                div(class="contenedor-datos-cargo")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Carrera (*)
+                        i(class=" fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="hideDiv fa fa-angle-down icon-down-filter" aria-hidden="true")
+                div(class="contenedor-desplegado")
+                    div(class="contenedor-datos-cargo")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Carrera (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" id="id_select_carrera" name="select_carrera_profesional")
+                                    option(value="") Seleccione
+                                    option(value="1") Informática
+                                    option(value="2") Sistemas
+                                    option(value="3") Idiomas
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Tipo de carrera (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" name="select_tipo_carrera" id="id_select_tipo_carrera")
+                                    option(value="") Seleccione
+                                    option(value="1") Informática
+                                    option(value="2") Sistemas
+                                    option(value="3") Idiomas
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Nivel (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" name="select_nivel" id="id_select_nivel")
+                                    option(value="") Seleccione
+                                    option(value="1") Informática
+                                    option(value="2") Sistemas
+                                    option(value="3") Idiomas
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                    div(class="row smb contenedor-paginacion align-left")
+                        div(class="col-sm-2 col-md-2 spb")
+                        div(class="col-sm-7 col-md-7 spb" id="cont-estudio-add")
+                    div(class="row smb contenedor-paginacion align-right")
+                        div(class="col-sm-2 col-md-2 spb")
                         div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" id="id_select_carrera" name="select_carrera_profesional")
-                                option(value="") Seleccione
-                                option(value="1") Informática
-                                option(value="2") Sistemas
-                                option(value="3") Idiomas
+                            span(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
                         div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
                             div(class="icon-alert icon-inline icon-alert-left hideDiv")
                             div(class="error-format text-2-line-error")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Tipo de carrera (*)
-                        div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" name="select_tipo_carrera" id="id_select_tipo_carrera")
-                                option(value="") Seleccione
-                                option(value="1") Informática
-                                option(value="2") Sistemas
-                                option(value="3") Idiomas
-                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                            div(class="error-format text-2-line-error")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Nivel (*)
-                        div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" name="select_nivel" id="id_select_nivel")
-                                option(value="") Seleccione
-                                option(value="1") Informática
-                                option(value="2") Sistemas
-                                option(value="3") Idiomas
-                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                            div(class="error-format text-2-line-error")
-                div(class="row smb contenedor-paginacion align-left")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb" id="cont-estudio-add")
-                div(class="row smb contenedor-paginacion align-right")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        span(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
             div(class="contenedor-slider-todobusco cont-input-experiencia")
-                div(class="contenedor-icon-gallito-perfil")
+                div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
                     div(class="contenedor-title-borde")
                         span(class="title-text-borde") Experincia
-                        div(class="borde-inferior-titulo")
-                div(class="contenedor-datos-cargo")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Nivel del cargo (*)
+                        i(class=" fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="hideDiv fa fa-angle-down icon-down-filter" aria-hidden="true")
+                div(class="contenedor-desplegado")
+                    div(class="contenedor-datos-cargo")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Nivel del cargo (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" id="id_nivel_cargo" name="select_nivel_cargo")
+                                    option(value="") Seleccione
+                                    option(value="1") Informática
+                                    option(value="2") Sistemas
+                                    option(value="3") Idiomas
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Area (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" name="select_area" id="id_select_area")
+                                    option(value="") Seleccione
+                                    option(value="1") Informática
+                                    option(value="2") Sistemas
+                                    option(value="3") Idiomas
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Tiempo de experiencia (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" name="slect_tiempo_experiencia" id="id_select_tiempo_experiencia")
+                                    option(value="") Seleccione
+                                    option(value="1") Informática
+                                    option(value="2") Sistemas
+                                    option(value="3") Idiomas
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                    div(class="row smb contenedor-paginacion align-left")
+                        div(class="col-sm-2 col-md-2 spb")
+                        div(class="col-sm-7 col-md-7 spb" id="cont-experiencia-add")
+                    div(class="row smb contenedor-paginacion align-right")
+                        div(class="col-sm-2 col-md-2 spb")
                         div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" id="id_nivel_cargo" name="select_nivel_cargo")
-                                option(value="") Seleccione
-                                option(value="1") Informática
-                                option(value="2") Sistemas
-                                option(value="3") Idiomas
+                            span(id="addExperiancia" class="btn-form-gallito btn-gallit-ligth" ) Añadir otra Experiencia
                         div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
                             div(class="icon-alert icon-inline icon-alert-left hideDiv")
                             div(class="error-format text-2-line-error")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Area (*)
-                        div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" name="select_area" id="id_select_area")
-                                option(value="") Seleccione
-                                option(value="1") Informática
-                                option(value="2") Sistemas
-                                option(value="3") Idiomas
-                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                            div(class="error-format text-2-line-error")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Tiempo de experiencia (*)
-                        div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" name="slect_tiempo_experiencia" id="id_select_tiempo_experiencia")
-                                option(value="") Seleccione
-                                option(value="1") Informática
-                                option(value="2") Sistemas
-                                option(value="3") Idiomas
-                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                            div(class="error-format text-2-line-error")
-                div(class="row smb contenedor-paginacion align-left")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb" id="cont-experiencia-add")
-                div(class="row smb contenedor-paginacion align-right")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        span(id="addExperiancia" class="btn-form-gallito btn-gallit-ligth" ) Añadir otra Experiencia
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
             div(class="contenedor-slider-todobusco cont-input-idioma")
-                div(class="contenedor-icon-gallito-perfil")
+                div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
                     div(class="contenedor-title-borde")
                         span(class="title-text-borde") Idioma
-                        div(class="borde-inferior-titulo")
-                div(class="contenedor-datos-cargo")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Idioma (*)
+                        i(class=" fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="hideDiv fa fa-angle-down icon-down-filter" aria-hidden="true")
+                div(class="contenedor-desplegado")
+                    div(class="contenedor-datos-cargo")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Idioma (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" id="id_select_idioma" name="select_idioma")
+                                    option(value="") Seleccione
+                                    option(value="1") Inlgés
+                                    option(value="2") Francés
+                                    option(value="3") Aleman
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Nivel (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" name="select_nivel_idioma" id="id_select_nivel_idioma")
+                                    option(value="") Seleccione
+                                    option(value="1") Básico
+                                    option(value="2") Intermedio
+                                    option(value="3") Avanzado
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                    div(class="row smb contenedor-paginacion align-left")
+                        div(class="col-sm-2 col-md-2 spb")
+                        div(class="col-sm-7 col-md-7 spb" id="cont-idioma-add")
+                    div(class="row smb contenedor-paginacion align-right")
+                        div(class="col-sm-2 col-md-2 spb")
                         div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" id="id_select_idioma" name="select_idioma")
-                                option(value="") Seleccione
-                                option(value="1") Inlgés
-                                option(value="2") Francés
-                                option(value="3") Aleman
+                            span(id="addIdioma" class="btn-form-gallito btn-gallit-ligth" ) Añadir otra Experiencia
                         div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
                             div(class="icon-alert icon-inline icon-alert-left hideDiv")
                             div(class="error-format text-2-line-error")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Nivel (*)
-                        div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" name="select_nivel_idioma" id="id_select_nivel_idioma")
-                                option(value="") Seleccione
-                                option(value="1") Básico
-                                option(value="2") Intermedio
-                                option(value="3") Avanzado
-                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                            div(class="error-format text-2-line-error")
-                div(class="row smb contenedor-paginacion align-left")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb" id="cont-idioma-add")
-                div(class="row smb contenedor-paginacion align-right")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        span(id="addIdioma" class="btn-form-gallito btn-gallit-ligth" ) Añadir otra Experiencia
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
             div(class="contenedor-slider-todobusco cont-input-programa")
-                div(class="contenedor-icon-gallito-perfil")
+                div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
                     div(class="contenedor-title-borde")
                         span(class="title-text-borde") Conocimientos Informáticos
-                        div(class="borde-inferior-titulo")
-                div(class="contenedor-datos-cargo")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Programa (*)
+                        i(class=" fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="hideDiv fa fa-angle-down icon-down-filter" aria-hidden="true")
+                div(class="contenedor-desplegado")
+                    div(class="contenedor-datos-cargo")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Programa (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" id="id_select_programa" name="select_programa")
+                                    option(value="") Seleccione
+                                    option(value="1") Html
+                                    option(value="2") Css
+                                    option(value="3") Javascript
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Nivel (*)
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" name="select_nivel_programa" id="id_select_nivel_programa")
+                                    option(value="") Seleccione
+                                    option(value="1") Básico
+                                    option(value="2") Intermedio
+                                    option(value="3") Avanzado
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                    div(class="row smb contenedor-paginacion align-left")
+                        div(class="col-sm-2 col-md-2 spb")
+                        div(class="col-sm-7 col-md-7 spb" id="cont-programa-add")
+                    div(class="row smb contenedor-paginacion align-right")
+                        div(class="col-sm-2 col-md-2 spb")
                         div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" id="id_select_programa" name="select_programa")
-                                option(value="") Seleccione
-                                option(value="1") Html
-                                option(value="2") Css
-                                option(value="3") Javascript
+                            span(id="addPrograma" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro Programa
                         div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
                             div(class="icon-alert icon-inline icon-alert-left hideDiv")
                             div(class="error-format text-2-line-error")
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Nivel (*)
-                        div(class="col-sm-7 col-md-7 spb align-middle")
-                            select(class="input_form_perfil select_color" name="select_nivel_programa" id="id_select_nivel_programa")
-                                option(value="") Seleccione
-                                option(value="1") Básico
-                                option(value="2") Intermedio
-                                option(value="3") Avanzado
-                        div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                            div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                            div(class="error-format text-2-line-error")
-                div(class="row smb contenedor-paginacion align-left")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb" id="cont-programa-add")
-                div(class="row smb contenedor-paginacion align-right")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        span(id="addPrograma" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro Programa
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
-            div(class="contenedor-slider-todobusco cont-input-programa")
-                div(class="contenedor-icon-gallito-perfil")
+            div(class="contenedor-slider-todobusco cont-input-pregunta")
+                div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
                     div(class="contenedor-title-borde")
                         span(class="title-text-borde") Pregunta al candidato
-                        div(class="borde-inferior-titulo")
-                div(class="contenedor-datos-cargo")
-                    div(class="row smb")
-                        div(class="col-sm-12 col-md-12 spb align-middle-text")
-                            div(class="row smb")
+                        i(class=" fa fa-angle-up icon-up-filter" aria-hidden="true")
+                        i(class="hideDiv fa fa-angle-down icon-down-filter" aria-hidden="true")
+                div(class="contenedor-desplegado")
+                    div(class="contenedor-datos-cargo")
+                        div(class="row smb")
+                            div(class="col-sm-12 col-md-12 spb align-middle-text")
+                                div(class="row smb")
+                                    div(class="col-md-12 spb")
+                                        span(class="color-error") Máximo 5 preguntas por aviso
+                        div(class="row smb cont-file content-textarea-pregunta")
+                            div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Redacte su pregunta
+                            div(class="col-sm-7 col-md-7 spb align-middle")
+                                textarea(type="text" class="input_form_perfil col-md-12 sp" id="id_pregunta_candidato" name="pregunta_candidato" placeholder="Esta pregutna sera obligatoria para todos los candidatos que se quieran postular a este aviso")
                                 div(class="col-md-12 spb")
-                                    span(class="color-error") Máximo 5 preguntas por aviso
-                    div(class="row smb cont-file")
-                        div(class="col-sm-2 col-md-2 spb align-middle-text")
-                            span(class="text-2-line ") Redacte su pregunta
+                                    div(class="text-saldo-preguntas") 
+                                        span(class="text-quedan") Te quedan 
+                                        span(id="text-number-queda") 5
+                                        span(class="text-quedan")  preguntas
+                                    div(class="text-sin-preguntas hideDiv") Ya no le quedan preguntas
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                    div(class="row smb contenedor-paginacion align-right")
+                        div(class="col-sm-2 col-md-2 spb")
                         div(class="col-sm-7 col-md-7 spb align-middle")
-                             textarea(type="text" class="input_form_perfil" id="id_pregunta_candidato" name="pregunta_candidato" placeholder="Esta pregutna sera obligatoria para todos los candidatos que se quieran postular a este aviso")
+                            span(id="addPregunta" class="btn-form-gallito btn-gallit-ligth" ) Añadir Pregunta
                         div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
                             div(class="icon-alert icon-inline icon-alert-left hideDiv")
                             div(class="error-format text-2-line-error")
-                div(class="row smb contenedor-paginacion align-left")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb" id="cont-programa-add")
-                div(class="row smb contenedor-paginacion align-right")
-                    div(class="col-sm-2 col-md-2 spb")
-                    div(class="col-sm-7 col-md-7 spb align-middle")
-                        span(id="addPrograma" class="btn-form-gallito btn-gallit-ligth" ) Añadir Pregunta
-                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
-                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
-                        div(class="error-format text-2-line-error")
+                    div(class="row smb contenedor-paginacion align-left " id="contenedor-preguntas-add")
+        div(class="content-btn-form")
+            button(id="addEstudio" class="btn-form-gallito btn-atras-gallito" ) Atrás
+            button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Continuar
 //************** formulario gallitoRegistro **************//
