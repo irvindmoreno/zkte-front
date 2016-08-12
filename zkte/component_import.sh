@@ -25,7 +25,7 @@ verificarExistenciaDeComponenteIngresado()
 	#read proyectoNombre < "$(pwd)/config/Proyecto/Nombre.conf"
 	#read vistaUse < "$(pwd)/config/Vistas/Use.conf"
 	proyectoNombre="gallito"
-	vistaUse="registro1"
+	vistaUse="registro2"
 	if [ -d $rutaComponenteIngresado ];
 		then
 			importJade

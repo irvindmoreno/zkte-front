@@ -1,6 +1,6 @@
 /******no tocar linea 1,2 y 3********/
 var proyecto='gallito';
-var vista='registro1';
+var vista='registro2';
 var tipo='proyecto';
 /*librerias requeridas para correr gulp*/
 
