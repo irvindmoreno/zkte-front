@@ -20,7 +20,7 @@ rutaImagenes='../../../imagenes'
 
 
 /************Layout****************/
-@import('$rutaProyecto/layout/layout.styl')
+@import('../layout/layout.styl')
 /************Layout****************/">> $vista.styl
 			
 }

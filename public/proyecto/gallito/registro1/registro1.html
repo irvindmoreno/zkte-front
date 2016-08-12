@@ -1,0 +1,546 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link rel="stylesheet" href="../../../../static/imagenes/sprite/gallito/sprite.css"/>
+    <link rel="stylesheet" href="../../../../static/lib/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../../../static/lib/font-awesome/css/font-awesome.min.css"/>
+    <link href="./registro1.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="relative headerDashboard">
+      <div class="gallito-icon"><a href="#"><span class="gallito-icon-title">gallito</span><span class="gallito-icon-com">.com</span></a><span class="borde-left-white">Postulante</span></div>
+      <div class="gallito-register-container"><span class="text-welcome">Bienvenido(a): Carla Paola</span>
+        <div class="gallito-register-text inline-block-middle"><a href="#" class="gallito-text-blue">Cerrar Sesión</a><a href="#" class="gallito-text-white"> Soy una empresa</a></div>
+      </div>
+    </header>
+    <div class="contenedor-layout">
+      <div class="contenedor-vista-paso-1">
+        <!--************** tabs gallito **************//-->
+        <div class="contenedor-tab-gallito">
+          <div class="TabsAsep row smb">
+            <div class="col-xs-4 col-sm-4 col-md-4 spb">
+              <div data="1" class="TabsAsep-Pestania TabsAsep-Pestania-1">
+                <div class="TabsAsep-Pestania-Ttulo">
+                  <div class="TabsAsep-Pestania-Ttulo-Numero">1</div>
+                  <div class="TabsAsep-Pestania-Bloque2">
+                    <div class="TabsAsep-Pestania-Ttulo-Texto">Primer paso</div>
+                    <div class="TabsAsep-Pestania-Contenido">INGRESE EL AVISO WEB</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 spb">
+              <div data="2" class="TabsAsep-Pestania TabsAsep-Pestania-2">
+                <div class="TabsAsep-Pestania-Ttulo">
+                  <div class="TabsAsep-Pestania-Ttulo-Numero">2</div>
+                  <div class="TabsAsep-Pestania-Bloque2">
+                    <div class="TabsAsep-Pestania-Ttulo-Texto">Segudno paso</div>
+                    <div class="TabsAsep-Pestania-Contenido">INGRESE EL AVISO IMPRESO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 spb">
+              <div data="3" class="TabsAsep-Pestania TabsAsep-Pestania-3">
+                <div class="TabsAsep-Pestania-Ttulo">
+                  <div class="TabsAsep-Pestania-Ttulo-Numero">3</div>
+                  <div class="TabsAsep-Pestania-Bloque2">
+                    <div class="TabsAsep-Pestania-Ttulo-Texto">Tercer paso</div>
+                    <div class="TabsAsep-Pestania-Contenido">PUBLICAR</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--************** tabs gallito **************// -->
+        <!--************** formulario gallitoRegistro **************//-->
+        <form id="formulario-registro-1" method="post" action="#">
+          <div class="contenedor-formulario-gallito">
+            <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
+              <div class="contenedor-title-borde"><span class="title-text-borde">Datos del cargo</span><i aria-hidden="true" class="fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
+            </div>
+            <div class="contenedor-desplegado">
+              <div class="contenedor-datos-cargo">
+                <div class="row smb cont-file">
+                  <div class="col-md-12 spb"><span class="color-error">(*) Campos Obligatorios</span></div>
+                </div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb"><span class="text-1-line">Titulo del aviso (*)</span></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <input type="text" name="titulo_aviso" placeholder="Ingrese nombre de la institución" class="input_form_perfil"/>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb"><span class="text-1-line">Tipo de cargo (*)</span></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <input type="text" name="name_tipo_cargo" placeholder="Ingrese nombre de la institución" class="input_form_perfil"/>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb"><span class="text-2-line">Nombre de la empresa en aviso</span></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <input type="text" name="name_empresa_aviso" placeholder="Ingrese nombre de la institución" class="input_form_perfil"/>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb cont-file pad-last-check">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <input type="checkbox" id="check_estudiando"/>
+                    <label for="check_estudiando" class="label-form-gallito">Mostrar otro nombre</label>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb"><span class="text-2-line">Funciones (*)</span></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <textarea type="text" name="name_funciones" placeholder="Ingrese nombre de la institución" class="input_form_perfil textarea-form-gallito"></textarea>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb"><span class="text-2-line">Responsabilidades (*)</span></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <textarea type="text" name="name_responsabilidades" placeholder="Ingrese nombre de la institución" class="input_form_perfil textarea-form-gallito"></textarea>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Salario</span></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <select name="select_carrera" class="input_form_perfil select_color">
+                      <option value="">Seleccione</option>
+                      <option value="1">Informática</option>
+                      <option value="2">Sistemas</option>
+                      <option value="3">Idiomas</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb cont-file pad-last-check">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <input type="checkbox" id="check_estudiando" name="name_departamento"/>
+                    <label for="check_estudiando" class="label-form-gallito">Mostrar en el aviso</label>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb subtitle-form-gallito-registro">Ubicación del puesto</div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Departamento (*)</span></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <select name="name_select_departamento" class="input_form_perfil select_color">
+                      <option value="">Seleccione</option>
+                      <option value="1">Informática</option>
+                      <option value="2">Sistemas</option>
+                      <option value="3">Idiomas</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Localidad / Barrio (*)</span></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle">
+                    <select name="name_select_localidad" class="input_form_perfil select_color">
+                      <option value="">Seleccione</option>
+                      <option value="1">Informática</option>
+                      <option value="2">Sistemas</option>
+                      <option value="3">Idiomas</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div class="row smb subtitle-form-gallito-registro">Logo de la empresa</div>
+                <div class="row smb cont-file">
+                  <div class="col-sm-3 col-md-2 spb align-middle-text"></div>
+                  <div class="row smB col-sm-6 col-md-7 spb align-middle">
+                    <div class="content-img-upload spb col-xs-6 col-sm-6 col-md-6">
+                      <label for="archivo" class="cargar"><span>Seleccionar archivo
+                          <input type="file" id="archivo" name="archivo"/></span></label>
+                      <div class="text-img-warning"><i aria-hidden="true" class="fa fa-exclamation-triangle"></i><span class="span-text-warning">Formatos permitidos: JPG, PNG.</span></div>
+                      <div class="text-img-warning"><i aria-hidden="true" class="fa fa-exclamation-triangle"></i><span class="span-text-warning">Tamaño máximo: 500kb.</span></div>
+                    </div>
+                    <div class="content-img-upload spb col-xs-6 col-sm-6 col-md-6 align-right">
+                      <div class="contenedor-img-upload"><span class="text-gallito-img-upload">gallito.com</span><img id="image_upload_preview"/></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-md-2 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor-slider-todobusco cont-input-estudios">
+              <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
+                <div class="contenedor-title-borde"><span class="title-text-borde">Estudios</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
+              </div>
+              <div class="contenedor-desplegado">
+                <div class="contenedor-datos-cargo">
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Carrera (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select id="id_select_carrera" name="select_carrera_profesional" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Informática</option>
+                        <option value="2">Sistemas</option>
+                        <option value="3">Idiomas</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Tipo de carrera (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select name="select_tipo_carrera" id="id_select_tipo_carrera" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Informática</option>
+                        <option value="2">Sistemas</option>
+                        <option value="3">Idiomas</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Nivel (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select name="select_nivel" id="id_select_nivel" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Informática</option>
+                        <option value="2">Sistemas</option>
+                        <option value="3">Idiomas</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row smb contenedor-paginacion align-left">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div id="cont-estudio-add" class="col-sm-6 col-md-7 spb"></div>
+                </div>
+                <div class="row smb contenedor-paginacion align-right">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle"><span id="addEstudio" class="btn-form-gallito btn-gallit-ligth">Añadir otro estudio</span></div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor-slider-todobusco cont-input-experiencia">
+              <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
+                <div class="contenedor-title-borde"><span class="title-text-borde">Experincia</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
+              </div>
+              <div class="contenedor-desplegado">
+                <div class="contenedor-datos-cargo">
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Nivel del cargo (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select id="id_nivel_cargo" name="select_nivel_cargo" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Informática</option>
+                        <option value="2">Sistemas</option>
+                        <option value="3">Idiomas</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Area (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select name="select_area" id="id_select_area" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Informática</option>
+                        <option value="2">Sistemas</option>
+                        <option value="3">Idiomas</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Tiempo de experiencia (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select name="slect_tiempo_experiencia" id="id_select_tiempo_experiencia" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Informática</option>
+                        <option value="2">Sistemas</option>
+                        <option value="3">Idiomas</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row smb contenedor-paginacion align-left">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div id="cont-experiencia-add" class="col-sm-6 col-md-7 spb"></div>
+                </div>
+                <div class="row smb contenedor-paginacion align-right">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle"><span id="addExperiancia" class="btn-form-gallito btn-gallit-ligth">Añadir otra Experiencia</span></div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor-slider-todobusco cont-input-idioma">
+              <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
+                <div class="contenedor-title-borde"><span class="title-text-borde">Idioma</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
+              </div>
+              <div class="contenedor-desplegado">
+                <div class="contenedor-datos-cargo">
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Idioma (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select id="id_select_idioma" name="select_idioma" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Inlgés</option>
+                        <option value="2">Francés</option>
+                        <option value="3">Aleman</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Nivel (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select name="select_nivel_idioma" id="id_select_nivel_idioma" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Básico</option>
+                        <option value="2">Intermedio</option>
+                        <option value="3">Avanzado</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row smb contenedor-paginacion align-left">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div id="cont-idioma-add" class="col-sm-6 col-md-7 spb"></div>
+                </div>
+                <div class="row smb contenedor-paginacion align-right">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle"><span id="addIdioma" class="btn-form-gallito btn-gallit-ligth">Añadir otra Experiencia</span></div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor-slider-todobusco cont-input-programa">
+              <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
+                <div class="contenedor-title-borde"><span class="title-text-borde">Conocimientos Informáticos</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
+              </div>
+              <div class="contenedor-desplegado">
+                <div class="contenedor-datos-cargo">
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Programa (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select id="id_select_programa" name="select_programa" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Html</option>
+                        <option value="2">Css</option>
+                        <option value="3">Javascript</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                  <div class="row smb cont-file">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Nivel (*)</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <select name="select_nivel_programa" id="id_select_nivel_programa" class="input_form_perfil select_color">
+                        <option value="">Seleccione</option>
+                        <option value="1">Básico</option>
+                        <option value="2">Intermedio</option>
+                        <option value="3">Avanzado</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row smb contenedor-paginacion align-left">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div id="cont-programa-add" class="col-sm-6 col-md-7 spb"></div>
+                </div>
+                <div class="row smb contenedor-paginacion align-right">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle"><span id="addPrograma" class="btn-form-gallito btn-gallit-ligth">Añadir otro Programa</span></div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contenedor-slider-todobusco cont-input-pregunta">
+              <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
+                <div class="contenedor-title-borde"><span class="title-text-borde">Pregunta al candidato</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
+              </div>
+              <div class="contenedor-desplegado">
+                <div class="contenedor-datos-cargo">
+                  <div class="row smb">
+                    <div class="col-sm-12 col-md-12 spb align-middle-text">
+                      <div class="row smb">
+                        <div class="col-md-12 spb"><span class="color-error">Máximo 5 preguntas por aviso</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row smb cont-file content-textarea-pregunta">
+                    <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Redacte su pregunta</span></div>
+                    <div class="col-sm-6 col-md-7 spb align-middle">
+                      <textarea type="text" id="id_pregunta_candidato" name="pregunta_candidato" placeholder="Esta pregutna sera obligatoria para todos los candidatos que se quieran postular a este aviso" class="input_form_perfil col-md-12 sp textarea-form-gallito"></textarea>
+                      <div class="col-md-12 spb">
+                        <div class="text-saldo-preguntas"> <span class="text-quedan">Te quedan </span><span id="text-number-queda">5</span><span class="text-quedan"> preguntas</span></div>
+                        <div class="text-sin-preguntas hideDiv">Ya no le quedan preguntas</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                      <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                      <div class="error-format text-2-line-error"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row smb contenedor-paginacion align-right">
+                  <div class="col-sm-3 col-md-2 spb"></div>
+                  <div class="col-sm-6 col-md-7 spb align-middle"><span id="addPregunta" class="btn-form-gallito btn-gallit-ligth">Añadir Pregunta</span></div>
+                  <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                    <div class="error-format text-2-line-error"></div>
+                  </div>
+                </div>
+                <div id="contenedor-preguntas-add" class="row smb contenedor-paginacion align-left "></div>
+              </div>
+            </div>
+          </div>
+          <div class="content-btn-form">
+            <button id="addEstudio" class="btn-form-gallito btn-atras-gallito">Atrás</button>
+            <button type="submit " id="btn-continuaraPaso-2" class="btn-form-gallito btn-gallit-green">Continuar</button>
+          </div>
+        </form>
+        <!--************** formulario gallitoRegistro **************//-->
+      </div>
+    </div>
+    <!--************** footer gallito **************//-->
+    <footer>
+      <div class="row footer-gallit-block-1 smb">
+        <div class="col-xs-6 col-sm-6 col-md-4 bloq-foot bloq-foot-left pad-mob-foot simr-dashed-1">
+          <div class="footer-gallito-title">Trabajo.gallito.com.uy</div>
+          <div class="leter-footer-gallito">Preguntas Frecuentes</div>
+          <div class="leter-footer-gallito">Términos y Condiciones</div>
+          <div class="leter-footer-gallito">&nbsp;</div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-2 bloq-foot pad-mob-foot  simr-dashed-2">
+          <div class="footer-gallito-title">Postulantes</div>
+          <div class="leter-footer-gallito">Busca Trabajo</div>
+          <div class="leter-footer-gallito">Crea tu cuenta</div>
+          <div class="leter-footer-gallito">Ingresa</div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-2 bloq-foot bloq-foot-3-1 pad-mob-foot simr-dashed-3">
+          <div class="footer-gallito-title">Empresa</div>
+          <div class="leter-footer-gallito">Publica tu aviso</div>
+          <div class="leter-footer-gallito">Crea tu cuenta</div>
+          <div class="leter-footer-gallito">Ingresa</div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 bloq-foot pad-mob-foot simrdashed">
+          <div class="footer-gallito-title">Central de ayuda</div>
+          <div class="leter-footer-gallito">(01)311-6707 - Opción 3</div>
+          <div class="leter-footer-gallito">Lunes a viernes de 8:00am a 6:00pm</div>
+          <div class="leter-footer-gallito"><i aria-hidden="true" class="fa fa-copyright"></i><span>Todos los derechos reservados - 2016</span></div>
+        </div>
+      </div>
+      <div class="row footer-gallit-block-2 smb">
+        <div class="col-xs-12 col-sm-3 col-md-2 block-2-letter">
+          <div class="logo-footer-galito"><span class="gallito-letter-logo-footer-first">gallito.</span><span class="gallito-letter-logo-footer-last">com</span></div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 block-2-letter">
+          <div><strong>El Libro de los Clasificados - Zelmar Michelini 1287, Montevideo - 11100 Uruguay</strong></div>
+          <div class="text-gray-suave">CLASITELEFONO 131</div>
+          <div class="text-gray-suave">Fundada el 30/10/1983 por: Carlos E. Scheck, Eduardo Scheck y Daniel Scheck</div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 block-2-letter">
+          <div class="redes-sociales-footer-gallito"><a href="#" class="inline-block link-redes-sociales-gallito-footer">
+              <div class="icon-mensaje"></div></a><a href="#" class="inline-block link-redes-sociales-gallito-footer">
+              <div class="icon-linkedin"></div></a><a href="#" class="inline-block link-redes-sociales-gallito-footer">
+              <div class="icon-youtube"></div></a><a href="#" class="inline-block link-redes-sociales-gallito-footer">
+              <div class="icon-twiter"></div></a><a href="#" class="inline-block link-redes-sociales-gallito-footer">
+              <div class="icon-facebook"></div></a></div>
+        </div>
+      </div>
+    </footer>
+    <!--************** footer gallito **************//-->
+    <script src="../../../../static/lib/jquery/jquery.min.js"></script>
+    <script src="../../../../static/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../../static/lib/jquery/jquery.validate.min.js"></script>
+    <script src="../../../../static/lib/jquery/jquery.message_es.js"></script>
+    <script src="./clases.js"></script>
+    <script src="./registro1.js"></script>
+  </body>
+</html>

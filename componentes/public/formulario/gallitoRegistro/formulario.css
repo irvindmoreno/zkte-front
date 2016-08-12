@@ -109,6 +109,7 @@ body {
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 1em;
 }
 .btn-gallit-ligth {
   background: #527494;
@@ -232,7 +233,6 @@ body {
   #addEstudio {
     width: 100%;
     display: inline-block;
-    margin-top: 0.3em;
   }
   .btn-form-gallito {
     margin-left: 0em;
@@ -381,11 +381,15 @@ label.error {
   .title-text-borde {
     font-size: 1em;
   }
+  .content-img-upload {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 496px) {
   .contenedor-datos-cargo,
   .contenedor-paginacion {
-    padding: 1em 0%;
+    padding: 1em 1em;
   }
   .contenedor-paginacion {
     margin-top: -2.5em;
