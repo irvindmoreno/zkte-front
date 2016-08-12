@@ -124,7 +124,7 @@ body {
 }
 .textarea-form-gallito {
   resize: none;
-  height: 6em;
+  height: 10em;
 }
 .subtitle-form-gallito-registro {
   color: #4d8ac8;
@@ -151,9 +151,6 @@ body {
   top: 8px;
   font-size: 0.8em;
   cursor: pointer;
-}
-#id_pregunta_candidato {
-  height: 10em;
 }
 .Text-Pregunta {
   text-align: center;

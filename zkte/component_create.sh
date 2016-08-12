@@ -15,6 +15,7 @@ crearComponente()
 
             #llenar el archivo js nombreNuevoComponente
             echo "- rutaStatic ='../../../../static'
+- rutaLib ='../../../../static/lib'
 doctype html
 html
     head
@@ -23,16 +24,16 @@ html
         block title
             title $nombreNuevoComponente-$nombreNuevoComponenteArchivo
         block link
-            link(rel='stylesheet' href=rutaStatic+'/css/bootstrap.min.css')
-            link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
+            link(rel='stylesheet' href=rutaLib+'/bootstrap/bootstrap.min.css')
+            link(rel='stylesheet' href=rutaLib+'/font-awesome/css/font-awesome.min.css')
             link(rel='stylesheet' type='text/css' href='./$nombreNuevoComponenteArchivo.css')
             link(rel='stylesheet' href=rutaStatic+'/imagenes/sprite/$componenteNombre/sprite.css')
 
     body
         block content
         block script
-            script(src=rutaStatic+'/js/jquery.min.js')
-            script(src=rutaStatic+'/js/bootstrap.min.js')
+            script(src=rutaLib+'/jquery/jquery.min.js')
+            script(src=rutaLib+'/bootstrap/bootstrap.min.js')
             script(src='./$nombreNuevoComponenteArchivo.js')">>layout.jade
             echo "//************** $nombreNuevoComponenteArchivo $nombreNuevoComponente **************//">> $nombreNuevoComponenteArchivo.jade
             echo "extends ./layout.jade
