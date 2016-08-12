@@ -1,0 +1,36 @@
+//************** formulario contador **************//
+extends ./layout.jade
+block content
+    - rutaImagenes ='../../../imagenes'
+    form#form-aviso-impreso
+        div.row.smb.contenedor-titulo-paso-2
+            span Aviso Web + Papel, $1400: 
+                span.msg-atencion#max-palabras  5 
+                    |palabras
+        div(class="contenedor-slider-todobusco cont-input-programa")
+                    div(class="contenedor-icon-gallito-perfil")
+                        div(class="contenedor-title-borde")
+                            span(class="title-text-borde") Redacte las palabras con las que desea describir su aviso impreso
+                    div(class="contenedor-datos-contador")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-8 col-md-8 spb align-middle")
+                                textarea(type="text" class="input_form_perfil" id="descripcionaviso" name="descripcionaviso")
+                                div#validacion-mensaje
+                            div(class="col-sm-4 col-md-4 msg")
+                                span.msg-atencion ¡Atención!
+                                p.msg-recomendacion Una palabra debe contener hasta 12 caracteres como máximo, de lo contrario se considerará 2 palabras.
+                                p.msg-recomendacion Recuerda también que en la edición impresa debes incluir los datos de contacto
+                                span.msg-palabras Le quedan 
+                                    span#numero-palabras 10 
+                                    |  palabras 
+        div(class="contenedor-slider-todobusco cont-input-programa")
+            div(class="contenedor-icon-gallito-perfil")
+                div(class="contenedor-title-borde")
+                    span(class="title-text-borde") Vista Referencial del aviso impreso (10 palabras)
+            div(class="contenedor-contador-resultado")
+                div.aviso-impreso#resultado-aviso-impreso 
+
+        div.contenedor-btn
+            a.enlace-volver(type='button', data-dismiss='modal') Atrás
+            button#confirm-form.btn.btn-continuar(type='submit') Continuar  
+//************** formulario contador **************//
