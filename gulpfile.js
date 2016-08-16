@@ -1,6 +1,6 @@
 /******no tocar linea 1,2 y 3********/
 var proyecto='gallito';
-var vista='registro2';
+var vista='perfil';
 var tipo='proyecto';
 /*librerias requeridas para correr gulp*/
 
@@ -45,6 +45,13 @@ gulp.task("js-reload",function(){
             presets: ['es2015']
         }))
         .pipe(gulp.dest(rutaDestinoVista))
+        .pipe(connect.reload());
+    console.log("escuchando el layout js")
+    gulp.src(['proyecto/'+proyecto+'/layout/*.js'])         
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest("public/proyecto/"+proyecto+"/layout"))
         .pipe(connect.reload());
 })
 gulp.task("jade-reload",function(){
@@ -98,6 +105,8 @@ function compile(watch) {
         gulp.watch(rutaOrigen+"/*.js",['js']);
         gulp.watch(rutaOrigen+"/*.jade",['jade']);
         gulp.watch(rutaImagenOrigen+"/*.*",['sprite']);
+        gulp.watch(['proyecto/'+proyecto+'/layout/*.js'],['js']);
+
     }
     rebundle();
 }

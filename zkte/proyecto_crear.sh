@@ -16,6 +16,7 @@ echo "html
 		script(src=rutaLib+'/bootstrap/bootstrap.min.js')
 		script(src=rutaLib+'/jquery/jquery.validate.min.js')
 		script(src=rutaLib+'/jquery/jquery.message_es.js')
+		script(src='../layout/layout.js')
 		block script">> layout.jade
 }
 LayoutLLenarStyl()
@@ -48,6 +49,7 @@ guardarRutaDelPoryectoEnConf()
 }
 crearLayout()
 {
+	mkdir "$rutaProyecto/include"
 	#definimos la ruta layout
 		rutaLayout="$rutaProyecto/layout"
 

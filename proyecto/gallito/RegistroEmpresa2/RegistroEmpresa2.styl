@@ -1,5 +1,5 @@
 rutaComponentes='../../../componentes'
-rutaImagenes='../../../imagenes'
+rutaImagenes='../../../../static/imagenes/no_sprite/'
 
 
 /************Layout****************/
@@ -54,7 +54,7 @@ colorContenido=#777
             color #35344a //colorContenido
             font-weight bold
             font-size 1.6em
-.TabsAsep-Pestania-1 .TabsAsep-Pestania-Ttulo-Numero
+.TabsAsep-Pestania-2 .TabsAsep-Pestania-Ttulo-Numero
     background #0cb570
 .TabsAsep-Pestania-Ttulo-Texto
     font-size 1.4em
@@ -69,9 +69,9 @@ colorContenido=#777
 .TabsAsep-Pestania-Ttulo-Numero,.TabsAsep-Pestania-Bloque2
     display inline-block
     vertical-align middle
-.TabsAsep-Pestania-1 .TabsAsep-Pestania-Contenido
+.TabsAsep-Pestania-2 .TabsAsep-Pestania-Contenido
     border-bottom 4px solid #0cb570
-.TabsAsep-Pestania-2 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-2 .TabsAsep-Pestania-Contenido,.TabsAsep-Pestania-3 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-3 .TabsAsep-Pestania-Contenido
+.TabsAsep-Pestania-1 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-1 .TabsAsep-Pestania-Contenido
     color #929497
 @media screen and (max-width: 1100px)
     .contenedor-tab-gallito
@@ -199,22 +199,35 @@ colorError=#ad3a3a
     margin-bottom 0.3em
     font-size 1.2em
 .cuadro-item
+    width 100%
+.cuadro-item-title
     display: inline-block;
     background: #4d8ac8;
     color: white;
-    padding: 0.2em 1em;
-    padding-right 1.5em
-    border-radius: 5px;
     font-family scfly
     font-size 1.1em
     position relative
     margin-right 0.5em
-    margin-bottom 0.5em
+    margin-top 0.5em
+    width 100%
+    padding 0.3em 1em
+    cursor pointer
+.contenedor-add-block
+    padding 0em 4%
+.cuadro-item-cont-desplegado
+    border 1px solid rgba(53, 62, 74, 0.61)
+    background #e6e7e8
 .style-close
     position: absolute;
     right: 7px;
     top: 8px;
-    font-size: 0.8em;
+    font-size: 1em;
+    cursor pointer
+.style-icon-cuadro-item,.style-save
+    position: absolute;
+    right: 25px;
+    top: 9px;
+    font-size: 1em;
     cursor pointer
 .Text-Pregunta
     text-align  center
@@ -238,7 +251,8 @@ colorError=#ad3a3a
 .cuatro-item-created
     display none
 .btn-atras-gallito
-    color blueLight
+    background blueLight
+    color white
 .icon-up-filter,.icon-down-filter
     font-size: 2em;
     position: absolute;
@@ -354,6 +368,22 @@ input[type="file"]
     border 1px solid #ad3a3a
 .contenedor-tab-gallito
     margin-top 1em
+.input-documento
+    margin-top 0.5em
+.contenido-banner-registro_aviso
+    background-image url(rutaImagenes+"gallito/baner_empresa.jpg")
+    height: 8em;
+    background-position-y: -6.5em;
+    background-size 100%
+.contenido-banner-registro_aviso-text
+    font-family: calibri;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.88);
+    height: 4em;
+    text-align: center;
+    padding-top: 1.2em;
 label.error
     font-weight normal
 @media screen and (max-width: 802px)

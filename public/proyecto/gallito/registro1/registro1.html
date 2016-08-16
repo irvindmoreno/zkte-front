@@ -146,8 +146,8 @@
                 <div class="row smb cont-file pad-last-check">
                   <div class="col-sm-3 col-md-2 spb"></div>
                   <div class="col-sm-6 col-md-7 spb align-middle">
-                    <input type="checkbox" id="check_estudiando" name="name_departamento"/>
-                    <label for="check_estudiando" class="label-form-gallito">Mostrar en el aviso</label>
+                    <input type="checkbox" id="check_mostrar_aviso"/>
+                    <label for="check_mostrar_aviso" class="label-form-gallito">Mostrar en el aviso</label>
                   </div>
                   <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
                     <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
@@ -206,12 +206,13 @@
                 </div>
               </div>
             </div>
-            <div class="contenedor-slider-todobusco cont-input-estudios">
+            <div class="contenedor-slider-todobusco">
               <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
                 <div class="contenedor-title-borde"><span class="title-text-borde">Estudios</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
               </div>
               <div class="contenedor-desplegado">
-                <div class="contenedor-datos-cargo">
+                <div id="cont-estudio-add"></div>
+                <div class="contenedor-datos-cargo cont-input-estudios">
                   <div class="row smb cont-file">
                     <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Carrera (*)</span></div>
                     <div class="col-sm-6 col-md-7 spb align-middle">
@@ -258,10 +259,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="row smb contenedor-paginacion align-left">
-                  <div class="col-sm-3 col-md-2 spb"></div>
-                  <div id="cont-estudio-add" class="col-sm-6 col-md-7 spb"></div>
-                </div>
                 <div class="row smb contenedor-paginacion align-right">
                   <div class="col-sm-3 col-md-2 spb"></div>
                   <div class="col-sm-6 col-md-7 spb align-middle"><span id="addEstudio" class="btn-form-gallito btn-gallit-ligth">Añadir otro estudio</span></div>
@@ -272,12 +269,13 @@
                 </div>
               </div>
             </div>
-            <div class="contenedor-slider-todobusco cont-input-experiencia">
+            <div class="contenedor-slider-todobusco">
               <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
-                <div class="contenedor-title-borde"><span class="title-text-borde">Experincia</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
+                <div class="contenedor-title-borde"><span class="title-text-borde">Experiencia</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
               </div>
               <div class="contenedor-desplegado">
-                <div class="contenedor-datos-cargo">
+                <div id="cont-experiencia-add"></div>
+                <div class="contenedor-datos-cargo cont-input-experiencia">
                   <div class="row smb cont-file">
                     <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Nivel del cargo (*)</span></div>
                     <div class="col-sm-6 col-md-7 spb align-middle">
@@ -324,10 +322,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="row smb contenedor-paginacion align-left">
-                  <div class="col-sm-3 col-md-2 spb"></div>
-                  <div id="cont-experiencia-add" class="col-sm-6 col-md-7 spb"></div>
-                </div>
                 <div class="row smb contenedor-paginacion align-right">
                   <div class="col-sm-3 col-md-2 spb"></div>
                   <div class="col-sm-6 col-md-7 spb align-middle"><span id="addExperiancia" class="btn-form-gallito btn-gallit-ligth">Añadir otra Experiencia</span></div>
@@ -338,12 +332,13 @@
                 </div>
               </div>
             </div>
-            <div class="contenedor-slider-todobusco cont-input-idioma">
+            <div class="contenedor-slider-todobusco">
               <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
                 <div class="contenedor-title-borde"><span class="title-text-borde">Idioma</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
               </div>
               <div class="contenedor-desplegado">
-                <div class="contenedor-datos-cargo">
+                <div id="cont-idioma-add"></div>
+                <div class="contenedor-datos-cargo cont-input-idioma">
                   <div class="row smb cont-file">
                     <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Idioma (*)</span></div>
                     <div class="col-sm-6 col-md-7 spb align-middle">
@@ -375,10 +370,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="row smb contenedor-paginacion align-left">
-                  <div class="col-sm-3 col-md-2 spb"></div>
-                  <div id="cont-idioma-add" class="col-sm-6 col-md-7 spb"></div>
-                </div>
                 <div class="row smb contenedor-paginacion align-right">
                   <div class="col-sm-3 col-md-2 spb"></div>
                   <div class="col-sm-6 col-md-7 spb align-middle"><span id="addIdioma" class="btn-form-gallito btn-gallit-ligth">Añadir otra Experiencia</span></div>
@@ -389,11 +380,12 @@
                 </div>
               </div>
             </div>
-            <div class="contenedor-slider-todobusco cont-input-programa">
+            <div class="contenedor-slider-todobusco">
               <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
                 <div class="contenedor-title-borde"><span class="title-text-borde">Conocimientos Informáticos</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
               </div>
-              <div class="contenedor-desplegado">
+              <div class="contenedor-desplegado cont-input-programa">
+                <div id="cont-programa-add"></div>
                 <div class="contenedor-datos-cargo">
                   <div class="row smb cont-file">
                     <div class="col-sm-3 col-md-2 spb align-middle-text"><span class="text-2-line ">Programa (*)</span></div>
@@ -426,10 +418,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="row smb contenedor-paginacion align-left">
-                  <div class="col-sm-3 col-md-2 spb"></div>
-                  <div id="cont-programa-add" class="col-sm-6 col-md-7 spb"></div>
-                </div>
                 <div class="row smb contenedor-paginacion align-right">
                   <div class="col-sm-3 col-md-2 spb"></div>
                   <div class="col-sm-6 col-md-7 spb align-middle"><span id="addPrograma" class="btn-form-gallito btn-gallit-ligth">Añadir otro Programa</span></div>
@@ -440,12 +428,12 @@
                 </div>
               </div>
             </div>
-            <div class="contenedor-slider-todobusco cont-input-pregunta">
+            <div class="contenedor-slider-todobusco">
               <div class="contenedor-icon-gallito-perfil block-desplegable-rectangle">
                 <div class="contenedor-title-borde"><span class="title-text-borde">Pregunta al candidato</span><i aria-hidden="true" class=" fa fa-angle-up icon-up-filter"></i><i aria-hidden="true" class="hideDiv fa fa-angle-down icon-down-filter"></i></div>
               </div>
               <div class="contenedor-desplegado">
-                <div class="contenedor-datos-cargo">
+                <div class="contenedor-datos-cargo cont-input-pregunta">
                   <div class="row smb">
                     <div class="col-sm-12 col-md-12 spb align-middle-text">
                       <div class="row smb">

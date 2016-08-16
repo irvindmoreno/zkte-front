@@ -1,0 +1,6 @@
+class PostGallito{
+	constructor()
+	{
+
+	}
+}

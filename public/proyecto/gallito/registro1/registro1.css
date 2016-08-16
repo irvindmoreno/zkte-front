@@ -530,23 +530,41 @@ body {
   font-size: 1.2em;
 }
 .cuadro-item {
+  width: 100%;
+}
+.cuadro-item-title {
   display: inline-block;
   background: #4d8ac8;
   color: #fff;
-  padding: 0.2em 1em;
-  padding-right: 1.5em;
-  border-radius: 5px;
   font-family: scfly;
   font-size: 1.1em;
   position: relative;
   margin-right: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  width: 100%;
+  padding: 0.3em 1em;
+  cursor: pointer;
+}
+.contenedor-add-block {
+  padding: 0em 4%;
+}
+.cuadro-item-cont-desplegado {
+  border: 1px solid rgba(53,62,74,0.61);
+  background: #e6e7e8;
 }
 .style-close {
   position: absolute;
   right: 7px;
   top: 8px;
-  font-size: 0.8em;
+  font-size: 1em;
+  cursor: pointer;
+}
+.style-icon-cuadro-item,
+.style-save {
+  position: absolute;
+  right: 25px;
+  top: 9px;
+  font-size: 1em;
   cursor: pointer;
 }
 .Text-Pregunta {

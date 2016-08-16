@@ -1,0 +1,90 @@
+extends ../layout/layout.jade
+block head
+    link(href='./RegistroEmpresa2.css' rel='stylesheet')
+block banner
+    div(class="contenido-banner-registro_aviso")
+        div(class="contenido-banner-registro_aviso-text") Registro de Empresa 
+block contenido
+    div(class="contenedor-vista-paso-1")
+        //************** tabs gallito **************//
+        - pestaniaUno="Primer paso"
+        - contenidoUno="DATOS DE LA EMPRESA"
+        - pestaniaDos="Segudno paso"
+        - contenidoDos="ADMINISTRADOR"
+        - pestaniaTres="Tercer paso"
+        - contenidoTres="PUBLICAR"
+        - pestanias={1:pestaniaUno,2:pestaniaDos}
+        - pestaniasContenido=[contenidoUno,contenidoDos]
+        div(class="contenedor-tab-gallito")
+            div(class="TabsAsep row smb")
+                each pestania,index in pestanias
+                    div(class="col-xs-6 col-sm-4 col-md-4 spb")
+                        div(class="TabsAsep-Pestania TabsAsep-Pestania-"+index data=index)
+                            div(class="TabsAsep-Pestania-Ttulo")
+                                div(class="TabsAsep-Pestania-Ttulo-Numero")=index
+                                div(class="TabsAsep-Pestania-Bloque2")
+                                    div(class="TabsAsep-Pestania-Ttulo-Texto")=pestania
+                                    div(class="TabsAsep-Pestania-Contenido")=pestaniasContenido[index-1]
+        //************** tabs gallito **************// 
+        //************** formulario gallitoRegistro **************//
+        - rutaImagenes ='../../../imagenes'
+        form(id="formulario-registro-1" method="post" action="#")
+            div(class="contenedor-formulario-gallito")
+                div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                    div(class="contenedor-title-borde")
+                        span(class="title-text-borde") Administrador
+                div(class="contenedor-desplegado")
+                    div(class="contenedor-datos-cargo")
+                        div(class="row smb cont-file")
+                            div(class="col-md-12 spb")
+                                span(class="color-error") (*) Campos Obligatorios
+                        div(class="row smb cont-file")
+                            div(class="col-sm-3 col-md-2 spb")
+                                span(class="text-1-line") Nombres (*)
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                input(type="text" class="input_form_perfil" maxlength="100" name="name_nombre" placeholder="Ingrese nombre comercial")
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-3 col-md-2 spb")
+                                span(class="text-1-line") Apellidos (*)
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                input(type="text" class="input_form_perfil" maxlength="100" name="name_Apellidos" placeholder="Ingrese razón social")
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Cargo (*)
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                select(class="input_form_perfil select_color" name="name_Cargo")
+                                    option(value="") Seleccione
+                                    option(value="1") Informática
+                                    option(value="2") Sistemas
+                                    option(value="3") Idiomas
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-3 col-md-2 spb")
+                                span(class="text-2-line") Teléfono directo/ interno o celular(*)
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                input(type="text" class="input_form_perfil" maxlength="100" name="name_telefono" placeholder="Ingrese dirección")
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+            div(class="contenedor-datos-cargo")
+                div(class="row smb cont-file")
+                    div(class="col-sm-3 col-md-2 spb")
+                        span(class="text-1-line")
+                    div(class="col-sm-6 col-md-7 spb align-middle align-right")
+                        button(id="addEstudio" class="btn-form-gallito btn-atras-gallito" ) Chat
+                        button(class="btn-form-gallito btn-gallit-green" type="submit " id="btn-continuaraPaso-2") Continuar
+                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                        div(class="error-format text-2-line-error")
+        //************** formulario gallitoRegistro **************//
+block script
+    script(src='./clases.js')
+    script(src='./RegistroEmpresa2.js')

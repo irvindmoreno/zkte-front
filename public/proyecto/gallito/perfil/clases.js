@@ -12,32 +12,6 @@ var HeaderGallitoDashboard = function HeaderGallitoDashboard() {
 
 var obj = new HeaderGallitoDashboard();
 
-var FiltroGallito = function () {
-		function FiltroGallito() {
-				_classCallCheck(this, FiltroGallito);
-
-				$(".block-desplegable-rectangle").on("click", this.desplegarFiltro);
-		}
-
-		_createClass(FiltroGallito, [{
-				key: "desplegarFiltro",
-				value: function desplegarFiltro() {
-						$(this).siblings(".contenedor-desplegado").slideToggle("fast");
-						if ($(this).find(".icon-down-filter").hasClass("hideDiv")) {
-								$(this).addClass("bg-blue");
-								$(this).find(".icon-down-filter").removeClass("hideDiv");
-								$(this).find(".icon-up-filter").addClass("hideDiv");
-						} else {
-								$(this).find(".icon-up-filter").removeClass("hideDiv");
-								$(this).find(".icon-down-filter").addClass("hideDiv");
-								$(this).removeClass("bg-blue");
-						}
-				}
-		}]);
-
-		return FiltroGallito;
-}();
-
 var IconsGallitoPerfil = function IconsGallitoPerfil() {
 		_classCallCheck(this, IconsGallitoPerfil);
 
