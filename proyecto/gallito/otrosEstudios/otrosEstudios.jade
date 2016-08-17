@@ -1,0 +1,107 @@
+extends ../layout/layout.jade
+block head
+    link(href='./otrosEstudios.css' rel='stylesheet')
+block navegacion    
+block contenido
+    div(class="row smb")
+        div(class="col-sm-3 col-md-3 spb contenedor-project-filter")
+            include ../include/dashboard/filtro.jade
+        div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto spb")
+            //************** icons gallitoPerfil **************//
+            div(class="contenedor-icon-gallito-perfil")
+                div(class="contenedor-title-borde")
+                    span(class="title-text-borde") Mi Pefil
+                    div(class="borde-inferior-titulo")
+                div(class="contenedor-all-circle-gallitoPerfil-icon")
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-green")
+                            div(class="circle-interno bg-green")
+                                div(class="icon-experiencia icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Experiencia
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-yellow")
+                            div(class="circle-interno bg-yellow margin-icon-estudios")
+                                div(class="icon-estudios icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Estudios
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-yellow")
+                            div(class="circle-interno bg-yellow margin-icon-idomas")
+                                div(class="icon-idiomas icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Idiomas
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-green")
+                            div(class="circle-interno bg-green margin-icon-estudios_otros_estudios")
+                                div(class="icon-otros_estudios icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Otros Estudios
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-red")
+                            div(class="circle-interno bg-red margin-icon-referencias")
+                                div(class="icon-referencias icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Referencias
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-green")
+                            div(class="circle-interno bg-green margin-icon-datos_personales")
+                                div(class="icon-datos_personales icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") Datos Personales
+                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
+                        div(class="circle-sup bg-red")
+                            div(class="circle-interno bg-red margin-icon-estudios_cv")
+                                div(class="icon-cv_circulo icon-ease icon-inline icon-center-auto icon-translate")
+                            div(class="icon-check check-icon-view")
+                        div(class="circle-text") CV
+            //************** icons gallitoPerfil **************//
+            //************** formulario gallito **************//
+            div(class="contenedor-slider-todobusco")
+                form(class="formulario-gallito-slider" method="post" action="")
+                    div(id="slider_3_demo")
+                        div(class="row smb")
+                            div(class="span12")
+                                div(id="owl-slider_3" class="owl-carousel")
+                                    div(class="item")            
+                                        div(class="contenedor-formulario-gallito")
+                                            div(class="contenedor-icon-gallito-perfil")
+                                                div(class="contenedor-title-borde")
+                                                    span(class="title-text-borde-2") Otros Estudios(1)
+                                                    div(class="borde-inferior-titulo")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="text-2-line") Nombre (*)
+                                                    div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
+                                                        input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                                        span(class="text-2-line ") Nivel (*)
+                                                    div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
+                                                        select(class="input_form_perfil select_color" name="select_carrera")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                        div(class="row smb")
+                            div(class="col-sm-2 col-md-2 spb")
+                            div(class="col-sm-7 col-md-7 spb align-middle contenedor-paginacion")
+                                div(class="arrow-prev arrow-transale-pagination ")
+                                    i(class="fa fa-caret-left disabled-arrow" aria-hidden="true")
+                                span(class="content-pagination")
+                                    input(type="button" class="pagination-formulario active-pagination " value="1")
+                                div(class="arrow-next arrow-transale-pagination ")
+                                    i(class="fa fa-caret-right disabled-arrow" aria-hidden="true")
+            div(class="content-btn-form")
+                button(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
+                button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
+            //************** formulario gallito **************//
+block script
+    script(src='./clases.js')
+    script(src='./otrosEstudios.js')
