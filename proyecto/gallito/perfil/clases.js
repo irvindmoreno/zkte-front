@@ -64,13 +64,17 @@ class FormularioGallito{
 		    </div>
 		    <div class="row smb cont-file">
 		      <div class="col-sm-2 col-md-2 spb"><span class="text-2-line">Nombre de la institución (*)</span></div>
-		      <div class="col-sm-10 col-md-10 spb align-middle">
+		      <div class="col-sm-7 col-md-7 spb align-middle">
 		        <input id="nombreInstitucional-${nroDeSlider}" name="nombreInstitucional-${nroDeSlider}" type="text" placeholder="Ingrese nombre de la institución" class="input_form_perfil"/>
 		      </div>
+		      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+				  <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+				  <div class="error-format text-2-line-error"></div>
+				</div>
 		    </div>
 		    <div class="row smb cont-file">
 		      <div class="col-sm-2 col-md-2 spb align-middle-text"><span class="text-2-line ">Carrera (*)</span></div>
-		      <div class="col-sm-10 col-md-10 spb align-middle">
+		      <div class="col-sm-7 col-md-7 spb align-middle">
 		        <select id="select_carrera-${nroDeSlider}" name="select_carrera-${nroDeSlider}" class="input_form_perfil select_color">
 		          <option value="">Seleccione tipo de carrera</option>
 		          <option value="1">Informática</option>
@@ -78,10 +82,14 @@ class FormularioGallito{
 		          <option value=3>Idiomas</option>
 		        </select>
 		      </div>
+		      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+				  <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+				  <div class="error-format text-2-line-error"></div>
+				</div>
 		    </div>
 		    <div class="row smb cont-file">
 		      <div class="col-sm-2 col-md-2 spb"><span class="text-2-line">Tipo de carrera (*)</span></div>
-		      <div class="col-sm-10 col-md-10 spb">
+		      <div class="col-sm-7 col-md-7 spb">
 		        <select id="select_tipo_carrera-${nroDeSlider}" name="select_tipo_carrera-${nroDeSlider}" class="input_form_perfil select_color">
 		          <option value="">Seleccione tipo de carrera</option>
 		          <option value="1">Informática</option>
@@ -89,10 +97,14 @@ class FormularioGallito{
 		          <option value="3">Idiomas</option>
 		        </select>
 		      </div>
+		      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+				  <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+				  <div class="error-format text-2-line-error"></div>
+				</div>
 		    </div>
 		    <div class="row smb cont-file">
 		      <div class="col-sm-2 col-md-2 spb align-middle-text"><span>Nivel (*)</span></div>
-		      <div class="col-sm-10 col-md-10 spb">
+		      <div class="col-sm-7 col-md-7 spb">
 		        <select id="select_nivel-${nroDeSlider}" name="select_nivel-${nroDeSlider}" class="input_form_perfil select_color">
 		          <option value="">Seleccione tipo de carrera</option>
 		          <option value="1">Informática</option>
@@ -100,25 +112,37 @@ class FormularioGallito{
 		          <option value="3">Idiomas</option>
 		        </select>
 		      </div>
+		      <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+				  <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+				  <div class="error-format text-2-line-error"></div>
+				</div>
 		    </div>
 		    <div class="row smb cont-file">
 		      <div class="col-sm-2 col-md-2 spb align-middle-text"><span>Inicio (*)</span></div>
-		      <div class="col-sm-10 col-md-10 spb">
+		      <div class="col-sm-7 col-md-7 spb">
 		        <div class="col-sm-6 col-md-6 spb slecet-izquieda">
-		          <select value="select_two" id="select_inicio-${nroDeSlider}" name="select_inicio-${nroDeSlider}" class="input_form_perfil select_color">
+		          <select  value="select_two" id="select_inicio-${nroDeSlider}" name="select_inicio-${nroDeSlider}" class="validate-2-select input_form_perfil select_color">
 		            <option value="">Seleccione</option>
 		            <option value="0">Febrero</option>
 		            <option value="1">Marzo</option>
 		            <option value="2">Abril</option>
 		          </select>
+		          <div class=" spb align-middle-text cont-module-error">
+					  <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+					  <div class="error-format text-2-line-error"></div>
+					</div>
 		        </div>
 		        <div class="col-sm-6 col-md-6 spb slecet-derecha">
-		          <select value="select_two" id="select_mes-${nroDeSlider}" name="select_mes-${nroDeSlider}" class="input_form_perfil select_color">
+		          <select  value="select_two" id="select_mes-${nroDeSlider}" name="select_mes-${nroDeSlider}" class="validate-2-select input_form_perfil select_color">
 		            <option value="">Seleccione</option>
 		            <option value="1">2015</option>
 		            <option value="2">2014</option>
 		            <option value="3">2013</option>
 		          </select>
+		          <div class="spb align-middle-text cont-module-error">
+					  <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+					  <div class="error-format text-2-line-error"></div>
+					</div>
 		        </div>
 		      </div>
 		    </div>
@@ -193,7 +217,52 @@ class FormularioGallito{
             },
             messages: {
                   
-             }
+             },highlight: function (element) {
+             	var bandera=$(element).hasClass("validate-2-select")
+           		if(bandera)
+           		{
+           			$(element).siblings(".cont-module-error").find(".icon-alert").removeClass("hideDiv")
+               		$(element).addClass('error-validacion');
+           		}
+           		else
+           		{
+           			$(element).parent().parent().find(".cont-module-error").find(".icon-alert").removeClass("hideDiv")
+               		$(element).addClass('error-validacion');
+               	}
+           
+           },
+           unhighlight: function (element) {
+               $(element).removeClass('error-validacion');
+               var bandera=$(element).hasClass("validate-2-select")
+           		if(bandera)
+           		{
+           			$(element).siblings(".cont-module-error").find(".icon-alert").addClass("hideDiv");
+               		$(element).siblings(".cont-module-error").find(".icon-alert").addClass("hideDiv");
+           		}
+           		else
+           		{
+           			$(element).parent().parent().find(".cont-module-error").find(".icon-alert").addClass("hideDiv");
+               		$(element).parent().parent().find(".cont-module-error").find(".icon-alert").addClass("hideDiv");
+           		}
+               
+             
+
+           },
+           errorPlacement: function(error, element) {
+           		var bandera=$(element).hasClass("validate-2-select")
+           		if(bandera)
+           		{
+           			error.appendTo( element.siblings(".cont-module-error").find(".error-format"));
+               		element.siblings(".cont-module-error").find(".icon-alert").removeClass("hideDiv")
+           		}
+           		else
+           		{
+           			error.appendTo( element.parent().parent().find(".cont-module-error").find(".error-format"));
+               		element.parent().parent().find(".cont-module-error").find(".icon-alert").removeClass("hideDiv")
+           		}
+           		
+           			
+           }
            
            
     	});

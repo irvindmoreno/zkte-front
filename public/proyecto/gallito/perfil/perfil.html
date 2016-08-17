@@ -137,13 +137,17 @@
                             </div>
                             <div class="row smb cont-file">
                               <div class="col-sm-2 col-md-2 spb"><span class="text-2-line">Nombre de la institución (*)</span></div>
-                              <div class="col-sm-10 col-md-10 spb align-middle cont-msj-relative">
+                              <div class="col-sm-7 col-md-7 spb align-middle cont-msj-relative">
                                 <input type="text" name="nombreInstitucional" placeholder="Ingrese nombre de la institución" class="input_form_perfil"/>
+                              </div>
+                              <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                                <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                                <div class="error-format text-2-line-error"></div>
                               </div>
                             </div>
                             <div class="row smb cont-file">
                               <div class="col-sm-2 col-md-2 spb align-middle-text"><span class="text-2-line ">Carrera (*)</span></div>
-                              <div class="col-sm-10 col-md-10 spb align-middle cont-msj-relative">
+                              <div class="col-sm-7 col-md-7 spb align-middle cont-msj-relative">
                                 <select name="select_carrera" class="input_form_perfil select_color">
                                   <option value="">Seleccione</option>
                                   <option value="1">Informática</option>
@@ -151,10 +155,14 @@
                                   <option value="3">Idiomas</option>
                                 </select>
                               </div>
+                              <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                                <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                                <div class="error-format text-2-line-error"></div>
+                              </div>
                             </div>
                             <div class="row smb cont-file">
                               <div class="col-sm-2 col-md-2 spb"><span class="text-2-line">Tipo de carrera (*)</span></div>
-                              <div class="col-sm-10 col-md-10 spb cont-msj-relative">
+                              <div class="col-sm-7 col-md-7 spb cont-msj-relative">
                                 <select name="select_tipo_carrera" class="input_form_perfil select_color">
                                   <option value="">Seleccione</option>
                                   <option value="1">Informática</option>
@@ -162,10 +170,14 @@
                                   <option value="3">Idiomas</option>
                                 </select>
                               </div>
+                              <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                                <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                                <div class="error-format text-2-line-error"></div>
+                              </div>
                             </div>
                             <div class="row smb cont-file">
                               <div class="col-sm-2 col-md-2 spb align-middle-text"><span>Nivel (*)</span></div>
-                              <div class="col-sm-10 col-md-10 spb cont-msj-relative">
+                              <div class="col-sm-7 col-md-7 spb cont-msj-relative">
                                 <select name="select_nivel" class="input_form_perfil select_color">
                                   <option value="">Seleccione</option>
                                   <option value="1">Informática</option>
@@ -173,31 +185,42 @@
                                   <option value="3">Idiomas</option>
                                 </select>
                               </div>
+                              <div class="col-sm-3 col-md-3 spb align-middle-text cont-module-error">
+                                <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                                <div class="error-format text-2-line-error"></div>
+                              </div>
                             </div>
                             <div class="row smb cont-file">
                               <div class="col-sm-2 col-md-2 spb align-middle-text"><span>Inicio (*)</span></div>
-                              <div class="col-sm-10 col-md-10 spb">
+                              <div class="col-sm-7 col-md-7 spb">
                                 <div class="col-sm-6 col-md-6 spb slecet-izquieda cont-msj-relative">
-                                  <select name="select_inicio" value="select_two" class="input_form_perfil select_color">
+                                  <select id="id_select_mes" name="select_inicio" value="select_two" class="validate-2-select input_form_perfil select_color">
                                     <option value="">Seleccione</option>
                                     <option value="1">Enero</option>
                                     <option value="2">Febrero</option>
                                     <option value="3">Marzo</option>
                                   </select>
+                                  <div id="cont-error-mes" class="spb align-middle-text cont-module-error">
+                                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                                    <div class="error-format text-2-line-error"></div>
+                                  </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6 spb slecet-derecha cont-msj-relative">
-                                  <select name="select_mes" value="select_two" class="input_form_perfil select_color">
+                                  <select id="id_select_anio" name="select_mes" value="select_two" class="validate-2-select input_form_perfil select_color">
                                     <option value="">Seleccione</option>
                                     <option value="1">2016</option>
                                     <option value="2">2015</option>
                                     <option value="3">2014</option>
                                   </select>
+                                  <div id="cont-error-anio" class="spb align-middle-text cont-module-error">
+                                    <div class="icon-alert icon-inline icon-alert-left hideDiv"></div>
+                                    <div class="error-format text-2-line-error"></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="row smb cont-file pad-last-check">
+                          <div class="row smb cont-file pad-last-check"></div>
                           <div class="col-sm-2 col-md-2 spb"></div>
                           <div class="col-sm-7 col-md-10 spb align-middle">
                             <input type="checkbox" id="check_estudiando"/>

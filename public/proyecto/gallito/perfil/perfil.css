@@ -1087,6 +1087,12 @@ body {
 .br-slider-green {
   border-right: 3px solid #b9bd33;
 }
+.label-form-gallito {
+  color: #333;
+}
+.icon-translate {
+  transition: all ease 0.3s;
+}
 @media screen and (max-width: 600px) {
   .imagen-slider-empresa {
     height: 100%;
@@ -1132,13 +1138,6 @@ body {
 }
 .cont-msj-relative {
   position: relative;
-}
-label.error {
-  position: absolute;
-  color: #b33c3c;
-  top: -19px;
-  right: 2px;
-  font-size: 14px;
 }
 .formulario-gallito-slider {
   margin-bottom: 0em;
