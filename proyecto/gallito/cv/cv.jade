@@ -1,0 +1,46 @@
+extends ../layout/layout.jade
+block head
+    link(href='./cv.css' rel='stylesheet')
+block navegacion    
+block contenido
+    div(class="row smb")
+        div(class="col-sm-3 col-md-3 spb contenedor-project-filter")
+            include ../include/dashboard/filtro.jade
+        div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto")
+            - vistaDashboard="Mi curriculum"
+            include ../include/dashboard/menu_icons.jade
+            //************** formulario gallito **************//
+            div(class="contenedor-slider-todobusco")
+                form(class="formulario-gallito-slider" method="post" action="")
+                    div(id="slider_3_demo")
+                        div(class="row smb")
+                            div(class="span12")
+                                div(id="owl-slider_3" class="owl-carousel")
+                                    div(class="item")            
+                                        div(class="contenedor-formulario-gallito")
+                                            div(class="contenedor-icon-gallito-perfil")
+                                                div(class="contenedor-title-borde")
+                                                    span(class="title-text-borde-2") Subir mi CV
+                                                    div(class="borde-inferior-titulo")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="text-2-line mobile-inline") Archivo CV personalizado 
+                                                        span(class="txt-max-file-mobile")  (Tamaño máximo del archivo 2MB)
+                                                    div(class="col-sm-7 col-md-9 spb align-middle cont-msj-relative")
+                                                        input(type="text" class="input_form_perfil input-file-complete input-file-complete-left" name="nombre_imagen_cv" id="id_nombre_imagen_cv" placeholder="¿Cuentas con una nueva cuenta versión de tu CV? ¡Actualizala!")
+                                                        div(class="content-img-upload spb  input-file-complete input-file-complete-right")
+                                                            label(class="cargar" for="archivo")
+                                                                span Seleccionar archivo
+                                                                    input(type="file" id="archivo" name="image")
+                                                        span(class="txt-max-file") Tamaño máximo del archivo 2MB
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+            div(class="content-btn-form")
+                button(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Cancelar
+                button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
+            //************** formulario gallito **************//
+block script
+    script(src='./clases.js')
+    script(src='./cv.js')

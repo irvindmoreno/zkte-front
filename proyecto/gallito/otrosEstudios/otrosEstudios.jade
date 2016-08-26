@@ -7,55 +7,7 @@ block contenido
         div(class="col-sm-3 col-md-3 spb contenedor-project-filter")
             include ../include/dashboard/filtro.jade
         div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto spb")
-            //************** icons gallitoPerfil **************//
-            div(class="contenedor-icon-gallito-perfil")
-                div(class="contenedor-title-borde")
-                    span(class="title-text-borde") Mi Pefil
-                    div(class="borde-inferior-titulo")
-                div(class="contenedor-all-circle-gallitoPerfil-icon")
-                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
-                        div(class="circle-sup bg-green")
-                            div(class="circle-interno bg-green")
-                                div(class="icon-experiencia icon-ease icon-inline icon-center-auto icon-translate")
-                            div(class="icon-check check-icon-view")
-                        div(class="circle-text") Experiencia
-                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
-                        div(class="circle-sup bg-yellow")
-                            div(class="circle-interno bg-yellow margin-icon-estudios")
-                                div(class="icon-estudios icon-ease icon-inline icon-center-auto icon-translate")
-                            div(class="icon-check check-icon-view")
-                        div(class="circle-text") Estudios
-                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
-                        div(class="circle-sup bg-yellow")
-                            div(class="circle-interno bg-yellow margin-icon-idomas")
-                                div(class="icon-idiomas icon-ease icon-inline icon-center-auto icon-translate")
-                            div(class="icon-check check-icon-view")
-                        div(class="circle-text") Idiomas
-                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
-                        div(class="circle-sup bg-green")
-                            div(class="circle-interno bg-green margin-icon-estudios_otros_estudios")
-                                div(class="icon-otros_estudios icon-ease icon-inline icon-center-auto icon-translate")
-                            div(class="icon-check check-icon-view")
-                        div(class="circle-text") Otros Estudios
-                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
-                        div(class="circle-sup bg-red")
-                            div(class="circle-interno bg-red margin-icon-referencias")
-                                div(class="icon-referencias icon-ease icon-inline icon-center-auto icon-translate")
-                            div(class="icon-check check-icon-view")
-                        div(class="circle-text") Referencias
-                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
-                        div(class="circle-sup bg-green")
-                            div(class="circle-interno bg-green margin-icon-datos_personales")
-                                div(class="icon-datos_personales icon-ease icon-inline icon-center-auto icon-translate")
-                            div(class="icon-check check-icon-view")
-                        div(class="circle-text") Datos Personales
-                    a(href="#" class="contenedor-icon-img-fallitoPerfil")
-                        div(class="circle-sup bg-red")
-                            div(class="circle-interno bg-red margin-icon-estudios_cv")
-                                div(class="icon-cv_circulo icon-ease icon-inline icon-center-auto icon-translate")
-                            div(class="icon-check check-icon-view")
-                        div(class="circle-text") CV
-            //************** icons gallitoPerfil **************//
+            include ../include/dashboard/menu_icons.jade
             //************** formulario gallito **************//
             div(class="contenedor-slider-todobusco")
                 form(class="formulario-gallito-slider" method="post" action="")
@@ -73,7 +25,7 @@ block contenido
                                                     div(class="col-sm-2 col-md-2 spb")
                                                         span(class="text-2-line") Nombre (*)
                                                     div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
-                                                        input(type="text" class="input_form_perfil" name="nombreInstitucional" placeholder="Ingrese nombre de la institución")
+                                                        input(type="text" class="input_form_perfil" name="nombre_otros_estudios" placeholder="Ingrese nombre de la institución")
                                                     div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
                                                         div(class="icon-alert icon-inline icon-alert-left hideDiv")
                                                         div(class="error-format text-2-line-error")
@@ -81,7 +33,7 @@ block contenido
                                                     div(class="col-sm-2 col-md-2 spb align-middle-text")
                                                         span(class="text-2-line ") Nivel (*)
                                                     div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
-                                                        select(class="input_form_perfil select_color" name="select_carrera")
+                                                        select(class="input_form_perfil select_color" name="name_nivel")
                                                             option(value="") Seleccione
                                                             option(value="1") Informática
                                                             option(value="2") Sistemas

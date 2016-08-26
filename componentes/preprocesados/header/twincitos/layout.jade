@@ -1,0 +1,21 @@
+- rutaStatic ='../../../../static'
+- rutaLib ='../../../../static/lib'
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, user-scalable=no')
+        block title
+            title twincitos-header
+        block link
+            link(rel='stylesheet' href=rutaLib+'/bootstrap/bootstrap.min.css')
+            link(rel='stylesheet' href=rutaLib+'/font-awesome/css/font-awesome.min.css')
+            link(rel='stylesheet' type='text/css' href='./header.css')
+            link(rel='stylesheet' href=rutaStatic+'/imagenes/sprite/twincitos/sprite.css')
+
+    body
+        block content
+        block script
+            script(src=rutaLib+'/jquery/jquery.min.js')
+            script(src=rutaLib+'/bootstrap/bootstrap.min.js')
+            script(src='./header.js')

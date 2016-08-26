@@ -1,0 +1,112 @@
+extends ../layout/layout.jade
+block head
+    link(href='./referencias.css' rel='stylesheet')
+block navegacion    
+block contenido
+    div(class="row smb")
+        div(class="col-sm-3 col-md-3 spb contenedor-project-filter")
+            include ../include/dashboard/filtro.jade
+        div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto")
+            - vistaDashboard="Mi Perfil"
+            include ../include/dashboard/menu_icons.jade
+            //************** formulario gallito **************//
+            div(class="contenedor-slider-todobusco")
+                form(class="formulario-gallito-slider" method="post" action="")
+                    div(id="slider_3_demo")
+                        div(class="row smb")
+                            div(class="span12")
+                                div(id="owl-slider_3" class="owl-carousel")
+                                    div(class="item")            
+                                        div(class="contenedor-formulario-gallito")
+                                            div(class="contenedor-icon-gallito-perfil")
+                                                div(class="contenedor-title-borde")
+                                                    span(class="title-text-borde-2") Referencia(1)
+                                                    div(class="borde-inferior-titulo")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-md-12 spb")
+                                                        label(for="check_no_tengo_estudios" class="label-form-gallito").
+                                                            Recuerda que las referencias que las empresas toman en cuenta son tus últimos trabajos.
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="text-2-line") Nombre de la referencia (*)
+                                                    div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
+                                                        input(type="text" class="input_form_perfil" name="name_nombre_referencia" placeholder="Ingrese nombre de la institución")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                                        span(class="text-1-line ") Cargo (*)
+                                                    div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
+                                                        select(class="input_form_perfil select_color" name="name_cargo")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="text-1-line") Nivel (*)
+                                                    div(class="col-sm-7 col-md-7 spb cont-msj-relative")
+                                                        select(class="input_form_perfil select_color" name="name_nivel")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb align-middle-text")
+                                                        span(class="text-2-line") Tiempo de Experiencia (*)
+                                                    div(class="col-sm-7 col-md-7 spb cont-msj-relative")
+                                                        select(class="input_form_perfil select_color" name="name_experiencia")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb")
+                                                        span(class="text-1-line") Teléfono
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        input(type="text" class="input_form_perfil" maxlength="100" name="name_telefono" placeholder="Ingrese nombre comercial")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb")
+                                                        span(class="text-1-line") Celular (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        input(type="text" class="input_form_perfil" maxlength="100" name="name_celular" placeholder="Ingrese nombre comercial")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb")
+                                                        span(class="text-1-line") Correo (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        input(type="text" class="input_form_perfil" maxlength="100" name="name_correo" placeholder="Ingrese nombre comercial")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                        div(class="row smb")
+                            div(class="col-sm-2 col-md-2 spb")
+                            div(class="col-sm-7 col-md-7 spb align-middle contenedor-paginacion")
+                                div(class="arrow-prev arrow-transale-pagination ")
+                                    i(class="fa fa-caret-left disabled-arrow" aria-hidden="true")
+                                span(class="content-pagination")
+                                    input(type="button" class="pagination-formulario active-pagination " value="1")
+                                div(class="arrow-next arrow-transale-pagination ")
+                                    i(class="fa fa-caret-right disabled-arrow" aria-hidden="true")
+            div(class="content-btn-form")
+                button(id="addEstudio" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro estudio
+                button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
+            //************** formulario gallito **************//
+block script
+    script(src='./clases.js')
+    script(src='./referencias.js')

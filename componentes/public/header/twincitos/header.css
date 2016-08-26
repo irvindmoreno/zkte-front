@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: "scfly";
+  src: url("../../../fonts/scfly/scfly.eot") format("embedded-opentype"), url("../../../fonts/scfly/scfly.woff") format("woff"), url("../../../fonts/scfly/scfly.ttf") format("truetype");
+}
+#header-twinci-developers {
+  background: #00796b;
+  min-width: 14em;
+  width: 20%;
+  display: inline-block;
+  font-family: scfly;
+  border: 1px solid #00796b;
+  height: 100%;
+  position: relative;
+  border-right: 5px solid #ff5722;
+}
+.contenedor-img-header {
+  width: 10em;
+  overflow: hidden;
+  height: 10em;
+  padding: 0.2em;
+  border-radius: 50%;
+  background: #ff5722;
+  position: absolute;
+  top: 35%;
+  right: -5em;
+  transition: all ease 1s;
+}
+.contenedor-img-header img {
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.contenedor-img-header:hover {
+  transform: rotateY(180deg);
+}
+.text-twinci-left {
+  color: #faa21b;
+  font-style: italic;
+}
+.text-twinci-left,
+.text-twinci-rigt {
+  line-height: 1;
+  font-size: 2em;
+}
+.text-twinci-rigt {
+  color: #fff;
+  font-size: 1.8em;
+  margin-left: 2em;
+}
+.contenedor-text-twinci {
+  display: inline-block;
+  margin: 1em;
+}
+.line-all {
+  display: inline-block;
+  background: #1976d2;
+  height: 100%;
+  vertical-align: top;
+  width: 0.2em;
+}
+.contenido-text {
+  padding: 0em 1em;
+}
+.contenedor-arrow {
+  display: inline-block;
+  background: #1976d2;
+  vertical-align: top;
+  color: #fff;
+  width: 1em;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: -3px;
+  cursor: pointer;
+  margin-top: 0.5em;
+}

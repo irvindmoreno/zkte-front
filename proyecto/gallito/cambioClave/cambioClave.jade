@@ -1,0 +1,63 @@
+extends ../layout/layout.jade
+block head
+    link(href='./cambioClave.css' rel='stylesheet')
+block navegacion    
+block contenido
+    div(class="row smb")
+        div(class="col-sm-3 col-md-3 spb contenedor-project-filter")
+            include ../include/dashboard/filtro.jade
+        div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto")
+            - vistaDashboard="Mi Perfil"
+            include ../include/dashboard/menu_icons.jade
+            //************** formulario gallito **************//
+            div(class="contenedor-slider-todobusco")
+                form(class="formulario-gallito-slider" method="post" action="")
+                    div(id="slider_3_demo")
+                        div(class="row smb")
+                            div(class="span12")
+                                div(id="owl-slider_3" class="owl-carousel")
+                                    div(class="item")            
+                                        div(class="contenedor-formulario-gallito")
+                                            div(class="contenedor-icon-gallito-perfil")
+                                                div(class="contenedor-title-borde")
+                                                    span(class="title-text-borde-2") Cambio de Clave
+                                                    div(class="borde-inferior-titulo")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="label-top") Actual contraseña (*)
+                                                    div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
+                                                        input(maxlength="32" type="text" class="input_form_perfil" name="nombre_actual_contrasenia" placeholder="Ingrese contraseña")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="label-top") Nueva contraseña (*)
+                                                    div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
+                                                        input(maxlength="32" type="text" class="input_form_perfil" name="name_nueva_contra" id="id_nueva_contra" placeholder="Ingrese nueva contraseña")
+                                                        div(class="contenedor-text-ingenioso col-xs-6 col-sm-5 col-md-6 spb")
+                                                            div(class="text-ingenioso") Usa de 6 a 32 caracteres
+                                                            div(class="text-ingenioso cl-bluelight") ¡Se ingenioso!
+                                                        div(class="contenedorNivelSeguridad col-xs-6 col-sm-7 col-md-6 spb")
+                                                            span(class="texto-security") Nivel de seguridad
+                                                            div(id="seguridad_corta" class="cuadro_nivel_seguridad")
+                                                            div(id="seguridad_debil" class="cuadro_nivel_seguridad")
+                                                            div(id="seguridad_fuerte" class="cuadro_nivel_seguridad")
+                                                            div(id="seguridad_muy_fuerte" class="cuadro_nivel_seguridad")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-2 col-md-2 spb")
+                                                        span(class="label-top") Repetir contraseña (*)
+                                                    div(class="col-sm-7 col-md-7 spb align-middle cont-msj-relative")
+                                                        input(maxlength="32" type="text" class="input_form_perfil" name="name_repetir_contra" placeholder="Repita contraseña")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+            div(class="content-btn-form")
+                button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
+            //************** formulario gallito **************//
+block script
+    script(src='./clases.js')
+    script(src='./cambioClave.js')

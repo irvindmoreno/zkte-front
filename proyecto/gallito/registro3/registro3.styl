@@ -1,0 +1,471 @@
+rutaComponentes='../../../componentes'
+rutaImagenes='../../../imagenes'
+
+
+/************Layout****************/
+@import('../layout/layout.styl')
+/************Layout****************/
+//************** tabs gallito **************//
+body
+    margin 0
+    font-size 16px
+
+backgroundNumero=#3a7e6d
+colorNumero=white
+backgroundPestania=#b4b4b4
+bordePestania=#8A8A8A
+hoverPestaniaBackground=#DEE0E2
+colorContenido=#777
+.contenedor-tab-gallito
+    font-family calibri
+.desactivarTab
+    background backgroundPestania !important// backgroundPestania
+    &:hover
+        background hoverPestaniaBackground !important//hoverPestaniaBackground
+.activarTab
+    background hoverPestaniaBackground !important//hoverPestaniaBackground
+.TabsAsep
+    display block
+    & a
+        text-decoration none
+    &-Pestania
+        height inherit
+        padding 0.6em 0.5em
+        cursor pointer
+        transition all ease 0.3s
+        text-align center
+        &-Bloque2
+            margin-top 0.4em
+            text-align left
+        &-Ttulo
+            color backgroundNumero //backgroundNumero
+            &-Numero
+                background backgroundNumero //backgroundNumero
+                border-radius: 50%;
+                height: 1.5em;
+                width: 1.5em;
+                color: #fff;
+                margin-right: 0.3em;
+                font-weight: bold;
+                font-size: 1.5em;
+                padding-top 0.1em
+                text-align center
+        &-Contenido
+            color #35344a //colorContenido
+            font-weight bold
+            font-size 1.6em
+.TabsAsep-Pestania-3 .TabsAsep-Pestania-Ttulo-Numero
+    background #0cb570
+.TabsAsep-Pestania-Ttulo-Texto
+    font-size 1.4em
+    color #353e4a
+    line-height 0.8
+.smb
+    margin-right 0em
+    margin-left 0em
+.spb
+    padding-left 0em
+    padding-right 0em
+.TabsAsep-Pestania-Ttulo-Numero,.TabsAsep-Pestania-Bloque2
+    display inline-block
+    vertical-align middle
+.TabsAsep-Pestania-3 .TabsAsep-Pestania-Contenido
+    border-bottom 4px solid #0cb570
+.TabsAsep-Pestania-2 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-2 .TabsAsep-Pestania-Contenido,.TabsAsep-Pestania-1 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-1 .TabsAsep-Pestania-Contenido
+    color #929497
+@media screen and (max-width: 1100px)
+    .contenedor-tab-gallito
+        font-size 14px
+@media screen and (max-width: 942px)
+    .contenedor-tab-gallito
+        font-size 13px
+    .TabsAsep-Pestania-Contenido
+        font-size 1.4em
+@media screen and (max-width: 785px)
+    .contenedor-tab-gallito
+        font-size 12px
+    .TabsAsep-Pestania-Contenido
+        font-size 1.4em
+@media screen and (max-width: 726px)
+    .TabsAsep-Pestania-Bloque2
+        display block
+        text-align center
+@media screen and (max-width: 408px)
+    .TabsAsep-Pestania-Contenido
+        font-size 0.9em
+    .TabsAsep-Pestania-Ttulo-Texto
+        font-size 1.2em
+//************** tabs gallito **************//
+//************** formulario gallitoRegistro **************//
+body
+    margin 0
+    font-size 16px
+blueDark=#353e4a
+blueLight=#527494
+redError=#ad3a3a
+colorLetterForm=#353e4a
+colorError=#ad3a3a
+.icon-inline
+    display inline-block
+    vertical-align top
+.smb
+    margin-left 0px
+    margin-right 0px
+.spb
+    padding-right 0px
+    padding-left 0px
+.contenedor-title-borde
+    position relative
+    font-family calibri
+.title-text-borde
+    color white !important
+    font-size 1.3em !important
+    padding 0.2em 0.8em !important
+    display inline-block !important
+    background none !important
+.borde-inferior-titulo
+    background blueLight
+    height 0.05em
+    width 100%
+    position absolute
+    bottom 8px;
+    z-index -1
+.label-form-gallito
+    font-weight normal
+    cursor pointer
+.label-form-gallito,#check_no_tengo_estudios
+    display inline-block
+    vertical-align middle
+    margin-bottom 0px
+#check_no_tengo_estudios
+    margin-top 1px
+    margin-left 0.5em
+.cont-file
+    padding 0.5em 0em
+    position relative
+.contenedor-formulario-gallito
+    font-family calibri
+.input_form_perfil
+    width 100%
+    outline none
+    padding 0.4em 0.8em
+    border 1px solid gray
+    background white
+.align-middle-text
+    margin-top 0.5em
+.error-format
+    color redError
+    margin-left 0.2em
+.icon-alert-left
+    margin-left 0.5em
+.cont-file
+    color colorLetterForm
+.text-2-line
+    width 9em
+    display inline-block
+    line-height 1
+.text-2-line-error
+    display inline-block
+    min-width 6em
+.select_color
+    color gray
+    cursor pointer
+.slecet-izquieda
+    padding-right 1em
+.slecet-derecha
+    padding-left 1em
+.pad-last-check
+    padding-top 0em
+.btn-form-gallito
+    border none
+    padding 0.4em 3em
+    color white
+    font-weight bold
+    cursor pointer
+.btn-gallit-ligth
+    background blueLight
+    margin-bottom 1em
+    display inline-block
+.btn-gallit-green
+    background #0cb570
+.content-btn-form
+    text-align right
+    padding-right 3em
+.textarea-form-gallito
+    resize none
+    height 10em
+.subtitle-form-gallito-registro
+    color #4d8ac8
+    font-weight bold
+    margin-bottom 0.3em
+    font-size 1.2em
+.cuadro-item
+    width 100%
+.cuadro-item-title
+    display: inline-block;
+    background: #4d8ac8;
+    color: white;
+    font-family scfly
+    font-size 1.1em
+    position relative
+    margin-right 0.5em
+    margin-top 0.5em
+    width 100%
+    padding 0.3em 1em
+    cursor pointer
+.contenedor-add-block
+    padding 0em 4%
+.cuadro-item-cont-desplegado
+    border 1px solid rgba(53, 62, 74, 0.61)
+    background #e6e7e8
+.style-close
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    font-size: 1em;
+    cursor pointer
+.style-icon-cuadro-item,.style-save
+    position: absolute;
+    right: 25px;
+    top: 9px;
+    font-size: 1em;
+    cursor pointer
+.Text-Pregunta
+    text-align  center
+.contenedor-Btn-edit
+    text-align right
+.contenedor-Btn-edit i
+    margin-right 0.2em
+    cursor pointer
+.contenedor-pregunta
+    background #4d8ac8
+    color white
+    padding 0.8em 0.5em
+    border-radius 5px
+    border 1px solid blueLight
+    margin-bottom 0.3em
+#archivo
+    width 100%
+.text-saldo-preguntas,.text-sin-preguntas
+    text-align right
+    color gray
+.cuatro-item-created
+    display none
+.btn-atras-gallito
+    color blueLight
+.icon-up-filter,.icon-down-filter
+    font-size: 2em;
+    position: absolute;
+    right: 0.5em;
+.block-desplegable-rectangle
+    cursor pointer
+    position relative
+.contenedor-icon-gallito-perfil
+    border-bottom 1px solid white
+@media screen and (max-width: 768px)
+    .text-2-line
+        width 100%
+    .slecet-derecha
+        margin-top 0.5em
+        padding-left 0em
+    .slecet-izquieda
+        padding-right 0em
+    .cont-module-error
+        margin-top 0em
+    .icon-alert-left
+        margin-left 0em
+    .align-middle-text
+        margin-top 0em
+    .contenedor-paginacion
+        padding 0em 1em
+@media screen and (max-width: 573px)
+    .content-btn-form
+        text-align center
+    #btn-guardarDatos-finta,#addEstudio
+        width 100%
+        display inline-block
+        text-align center
+    .btn-form-gallito
+        margin-left 0em
+    .content-btn-form
+        padding-right 0em
+//************** formulario gallito **************//
+
+.borde-azul-todobusco  
+    border: 6px solid #0e5682;
+.br-slider-azul
+    border-right 3px solid #0e5682;
+.borde-green-todobusco  
+    border: 6px solid #b9bd33;
+.br-slider-green
+    border-right 3px solid #b9bd33;
+.contenedor-icon-gallito-perfil
+    background blueDark
+    color white
+.color-error
+    color colorError
+.contenedor-datos-cargo
+    padding 0em 4%
+.contenedor-paginacion
+    padding 0em 4%
+.text-1-line
+    margin-top: 0.5em;
+    display: inline-block;
+colorDeLetra=#4e4444
+colorDeBorde=#4e4444
+background=white
+ancho=150px
+alto=30px
+tamanioLetra=18px
+input[type="file"]
+    z-index 999
+    line-height 0
+    font-size 50px
+    position absolute
+    opacity 0
+    margin 0
+    padding 0
+    left 0
+.cargar
+    text-align: center;
+    background-color: #4d8ac8;
+    color: white;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 1em;
+    line-height: 1.6em;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 0.2em 1em;
+#image_upload_preview
+    width 100%
+.text-img-warning
+    color #6d6e70
+    font-size 0.9em
+.span-text-warning
+    margin-left 0.5em
+.contenedor-img-upload
+    background #e6e7e8
+    border 1px solid #696969
+    height 10em
+    width 15em
+    overflow hidden
+    display inline-block
+    margin-top 0em
+    text-align center
+.center
+    text-align center
+.text-gallito-img-upload
+    font-family: calisto;
+    font-size: 2em;
+    padding-top: 1.6em;
+    display: inline-block;
+.hideDiv
+    display none
+.align-right
+    text-align right
+.error-validacion
+    border 1px solid #ad3a3a
+.contenedor-tab-gallito
+    margin-top 1em
+label.error
+    font-weight normal
+@media screen and (max-width: 802px)
+    .contenedor-datos-cargo,.contenedor-paginacion
+        padding 1em 4%
+    .contenedor-paginacion
+        padding-top 0em
+        margin-top -0.5em
+        padding-bottom 1em
+@media screen and (max-width: 600px)    
+    .imagen-slider-empresa
+        height 100%    
+    .cuadro-todobusco-slider-casabusco
+        background #efb762
+    .borde-azul-todobusco
+        background #337dab
+    .borde-green-todobusco
+        background #ccd06b
+    .borderojo-todobusco
+        background rgb(216, 163, 163)
+@media screen and (max-width: 542px)
+    .post-gallito-title-txt
+        font-size 1.1em
+        text-align center
+    .post-gallito-title
+        margin-bottom 0em
+    .contenedor-post-gallito
+        border-top: 1px solid #808080;
+        padding: 1em 0em 0em 0em
+    .btn-form-gallito
+        width 100%
+        padding 0.5em 0em
+        text-align center
+    .content-img-upload
+        width 100%
+        text-align center
+@media screen and (max-width: 496px)
+    .contenedor-datos-cargo,.contenedor-paginacion
+        padding 1em 1em
+    .contenedor-paginacion
+        margin-top -2.5em
+    .btn-form-gallito
+        margin-top 1em
+@media screen and (max-width: 390px)
+    .imagen-slider-empresa
+        height initial
+//************** formulario gallitoRegistro **************//
+/********************otros*******************/
+#formulario-registro-1
+    margin-top 1em
+@media screen and (max-width: 768px)
+    .contenedor-vista-paso-1
+        padding 1em 0em
+/********************otros*******************/
+.text-aviso-3-title
+    font-weight bold
+    color #353e4a
+    font-size 1.2em
+.text-gray
+    color gray
+.text-middle
+    font-size 1.8em
+    color #353e4a
+.text-middle-price
+    color #0cb570
+    font-size 1.8em
+    font-weight bold
+.contenedor-layout
+    max-width 1100px !important
+.block-desplegable-rectangle
+    padding 0em
+.contenedor-radio
+    padding 1em 2em
+    height 2.3em
+.label-for-radio
+    margin-left: 0.5em;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    cursor pointer
+.cont-radio
+    display inline-block
+.cont-radio-right
+    margin-left 2em
+.contenedor-desplegado
+    padding-bottom 0.5em
+.text-warring-metodo-pago
+    font-size 14px
+    padding 1em 0em
+.text-title-pago
+    color #353e4a
+    font-weight bold
+    font-size 1.2em
+.label-pago
+    font-weight normal
+    display inline-block
+    vertical-align top
+    margin-left 0.5em
+    cursor pointer
+.label-img
+    display block

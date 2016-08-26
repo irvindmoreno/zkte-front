@@ -1,0 +1,245 @@
+extends ../layout/layout.jade
+block head
+    link(href='./registro3.css' rel='stylesheet')   
+block contenido
+    div(class="contenedor-vista-paso-1")
+        //************** tabs gallito **************//
+        - pestaniaUno="Primer paso"
+        - contenidoUno="INGRESE EL AVISO WEB"
+        - pestaniaDos="Segudno paso"
+        - contenidoDos="INGRESE EL AVISO IMPRESO"
+        - pestaniaTres="Tercer paso"
+        - contenidoTres="PUBLICAR"
+        - pestanias={1:pestaniaUno,2:pestaniaDos,3:pestaniaTres}
+        - pestaniasContenido=[contenidoUno,contenidoDos,contenidoTres]
+        div(class="contenedor-tab-gallito")
+            div(class="TabsAsep row smb")
+                each pestania,index in pestanias
+                    div(class="col-xs-4 col-sm-4 col-md-4 spb")
+                        div(class="TabsAsep-Pestania TabsAsep-Pestania-"+index data=index)
+                            div(class="TabsAsep-Pestania-Ttulo")
+                                div(class="TabsAsep-Pestania-Ttulo-Numero")=index
+                                div(class="TabsAsep-Pestania-Bloque2")
+                                    div(class="TabsAsep-Pestania-Ttulo-Texto")=pestania
+                                    div(class="TabsAsep-Pestania-Contenido")=pestaniasContenido[index-1]
+        //************** tabs gallito **************// 
+        //************** formulario gallitoRegistro **************//
+        - rutaImagenes ='../../../imagenes'
+        form(id="formulario-registro-3" method="post" action="#")
+            div(class="contenedor-formulario-gallito")
+                div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                    div(class="contenedor-title-borde")
+                        span(class="title-text-borde") Detalles de compra
+                div(class="contenedor-desplegado")
+                    div(class="contenedor-datos-cargo")
+                        div(class="text-aviso-3-title") Producto: Aviso Web + Papel
+                        div(class="text-gray")
+                            div Impreso en gallito Domingo 3 de Julio del 2016
+                            div Pago hasta viernes 1 de julio del 2016 a las 6:00pm
+                            div 30 días de publicación web, del 28 de Junio al 29 de julio de 2016
+                            div 30 palabras
+                        div
+                            a(href="#") Mire su aviso Web
+                        div 
+                            span(class="text-middle") Total:
+                            span(class="text-middle-price")  $1.400
+                        div(class="text-gray") El precio incluye impuestos
+                div(class="contenedor-slider-todobusco")
+                    div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                        div(class="contenedor-title-borde")
+                            span(class="title-text-borde") Tipo de comprobante
+                    div(class="contenedor-desplegado")
+                        div(class="contenedor-radio")
+                            span(class="cont-radio")
+                                input(type="radio" name="name-radio" class="radio-comprobante" id="id_radio_boleta") 
+                                label(class="label-for-radio" for="id_radio_boleta" ) Boleta
+                            span(class="cont-radio cont-radio-right")
+                                input(type="radio" name="name-radio" class="radio-comprobante" id="id_radio_factura" checked)
+                                label(class="label-for-radio" for="id_radio_factura") Factura
+                        div(class="contenedor-datos-cargo cont-input-estudios" id="contenido-comprobante")
+                            div(class="row smb cont-file")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") RUT (*)
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    input(class="input_form_perfil " id="id_select_carrera" name="name_rut")
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                            div(class="row smb cont-file")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") Razón Social (*)
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    input(class="input_form_perfil" name="name_razon_social" id="id_select_tipo_carrera")
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                            div(class="row smb cont-file")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") Nro CI: (*)
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    input(class="input_form_perfil" name="name_ci" id="id_select_nivel")
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                div(class="contenedor-slider-todobusco")
+                    div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                        div(class="contenedor-title-borde")
+                            span(class="title-text-borde") Método de pago
+                    div(class="contenedor-desplegado")
+                        div(class="contenedor-datos-cargo cont-input-experiencia")
+                            div(class="color-error text-warring-metodo-pago") ATENCIÓN: No se podrá cambiar la forma de pago luego de ser elegida
+                            div(class="row smb cont-file")                                
+                                div(class="col-sm-12 col-md-12 spb text-title-pago") Publica un aviso con tu abono
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    input(type="radio" class="" id="id_tu_abono" name="select_nivel_cargo")
+                                    label( class="label-pago" for="id_tu_abono") Descontar de mi abono
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                            div(class="row smb cont-file")                                
+                                div(class="col-sm-12 col-md-12 spb text-title-pago") Publica el aviso pagando con Efectivo
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    input(type="radio" class="" id="id_tu_abono" name="select_nivel_cargo")
+                                    label( class="label-pago" for="id_tu_abono") 
+                                        img(src="#" class="label-img")
+                                        span( class="label-txt") Compra en efectivo
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                            div(class="row smb cont-file")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") Tiempo de experiencia (*)
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    select(class="input_form_perfil select_color" name="slect_tiempo_experiencia" id="id_select_tiempo_experiencia")
+                                        option(value="") Seleccione
+                                        option(value="1") Informática
+                                        option(value="2") Sistemas
+                                        option(value="3") Idiomas
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                        div(class="row smb contenedor-paginacion align-right")
+                            div(class="col-sm-3 col-md-2 spb")
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                span(id="addExperiancia" class="btn-form-gallito btn-gallit-ligth" ) Añadir otra Experiencia
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                div(class="contenedor-slider-todobusco")
+                    div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                        div(class="contenedor-title-borde")
+                            span(class="title-text-borde") Idioma
+                    div(class="contenedor-desplegado")
+                        div(id="cont-idioma-add")
+                        div(class="contenedor-datos-cargo cont-input-idioma")
+                            div(class="row smb cont-file")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") Idioma (*)
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    select(class="input_form_perfil select_color" id="id_select_idioma" name="select_idioma")
+                                        option(value="") Seleccione
+                                        option(value="1") Inlgés
+                                        option(value="2") Francés
+                                        option(value="3") Aleman
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                            div(class="row smb cont-file")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") Nivel (*)
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    select(class="input_form_perfil select_color" name="select_nivel_idioma" id="id_select_nivel_idioma")
+                                        option(value="") Seleccione
+                                        option(value="1") Básico
+                                        option(value="2") Intermedio
+                                        option(value="3") Avanzado
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                        div(class="row smb contenedor-paginacion align-right")
+                            div(class="col-sm-3 col-md-2 spb")
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                span(id="addIdioma" class="btn-form-gallito btn-gallit-ligth" ) Añadir otra Experiencia
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                div(class="contenedor-slider-todobusco")
+                    div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                        div(class="contenedor-title-borde")
+                            span(class="title-text-borde") Conocimientos Informáticos
+                    div(class="contenedor-desplegado cont-input-programa")
+                        div( id="cont-programa-add")
+                        div(class="contenedor-datos-cargo")
+                            div(class="row smb cont-file")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") Programa (*)
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    select(class="input_form_perfil select_color" id="id_select_programa" name="select_programa")
+                                        option(value="") Seleccione
+                                        option(value="1") Html
+                                        option(value="2") Css
+                                        option(value="3") Javascript
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                            div(class="row smb cont-file")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") Nivel (*)
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    select(class="input_form_perfil select_color" name="select_nivel_programa" id="id_select_nivel_programa")
+                                        option(value="") Seleccione
+                                        option(value="1") Básico
+                                        option(value="2") Intermedio
+                                        option(value="3") Avanzado
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                        div(class="row smb contenedor-paginacion align-right")
+                            div(class="col-sm-3 col-md-2 spb")
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                span(id="addPrograma" class="btn-form-gallito btn-gallit-ligth" ) Añadir otro Programa
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                div(class="contenedor-slider-todobusco")
+                    div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                        div(class="contenedor-title-borde")
+                            span(class="title-text-borde") Pregunta al candidato
+                            i(class=" fa fa-angle-up icon-up-filter" aria-hidden="true")
+                            i(class="hideDiv fa fa-angle-down icon-down-filter" aria-hidden="true")
+                    div(class="contenedor-desplegado")
+                        div(class="contenedor-datos-cargo cont-input-pregunta")
+                            div(class="row smb")
+                                div(class="col-sm-12 col-md-12 spb align-middle-text")
+                                    div(class="row smb")
+                                        div(class="col-md-12 spb")
+                                            span(class="color-error") Máximo 5 preguntas por aviso
+                            div(class="row smb cont-file content-textarea-pregunta")
+                                div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                    span(class="text-2-line ") Redacte su pregunta
+                                div(class="col-sm-6 col-md-7 spb align-middle")
+                                    textarea(type="text" class="input_form_perfil col-md-12 sp textarea-form-gallito" id="id_pregunta_candidato" name="pregunta_candidato" placeholder="Esta pregutna sera obligatoria para todos los candidatos que se quieran postular a este aviso")
+                                    div(class="col-md-12 spb")
+                                        div(class="text-saldo-preguntas") 
+                                            span(class="text-quedan") Te quedan 
+                                            span(id="text-number-queda") 5
+                                            span(class="text-quedan")  preguntas
+                                        div(class="text-sin-preguntas hideDiv") Ya no le quedan preguntas
+                                div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                    div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                    div(class="error-format text-2-line-error")
+                        div(class="row smb contenedor-paginacion align-right")
+                            div(class="col-sm-3 col-md-2 spb")
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                span(id="addPregunta" class="btn-form-gallito btn-gallit-ligth" ) Añadir Pregunta
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb contenedor-paginacion align-left " id="contenedor-preguntas-add")
+            div(class="content-btn-form")
+                button(id="addEstudio" class="btn-form-gallito btn-atras-gallito" ) Atrás
+                button(class="btn-form-gallito btn-gallit-green" type="submit " id="btn-continuaraPaso-2") Continuar
+        //************** formulario gallitoRegistro **************//
+block script
+    script(src='./clases.js')
+    script(src='./registro3.js')

@@ -1,4 +1,5 @@
 - rutaStatic ='../../../../static'
+- rutaLib ='../../../../static/lib'
 doctype html
 html
     head
@@ -7,13 +8,12 @@ html
         block title
             title nuevo-nuevo
         block link
-            link(rel='stylesheet' href=rutaStatic+'/css/bootstrap.min.css')
-            link(rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+            link(rel='stylesheet' href=rutaLib+'/bootstrap/bootstrap.min.css')
+            link(rel='stylesheet' href=rutaLib+'/font-awesome/css/font-awesome.min.css')
             link(rel='stylesheet' type='text/css' href='./slider.css')
     body
         block content
         block script
-            script(src=rutaStatic+'/js/jquery.min.js')
-            script(src=rutaStatic+'/js/bootstrap.min.js')
-            script()
+            script(src=rutaLib+'/jquery/jquery.min.js')
+            script(src=rutaLib+'/bootstrap/bootstrap.min.js')
             script(src='./slider.js')

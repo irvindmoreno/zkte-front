@@ -12,18 +12,6 @@ var HeaderGallitoDashboard = function HeaderGallitoDashboard() {
 
 var obj = new HeaderGallitoDashboard();
 
-var IconsGallitoPerfil = function IconsGallitoPerfil() {
-				_classCallCheck(this, IconsGallitoPerfil);
-
-				$(".contenedor-icon-img-fallitoPerfil").hover(function () {
-								$(this).find(".icon-translate").addClass("transalate-icon-efect");
-								$(this).find(".check-icon-view").addClass("transalate-icon-check");
-				}, function () {
-								$(this).find(".icon-translate").removeClass("transalate-icon-efect");
-								$(this).find(".check-icon-view").removeClass("transalate-icon-check");
-				});
-};
-
 var nroDeSlider = 1;
 
 var FormularioGallito = function () {
@@ -51,7 +39,7 @@ var FormularioGallito = function () {
 												$(".pagination-formulario").removeClass("active-pagination");
 												//aparesco las felchas de traslado
 												$(".arrow-transale-pagination").removeClass("hideDiv");
-												var template = "<div class=\"item\">\n\t\t  <div class=\"contenedor-formulario-gallito\">\n\t\t    <div class=\"contenedor-icon-gallito-perfil\">\n\t\t      <div class=\"contenedor-title-borde\"><span class=\"title-text-borde\">Estudios(" + nroDeSlider + ")</span>\n\t\t        <div class=\"borde-inferior-titulo\"></div>\n\t\t      </div>\n\t\t    </div>\n\t\t    <div class=\"row smb cont-file\">\n\t\t      <div class=\"col-sm-2 col-md-2 spb\"><span class=\"text-2-line\">Nombre (*)</span></div>\n\t\t      <div class=\"col-sm-7 col-md-7 spb align-middle\">\n\t\t        <input id=\"nombreInstitucional-" + nroDeSlider + "\" name=\"nombreInstitucional-" + nroDeSlider + "\" type=\"text\" placeholder=\"Ingrese nombre de la institución\" class=\"input_form_perfil\"/>\n\t\t      </div>\n\t\t      <div class=\"col-sm-3 col-md-3 spb align-middle-text cont-module-error\">\n\t\t\t\t  <div class=\"icon-alert icon-inline icon-alert-left hideDiv\"></div>\n\t\t\t\t  <div class=\"error-format text-2-line-error\"></div>\n\t\t\t\t</div>\n\t\t    </div>\n\t\t    <div class=\"row smb cont-file\">\n\t\t      <div class=\"col-sm-2 col-md-2 spb align-middle-text\"><span class=\"text-2-line \">Nivel (*)</span></div>\n\t\t      <div class=\"col-sm-7 col-md-7 spb align-middle\">\n\t\t        <select id=\"select_carrera-" + nroDeSlider + "\" name=\"select_carrera-" + nroDeSlider + "\" class=\"input_form_perfil select_color\">\n\t\t          <option value=\"\">Seleccione tipo de carrera</option>\n\t\t          <option value=\"1\">Informática</option>\n\t\t          <option value=\"2\">Sistemas</option>\n\t\t          <option value=3>Idiomas</option>\n\t\t        </select>\n\t\t      </div>\n\t\t      <div class=\"col-sm-3 col-md-3 spb align-middle-text cont-module-error\">\n\t\t\t\t  <div class=\"icon-alert icon-inline icon-alert-left hideDiv\"></div>\n\t\t\t\t  <div class=\"error-format text-2-line-error\"></div>\n\t\t\t\t</div>\n\t\t    </div>\n\t\t  </div>\n\t\t</div>";
+												var template = "<div class=\"item\">\n\t\t  <div class=\"contenedor-formulario-gallito\">\n\t\t    <div class=\"contenedor-icon-gallito-perfil\">\n\t\t      <div class=\"contenedor-title-borde\"><span class=\"title-text-borde\">Otros Estudios(" + nroDeSlider + ")</span>\n\t\t        <div class=\"borde-inferior-titulo\"></div>\n\t\t      </div>\n\t\t    </div>\n\t\t    <div class=\"row smb cont-file\">\n\t\t      <div class=\"col-sm-2 col-md-2 spb\"><span class=\"text-2-line\">Nombre (*)</span></div>\n\t\t      <div class=\"col-sm-7 col-md-7 spb align-middle\">\n\t\t        <input id=\"id_nombre-" + nroDeSlider + "\" name=\"name_nombre-" + nroDeSlider + "\" type=\"text\" placeholder=\"Ingrese nombre de la institución\" class=\"input_form_perfil\"/>\n\t\t      </div>\n\t\t      <div class=\"col-sm-3 col-md-3 spb align-middle-text cont-module-error\">\n\t\t\t\t  <div class=\"icon-alert icon-inline icon-alert-left hideDiv\"></div>\n\t\t\t\t  <div class=\"error-format text-2-line-error\"></div>\n\t\t\t\t</div>\n\t\t    </div>\n\t\t    <div class=\"row smb cont-file\">\n\t\t      <div class=\"col-sm-2 col-md-2 spb align-middle-text\"><span class=\"text-2-line \">Nivel (*)</span></div>\n\t\t      <div class=\"col-sm-7 col-md-7 spb align-middle\">\n\t\t        <select id=\"id_nivel-" + nroDeSlider + "\" name=\"name_nivel-" + nroDeSlider + "\" class=\"input_form_perfil select_color\">\n\t\t          <option value=\"\">Seleccione tipo de carrera</option>\n\t\t          <option value=\"1\">Informática</option>\n\t\t          <option value=\"2\">Sistemas</option>\n\t\t          <option value=3>Idiomas</option>\n\t\t        </select>\n\t\t      </div>\n\t\t      <div class=\"col-sm-3 col-md-3 spb align-middle-text cont-module-error\">\n\t\t\t\t  <div class=\"icon-alert icon-inline icon-alert-left hideDiv\"></div>\n\t\t\t\t  <div class=\"error-format text-2-line-error\"></div>\n\t\t\t\t</div>\n\t\t    </div>\n\t\t  </div>\n\t\t</div>";
 												$("#owl-slider_3").append(template);
 												$('#owl-slider_3').data('owlCarousel').reinit();
 												$('#owl-slider_3').trigger('owl.goTo', nroDeSlider);
@@ -64,22 +52,10 @@ var FormularioGallito = function () {
 																$(this).addClass("active-pagination");
 												});
 												// agregando las reglas
-												$("#nombreInstitucional-" + nroDeSlider).rules("add", {
+												$("#id_nombre-" + nroDeSlider).rules("add", {
 																required: true
 												});
-												$("#select_carrera-" + nroDeSlider).rules("add", {
-																required: true
-												});
-												$("#select_tipo_carrera-" + nroDeSlider).rules("add", {
-																required: true
-												});
-												$("#select_nivel-" + nroDeSlider).rules("add", {
-																required: true
-												});
-												$("#select_inicio-" + nroDeSlider).rules("add", {
-																required: true
-												});
-												$("#select_mes-" + nroDeSlider).rules("add", {
+												$("#id_nivel-" + nroDeSlider).rules("add", {
 																required: true
 												});
 								}
@@ -89,20 +65,10 @@ var FormularioGallito = function () {
 
 												$(".formulario-gallito-slider").validate({
 																rules: {
-																				nombreInstitucional: {
+																				nombre_otros_estudios: {
 																								required: true
 																				},
-																				select_carrera: {
-																								required: true
-																				},
-																				select_tipo_carrera: {
-																								required: true
-																				},
-																				select_nivel: {
-																								required: true
-																				}, select_inicio: {
-																								required: true
-																				}, select_mes: {
+																				name_nivel: {
 																								required: true
 																				}
 

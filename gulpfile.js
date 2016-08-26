@@ -1,6 +1,6 @@
 /******no tocar linea 1,2 y 3********/
 var proyecto='gallito';
-var vista='otrosEstudios';
+var vista='conocePlanes';
 var tipo='proyecto';
 /*librerias requeridas para correr gulp*/
 

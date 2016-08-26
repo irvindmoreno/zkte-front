@@ -1,0 +1,40 @@
+rutaComponentes='../../../componentes'
+rutaImagenes='../../../imagenes'
+
+
+/************Layout****************/
+@import('../layout/layout.styl')
+/************Layout****************/
+.input-file-complete
+	display inline-block
+.content-img-upload
+	margin-left -4px
+.input-file-complete-left
+	width 70%
+.input-file-complete-right
+	width 30%
+	text-align center
+#archivo
+	display none
+.txt-max-file
+	color #366599
+	font-size 14px
+.txt-max-file-mobile
+	display none
+	color #366599
+	font-size 14px
+@media screen and (max-width: 740px)
+	.input-file-complete-left
+		width 100%
+	.input-file-complete-right
+		width 100%
+		text-align right
+		margin-top 0.5em
+	.txt-max-file
+		display none
+	.txt-max-file-mobile
+		display inline-block
+		margin-left 0.5em
+	.mobile-inline
+		display inline-block
+		width inherit

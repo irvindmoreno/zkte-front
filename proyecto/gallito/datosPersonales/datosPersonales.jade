@@ -1,0 +1,158 @@
+extends ../layout/layout.jade
+block head
+    link(href='./datosPersonales.css' rel='stylesheet')
+block navegacion    
+block contenido
+    div(class="row smb")
+        div(class="col-sm-3 col-md-3 spb contenedor-project-filter")
+            include ../include/dashboard/filtro.jade
+        div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto")
+            - vistaDashboard="Mi Perfil"
+            include ../include/dashboard/menu_icons.jade
+            //************** formulario gallito **************//
+            div(class="contenedor-slider-todobusco")
+                form(class="formulario-gallito-slider" method="post" action="")
+                    div(id="slider_3_demo")
+                        div(class="row smb")
+                            div(class="span12")
+                                div(id="owl-slider_3" class="owl-carousel")
+                                    div(class="item")            
+                                        div(class="contenedor-formulario-gallito")
+                                            div(class="contenedor-icon-gallito-perfil")
+                                                div(class="contenedor-title-borde")
+                                                    span(class="title-text-borde-2") Datos Personales
+                                                    div(class="borde-inferior-titulo")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-md-12 spb")
+                                                        span(class="color-error") (*) Campos Obligatorios
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb")
+                                                        span(class="text-1-line") Nombres (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        input(type="text" class="input_form_perfil" maxlength="100" name="name_nombre" placeholder="Ingrese nombre comercial")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb")
+                                                        span(class="text-1-line") Apellidos (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        input(type="text" class="input_form_perfil" maxlength="100" name="name_apellidos" placeholder="Ingrese razón social")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                                        span(class="text-1-line ") Sexo (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        select(class="input_form_perfil select_color" name="name_sexo")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Masculino
+                                                            option(value="2") Femenino                               
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                                        span(class="text-1-line ") Documento de identidad (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        select(class="input_form_perfil select_color" name="name_documento" id="select_documento")
+                                                            option(value="") Seleccione
+                                                            option(value="1") RUT
+                                                            option(value="2") CI
+                                                            option(value="3") Doc. Extranjero
+                                                        input(type="text" class="input_form_perfil input-documento" maxlength="100" name="name_nro_documento" id="id_nro_documento" placeholder="Seleccione un tipo de documento" disabled)
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb")
+                                                        span(class="text-1-line") Telefono fijo
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        input(type="text" class="input_form_perfil" maxlength="100" name="name_telefono_fijo" placeholder="Ingrese dirección")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb")
+                                                        span(class="text-1-line") Celular (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        input(type="text" class="input_form_perfil" maxlength="100" name="name_celular" placeholder="Ingrese dirección")
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                                        span(class="text-2-line ") Estado civil (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        select(class="input_form_perfil select_color" name="name_estado_civil")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                                        span(class="text-2-line ") País (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        select(class="input_form_perfil select_color" name="name_pais")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                                        span(class="text-2-line ") Departamento (*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        select(class="input_form_perfil select_color" name="name_departamento")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                                        span(class="text-2-line ") Localidad / Barrio(*)
+                                                    div(class="col-sm-6 col-md-7 spb align-middle")
+                                                        select(class="input_form_perfil select_color" name="name_localidad")
+                                                            option(value="") Seleccione
+                                                            option(value="1") Informática
+                                                            option(value="2") Sistemas
+                                                            option(value="3") Idiomas
+                                                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+                                                div(class="row smb subtitle-form-gallito-registro") Foto de Perfil
+                                                div(class="row smb cont-file")
+                                                    div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                                    div(class="row smB col-sm-6 col-md-7 spb align-middle")
+                                                        div(class="content-img-upload spb col-xs-12 col-sm-6 col-md-6")
+                                                            label(class="cargar" for="archivo")
+                                                                span Seleccionar archivo
+                                                                    input(type="file" id="archivo" name="archivo")
+                                                            div(class="text-img-warning")
+                                                                i(class="fa fa-exclamation-triangle" aria-hidden="true")
+                                                                span(class="span-text-warning") Formatos permitidos: JPG, PNG.
+                                                            div(class="text-img-warning")
+                                                                i(class="fa fa-exclamation-triangle" aria-hidden="true")
+                                                                span(class="span-text-warning") Tamaño máximo: 500kb.
+                                                        div(class="content-img-upload spb col-xs-12 col-sm-6 col-md-6 align-right")
+                                                            div(class="contenedor-img-upload")
+                                                                span(class="text-gallito-img-upload") gallito.com
+                                                                img(id="image_upload_preview")
+                                                    div(class="col-sm-3 col-md-2 spb align-middle-text cont-module-error")
+                                                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                                        div(class="error-format text-2-line-error")
+            div(class="content-btn-form")
+                button(class="btn-form-gallito btn-gallit-green" id="btn-guardarDatos-finta") Guardar cambios
+            //************** formulario gallito **************//
+block script
+    script(src='./clases.js')
+    script(src='./datosPersonales.js')
