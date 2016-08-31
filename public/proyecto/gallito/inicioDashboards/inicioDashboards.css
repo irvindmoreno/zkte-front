@@ -1,5 +1,4 @@
-//************** header gallitoDashboard **************//
-rutaImagenes='../../../../static/imagenes/no_sprite/'
+/************Layout****************/
 @font-face {
   font-family: "calisto";
   src: url("../../../../componentes/fonts/calisto/calisto.eot") format("embedded-opentype"), url("../../../../componentes/fonts/calisto/calisto.woff") format("woff"), url("../../../../componentes/fonts/calisto/calisto.ttf") format("truetype");
@@ -13,7 +12,7 @@ rutaImagenes='../../../../static/imagenes/no_sprite/'
     background: #823333;
   }
   50% {
-    background: #e26a39;    
+    background: #e26a39;
   }
   100% {
     background: #823333;
@@ -24,7 +23,7 @@ rutaImagenes='../../../../static/imagenes/no_sprite/'
     background: #823333;
   }
   50% {
-    background: #e26a39;    
+    background: #e26a39;
   }
   100% {
     background: #823333;
@@ -35,915 +34,1135 @@ rutaImagenes='../../../../static/imagenes/no_sprite/'
     background: #823333;
   }
   50% {
-    background: #e26a39;    
+    background: #e26a39;
   }
   100% {
     background: #823333;
   }
 }
-@keyframes animationButton {
-  0% {
-    background: #823333;
-  }
-  50% {
-    background: #e26a39;    
-  }
-  100% {
-    background: #823333;
-  }
+header {
+  background: #353e4a;
+  height: 5em;
 }
-header
-    background:#353e4a;
-    height:5em;
-.smb
-    margin-left 0em
-    margin-right 0em
-.spb
-    padding-left 0em
-    padding-right 0em
-.contenedor-project-filter
-    text-align right
-.contenedor-filtro-proyecto
-    padding 0em 5em 0em 1.5em
-a:hover
-    text-decoration:none
-.headerDashboard
-    font-family calibri
-.relative
-    position relative
-.inline-block-top
-    display:inline-block
-    vertical-align:top
-.inline-block-middle
-    display:inline-block
-    vertical-align:middle
-.gallito-icon
-    position: absolute;
-    left: 1em;
-    top: 0.2em;
-    font-size: 2.4em;
-.gallito-register-container
-    position: absolute;
-    right: 1em;
-    top: 1.7em;
-.gallito-icon-title
-    color white;
-    font-family calisto
-.gallito-icon-com
-    color:#93b4d9;
-    font-family calisto
-.gallito-register-botton input
-    background: #52749a;
-    color: white;
-    border: navajowhite;
-    outline: none;
-    -webkit-appearance: none;
-    padding: 0.3em 1em;
-.gallito-register-botton input:hover    
-    animation: animationButton 1.5s infinite;
-.gallito-text-blue
-    color: white;
-    border-right 1px solid white
-    padding-right 0.8em
-    font-size 1.1em
-    transition all ease 0.3s
-.gallito-text-white
-    color: #93b4d9;
-    padding 0em 0.5em
-    transition all ease 0.3s
-.gallito-register-text
-    margin-left 0.5em
-    margin-top -0.4em
-.gallito-text-blue:hover
-    color #e26a39
-.gallito-text-white:hover
-    color #e26a39
-.borde-left-white
-    font-family: calibri;
-    color: white;
-    padding: 0em 0.4em;
-    margin-left: 0.4em;
-    border-left: 1px solid white;
-    font-size: 0.7em;
-    font-weight: bold;
-.text-welcome
-    color white
-    font-size 1.3em
-    border-right 1px solid white
-    padding 0em 0.5em 0em 0em
-@media screen and (max-width: 761px)
-    .gallito-icon,.gallito-register-container
-        position initial
-        text-align center
-    .contenedor-all-circle-gallitoPerfil-icon
-        padding-bottom 0em !important
-    header
-        height inherit
-        padding 0.5em
-@media screen and (max-width: 439px)
-    .text-welcome
-        border-right none
-    .headerDashboard
-        font-size 13px
-//************** header gallitoDashboard **************//
-/************** footer gallito **************/
-.footer-gallit-block-1
-    background: #3a404b;
-    color: white;
-.bloq-foot
-    padding: 1em 3%;
-    border-right: 1px dashed white;
-.footer-gallito-title
-    color #93B4D9
-    font-weight bold
-    font-size 1.3em
-    margin-bottom 0.5em
-.bloq-foot-left
-    padding-left 11%
-.leter-footer-gallito
-    font-size 14px
-.block-2-letter
-    padding: 1em 2em;
-    font-size: 14px;
-    color #585858
-.logo-footer-galito
-    font-size 3.1em
-    font-family calisto
-    line-height 1.2em
-.gallito-letter-logo-footer-first
-    color #353E4A
-.gallito-letter-logo-footer-last
-    color #93B5DA
-.color-fot-gallito-letter
-    color #353E4A
-.redes-sociales-footer-gallito
-    text-align right
-.redes-sociales-footer-gallito i
-    font-size: 2em;
-    margin-right: 0.5em;
-.smb
-    margin-right 0px
-    margin-left 0px
-.footer-gallit-block-1
-    font-family Arial
-.text-gray-suave
-    color #808184
-.inline-block
-    display inline-block
-.link-redes-sociales-gallito-footer
-    margin-left 0.5em;
-    margin-top 1em
-.simrdashed
-    border-right none
-.contenedor-layout
-    max-width 1100px !important
-    margin 0 auto
-@media (max-width: 991px)
-    .bloq-foot-3-1
-        padding-left 11%
-    .simr-dashed-2
-        border-right none
-@media (max-width: 768px)       
-    .block-2-letter
-        text-align center
-@media (max-width: 542px)
-    .pad-mob-foot
-        padding-left 20%
-        width 100%
-    .simr-dashed-1,.simr-dashed-3
-        border-right none
-/************** footer gallito **************/
-//************** filtro gallito **************//
-blue=#353e4a
-blueLight=#366599
-body
-    margin 0
-    font-size 16px
-.contenedor-layout
-    max-width inherit
-.contenedor-icon-gallito-perfil
-    margin-top 1em
-.icon-inline
-    display inline-block
-    vertical-align middle
-.icon-pointer
-    cursor pointer
-.contenedor-filtro-gallito
-    background: #ebedeb;
-    width: 16em;
-    display: inline-block;
-    padding 1em 0em
-    font-family Arial
-    text-align left
-    height inherit
-    height 38em
-.hideDiv
-    display none
-.bloque-filtro
-    padding: 0.3em 1em;
-.title-block-filtro
-    margin-left 0.8em
-    color: blue;
-    text-decoration none
-    transition all ease 0.3s
-    vertical-align middle
-    display inline-block
-    cursor pointer
-    font-family: Arial;
-    font-size 0.9em
-    font-weight bold
-.title-block-filtro:hover
-    text-decoration none
-.avisos-left
-    margin-left 1em
-.block-desplegable-rectangle
-    background: #366599;
-    color: white;
-    padding: 0.3em 1em;
-    margin-top: 0.2em;
-    cursor pointer
-    transition all ease 0.3s
-.block-desplegable-rectangle:hover
-    background blue
-.cl-white
-    color white
-    font-weight normal
-.icon-up-filter,.icon-down-filter
-    font-size 2em
-    float right
-    margin-top -0.2em
-.block-dashed
-    padding: 0.5em 1em;
-    border-bottom: 1px dotted #b3b3b3;
-.block-dashed-title
-    color #366599
-    font-weight bold
-    font-size 0.9em
-.filtro-subcat
-    padding 0.2em 0em 0.2em 3em
-.link-subcat
-    font-size 0.9em
-    color #353e4a
-    cursor pointer
-.bg-blue
-    background blue
-    transition all ease 0.3s
-.bg-blue:hover
-    background blueLight
-@media screen and (max-width: 956px)
-    .contenedor-project-filter
-        width 100%
-    .contenedor-filtro-gallito
-        width 100%
-    .contenedor-filtro-gallito
-        padding-bottom 0.5em
-    .contenedor-filtro-proyecto
-        width 100%
-        padding 0em 0em 0em 0em
-    .contenedor-filtro-gallito
-        height inherit
-        padding-bottom 1.5em
-    footer
-        margin-top 1em
-//************** filtro gallito **************//
-//************** icons gallitoPerfil **************//
-blueDark=#353e4a
-green=#009933
-yellow=#ffcc33
-red=#cc0000
-
-.icon-inline
-    display inline-block
-    vertical-align middle
-.icon-pointer
-    cursor pointer
-body
-    margin 0
-    font-size 16px
-.contenedor-title-borde
-    position relative
-    font-family calibri
-.title-text-borde
-    font-weight bold
-    color blueDark !important
-    font-size 1.3em !important
-    padding-right 0.5em !important
-    background white !important
-    display inline-block !important
-.borde-inferior-titulo
-    background blueDark
-    height 0.1em
-    width 100%
-    position absolute
-    bottom 8px;
-    z-index -1
-.circle-sup
-    display inline-block
-    height 4.8em
-    width 4.8em
-    border-radius 50%
-    padding 0.1em
-    background blueDark
-    transition all ease 0.3s
-.circle-interno
-    border 1px solid white
-    border-radius 50%
-    height 100%
-    width 100%
-    text-align center
-    padding-top 1em
-    background blueDark
-    transition all ease 0.3s
-.contenedor-icon-img-fallitoPerfil
-    cursor pointer
-    display inline-block
-    width 14%
-    min-width 7em
-    text-align center
-    margin-bottom 0.5em
-    transition all ease 0.3s
-.contenedor-icon-img-fallitoPerfil:hover
-    color blueLight !important
-.contenedor-all-circle-gallitoPerfil-icon
-    padding 1.5em 1em
-    text-align center
-.circle-text
-    font-family calibri
-    color blueDark
-    font-weight bold
-    margin-top 0.3em
-    transition all ease 0.3s
-.check-icon-view
-    margin 0 auto
-    margin-top -0.8em
-    transition all ease 0.4s
-.transalate-icon-efect
-    transform translate(0,6px)
-.transalate-icon-check
-    transform translate(0,-70px)
-.bg-yellow
-    background yellow
-.bg-green
-    background green
-.bg-red
-    background red
-.margin-icon-estudios
-    padding-top 0.8em
-.margin-icon-idomas
-    padding-top 0.6em
-.margin-icon-referencias
-    padding-top 0.7em
-.margin-icon-datos_personales
-    padding-top 1.2em
-.margin-icon-estudios_cv
-    padding-top 0.8em
-.bg-blueLight
-    background blueLight
-.color-blueLight
-    color blueLight
-//************** icons gallitoPerfil **************//
-//************** formulario gallito **************//
-blueDark=#353e4a
-blueLight=#527494
-redError=#ad3a3a
-colorLetterForm=#353e4a
-textarea
-    resize none
-    height 5em
-.icon-inline
-    display inline-block
-    vertical-align top
-.smb
-    margin-left 0px
-    margin-right 0px
-.spb
-    padding-right 0px
-    padding-left 0px
-body
-    margin 0
-    font-size 16px
-.contenedor-title-borde
-    position relative
-    font-family calibri
-.title-text-borde-2
-    color blueLight
-    font-size 1.3em
-    padding-right 0.5em
-    background white
-    display inline-block
-.borde-inferior-titulo
-    background blueLight
-    height 0.05em
-    width 100%
-    position absolute
-    bottom 8px;
-    z-index -1
-.label-form-gallito
-    font-weight normal
-    cursor pointer
-.label-form-gallito,#check_no_tengo_estudios
-    display inline-block
-    vertical-align middle
-    margin-bottom 0px
-#check_no_tengo_estudios
-    margin-top 1px
-    margin-left 0.5em
-.cont-file
-    padding 0.5em 0em
-    position relative
-.contenedor-formulario-gallito
-    font-family calibri
-.input_form_perfil
-    width 100%
-    outline none
-    padding 0.4em 0.8em
-    border 1px solid gray
-    background white
-.align-middle-text
-    margin-top 0.5em
-.error-format
-    color redError
-    margin-left 0.2em
-.icon-alert-left
-    margin-left 0.5em
-.cont-file
-    color colorLetterForm
-.text-2-line
-    width 6em
-    display inline-block
-    line-height 1
-.text-2-line-error
-    display inline-block
-    min-width 6em
-.select_color
-    color gray
-    cursor pointer
-.slecet-izquieda
-    padding-right 1em !important
-.slecet-derecha
-    padding-left 1em !important
-.pad-last-check
-    padding-top 0em
-.btn-form-gallito
-    border none
-    padding 0.4em 3em
-    color white
-    font-weight bold
-    margin-left 1em
-    cursor pointer
-.btn-gallit-ligth
-    background blueLight
-.btn-gallit-green
-    background #0cb570
-.content-btn-form
-    text-align right
-    padding-right 3em
-@media screen and (max-width: 768px)
-    .text-2-line
-        width 100%
-    .slecet-derecha
-        margin-top 1em
-        padding-left 0em !important
-    .slecet-izquieda
-        padding-right 0em !important
-    .cont-module-error
-        margin-top 0em
-    .icon-alert-left
-        margin-left 0em
-    .contenedor-formulario-gallito
-        padding 0em 1em
-    .align-middle-text
-        margin-top 0em
-    .cont-file
-        padding 0.5em 0em
-    .contenedor-paginacion
-        padding 0em 1em
-@media screen and (max-width: 573px)
-    .content-btn-form
-        text-align center
-    #btn-guardarDatos-finta,#addEstudio
-        width 100%
-        display inline-block
-        margin-top 0.3em
-    .btn-form-gallito
-        margin-left 0em
-    .content-btn-form
-        padding-right 0em
-//************** formulario gallito **************//
-blueDark=#353e4a
-.contenedor-title-borde
-    position relative
-    font-family calibri
-.title-text-borde
-    font-weight bold
-    color blueDark !important
-    font-size 1.3em !important
-    padding-right 0.5em !important
-    background white !important
-    display inline-block !important
-.borde-inferior-titulo
-    background blueDark
-    height 0.1em
-    width 100%
-    position absolute
-    bottom 8px;
-    z-index -1
-.text-notificaciones
-    color blueLight
-    font-weight bold
-    padding 1em 0em
-    font-size 1.3em
-//************** formulario gallito **************//    
-/*******************slider form gallito*********/
-.owl-carousel
-  position relative
-  width 100%
-  -ms-touch-action pan-y
-  .owl-wrapper
-    display none
-    position relative
-    -webkit-transform translate3d(0px, 0px, 0px)
-    &:after
-      content "."
-      display block
-      clear both
-      visibility hidden
-      line-height 0
-      height 0
-  .owl-wrapper-outer
-      overflow hidden
-    position relative
-    width 100%
-    &.autoHeight
-      -webkit-transition height 500ms ease-in-out
-      -moz-transition height 500ms ease-in-out
-      -ms-transition height 500ms ease-in-out
-      -o-transition height 500ms ease-in-out
-      transition height 500ms ease-in-out
-  .owl-item
-    float left
-
-.owl-controls .owl-page,
-.owl-controls .owl-buttons div
-  cursor pointer
-
-.owl-controls
-  -webkit-user-select none
-  -khtml-user-select none
-  -moz-user-select none
-  -ms-user-select none
-  user-select none
-  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
-
-.grabbing
-  cursor url(grabbing.png) 8 8, move
-
-.owl-carousel  .owl-wrapper,
-.owl-carousel  .owl-item
-  -webkit-backface-visibility hidden
-  -moz-backface-visibility hidden
-  -ms-backface-visibility hidden
-  -webkit-transform translate3d(0,0,0)
-  -moz-transform translate3d(0,0,0)
-  -ms-transform translate3d(0,0,0)
-
-#owl-slider_3
-  .item
-    color #FFF
-    -webkit-border-radius 3px
-    -moz-border-radius 3px
-    border-radius 3px
-
-.customNavigation
-  text-align center
-  a
-    -webkit-user-select none
-    -khtml-user-select none
-    -moz-user-select none
-    -ms-user-select none
-    user-select none
-    -webkit-tap-highlight-color rgba(0, 0, 0, 0)
-
-.smB
-    margin-left 0px
-    margin-right 0px
-#slider_3_demo
-    position relative
-.arrow-prev i,.arrow-next i
-    font-size: 2em;
-    font-weight: bold;
-    color: #afb8c2;
-    cursor pointer
-    transition all ease 0.3s
-.arrow-transale-pagination
-    display inline-block
-    vertical-align middle
-.arrow-transale-pagination i
-    color #366599
-.pagination-formulario
-    padding: 0.2em 0.6em;
-    border: none;
-    outline none
-    margin-left 0.5em
-.pagination-formulario:first-child
-    margin-left 0em;
-.hideDiv
-    display none
-.active-pagination
-    background: #0cb570;
-    color white
-.item-gallitoB
-    position relative
-.imagen-slider-empresa
-    width 100%
-    cursor pointer
-    transition all ease 0.5s
-.error-validacion
-    border 1px solid #ad3a3a
-.error
-    font-weight normal
-.slider-hover-title
-    padding 1em
-    font-weight bold
-.slider-hover-description
-    padding: 0em 1em;
-    font-style: italic;
-.container-slider-empresa-img,.container-slider-empresa-title
-    display inline-block
-    vertical-align top
-.container-slider-empresa-img img
-    width 74%
-.container-slider-empresa-img
-    height 5em
-    font-size 14px
-.container-slider-empresa-title
-    height: 5em;
-    text-align: left;
-    font-size: 14px;
-    text-align center
-
-.ofertas-laborales-text-slider
-    line-height 0
-.container-slider-empresa-img
-    border-bottom: 2px solid #c5c5c5;
-    border-top: none;
-    border-left: 2px solid #c5c5c5;
-.container-slider-empresa-title
-    border 2px solid #c5c5c5;
-    border-top: none;
-.spB
-    padding-right: 0px;
-    padding-left: 0px;
-.cont-hver-desc-slider
-    height 0px
-.owl-pagination
-    display: block;
-    height: 1em;
+.smb {
+  margin-left: 0em;
+  margin-right: 0em;
+}
+.spb {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+.contenedor-project-filter {
+  text-align: right;
+}
+.contenedor-filtro-proyecto {
+  padding: 0em 5em 0em 1.5em;
+}
+a:hover {
+  text-decoration: none;
+}
+.headerDashboard {
+  font-family: calibri;
+}
+.relative {
+  position: relative;
+}
+.inline-block-top {
+  display: inline-block;
+  vertical-align: top;
+}
+.inline-block-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+.gallito-icon {
+  position: absolute;
+  left: 1em;
+  top: 0.2em;
+  font-size: 2.4em;
+}
+.gallito-register-container {
+  position: absolute;
+  right: 1em;
+  top: 1.7em;
+}
+.gallito-icon-title {
+  color: #fff;
+  font-family: calisto;
+}
+.gallito-icon-com {
+  color: #93b4d9;
+  font-family: calisto;
+}
+.gallito-register-botton input {
+  background: #52749a;
+  color: #fff;
+  border: #ffdead;
+  outline: none;
+  -webkit-appearance: none;
+  padding: 0.3em 1em;
+}
+.gallito-register-botton input:hover {
+  animation: animationButton 1.5s infinite;
+}
+.gallito-text-blue {
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding-right: 0.8em;
+  font-size: 1.1em;
+  transition: all ease 0.3s;
+}
+.gallito-text-white {
+  color: #93b4d9;
+  padding: 0em 0.5em;
+  transition: all ease 0.3s;
+}
+.gallito-register-text {
+  margin-left: 0.5em;
+  margin-top: -0.4em;
+}
+.gallito-text-blue:hover {
+  color: #e26a39;
+}
+.gallito-text-white:hover {
+  color: #e26a39;
+}
+.borde-left-white {
+  font-family: calibri;
+  color: #fff;
+  padding: 0em 0.4em;
+  margin-left: 0.4em;
+  border-left: 1px solid #fff;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.text-welcome {
+  color: #fff;
+  font-size: 1.3em;
+  border-right: 1px solid #fff;
+  padding: 0em 0.5em 0em 0em;
+}
+@media screen and (max-width: 761px) {
+  .gallito-icon,
+  .gallito-register-container {
+    position: initial;
     text-align: center;
-    padding 1em
-.owl-page
-    display: inline-block;
-    height: 1em;
-    width: 1em;
-    background: #5e7397;
-    border-radius: 50%;
-    margin-right 0.5em
-.owl-page.active
-    background #976e5e
-.owl-buttons
-    display none
-.owl-pagination
-    display none
-.arrow-next i:hover,.arrow-next i:hover
-    color #5e7397
-.container-btn-green
-    color: white;
-    background: #007f4c;
-    width: 80%;
-    margin: 0 auto;
-    font-weight: bold;
-    text-align: center;
-    padding: 0.2em;
-    font-size: 1.5em;
-    border-radius: 0.2em;
-    margin-bottom 2em
-.cuadro-todobusco-slider-casabusco    
-    border: 6px solid #ffa200;
-    border-radius: 21px;
-    overflow: hidden;
-    height 12.8em
-.icon-todobusco-slider
-    position: absolute;
-    left: -1px;
-    top: 6px;
-    height: 17%;
-.bl-slider
-    border-right: 3px solid #ffa200;
-    position: absolute;
-    top: 24px;
-    height: 5em;
-    width: 1em;
-    right: 8px;
-.br-slider
-    border-right: 3px solid #ffa200;
-    position: absolute;
-    top: 129px;
-    height: 5em;
-    width: 1em;
-    left: -5px;
-.title-slider-todobusco
-    color: #007f4c;
+  }
+  .contenedor-all-circle-gallitoPerfil-icon {
+    padding-bottom: 0em !important;
+  }
+  header {
+    height: inherit;
     padding: 0.5em;
-    font-weight: bold;
-.text-slider-todobusco
-    color #424242
-.precio-slider
-    background: #007f4c;
-    padding: 0.1em 1em;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 0.5em;
-    font-weight: bold;
-    font-size: 1.2em;
-.item-gallitoB
-    padding 1em
-    display inline-block
-    transition all ease 0.3s
-.item-gallitoB:hover
-    transform scale(1.1)
-.bgred-todobusco
-    background #d12626
-.borderojo-todobusco  
-    border: 6px solid #d12626;
-.br-slider-red
-    border-right 3px solid #d12626;
-.borde-azul-todobusco  
-    border: 6px solid #0e5682;
-.br-slider-azul
-    border-right 3px solid #0e5682;
-.borde-green-todobusco  
-    border: 6px solid #b9bd33;
-.br-slider-green
-    border-right 3px solid #b9bd33;
-.label-form-gallito
-    color #333
-.icon-translate
-    transition all ease 0.3s
-@media screen and (max-width: 600px)    
-    .imagen-slider-empresa
-        height 100%    
-    .cuadro-todobusco-slider-casabusco
-        background #efb762
-    .borde-azul-todobusco
-        background #337dab
-    .borde-green-todobusco
-        background #ccd06b
-    .borderojo-todobusco
-        background rgb(216, 163, 163)
-@media screen and (max-width: 542px)
-    .post-gallito-title-txt
-        font-size 1.1em
-        text-align center
-    .post-gallito-title
-        margin-bottom 0em
-    .contenedor-post-gallito
-        border-top: 1px solid #808080;
-        padding: 1em 0em 0em 0em
-@media screen and (max-width: 390px)
-    .imagen-slider-empresa
-        height initial
-/*******************slider form gallito*********/
-colorDeLetra=#4e4444
-colorDeBorde=#4e4444
-background=white
-ancho=150px
-alto=30px
-tamanioLetra=18px
-input[type="file"]
-    z-index 999
-    line-height 0
-    font-size 50px
-    position absolute
-    opacity 0
-    margin 0
-    padding 0
-    left 0
-.cargar
+  }
+}
+@media screen and (max-width: 439px) {
+  .text-welcome {
+    border-right: none;
+  }
+  .headerDashboard {
+    font-size: 13px;
+  }
+}
+.footer-gallit-block-1 {
+  background: #3a404b;
+  color: #fff;
+}
+.bloq-foot {
+  padding: 1em 3%;
+  border-right: 1px dashed #fff;
+}
+.footer-gallito-title {
+  color: #93b4d9;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+.bloq-foot-left {
+  padding-left: 11%;
+}
+.leter-footer-gallito {
+  font-size: 14px;
+}
+.block-2-letter {
+  padding: 1em 2em;
+  font-size: 14px;
+  color: #585858;
+}
+.logo-footer-galito {
+  font-size: 3.1em;
+  font-family: calisto;
+  line-height: 1.2em;
+}
+.gallito-letter-logo-footer-first {
+  color: #353e4a;
+}
+.gallito-letter-logo-footer-last {
+  color: #93b5da;
+}
+.color-fot-gallito-letter {
+  color: #353e4a;
+}
+.redes-sociales-footer-gallito {
+  text-align: right;
+}
+.redes-sociales-footer-gallito i {
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+.smb {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.footer-gallit-block-1 {
+  font-family: Arial;
+}
+.text-gray-suave {
+  color: #808184;
+}
+.inline-block {
+  display: inline-block;
+}
+.link-redes-sociales-gallito-footer {
+  margin-left: 0.5em;
+  margin-top: 1em;
+}
+.simrdashed {
+  border-right: none;
+}
+.contenedor-layout {
+  max-width: 1100px !important;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .bloq-foot-3-1 {
+    padding-left: 11%;
+  }
+  .simr-dashed-2 {
+    border-right: none;
+  }
+}
+@media (max-width: 768px) {
+  .block-2-letter {
     text-align: center;
-    background-color: #4d8ac8;
-    color: white;
+  }
+}
+@media (max-width: 542px) {
+  .pad-mob-foot {
+    padding-left: 20%;
+    width: 100%;
+  }
+  .simr-dashed-1,
+  .simr-dashed-3 {
+    border-right: none;
+  }
+}
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.contenedor-layout {
+  max-width: inherit;
+}
+.contenedor-icon-gallito-perfil {
+  margin-top: 1em;
+}
+.icon-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-pointer {
+  cursor: pointer;
+}
+.contenedor-filtro-gallito {
+  background: #ebedeb;
+  width: 16em;
+  display: inline-block;
+  padding: 1em 0em;
+  font-family: Arial;
+  text-align: left;
+  height: inherit;
+  height: 38em;
+}
+.hideDiv {
+  display: none;
+}
+.bloque-filtro {
+  padding: 0.3em 1em;
+}
+.title-block-filtro {
+  margin-left: 0.8em;
+  color: #353e4a;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.title-block-filtro:hover {
+  text-decoration: none;
+}
+.avisos-left {
+  margin-left: 1em;
+}
+.block-desplegable-rectangle {
+  background: #366599;
+  color: #fff;
+  padding: 0.3em 1em;
+  margin-top: 0.2em;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.block-desplegable-rectangle:hover {
+  background: #353e4a;
+}
+.cl-white {
+  color: #fff;
+  font-weight: normal;
+}
+.icon-up-filter,
+.icon-down-filter {
+  font-size: 2em;
+  float: right;
+  margin-top: -0.2em;
+}
+.block-dashed {
+  padding: 0.5em 1em;
+  border-bottom: 1px dotted #b3b3b3;
+}
+.block-dashed-title {
+  color: #366599;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.filtro-subcat {
+  padding: 0.2em 0em 0.2em 3em;
+}
+.link-subcat {
+  font-size: 0.9em;
+  color: #353e4a;
+  cursor: pointer;
+}
+.bg-blue {
+  background: #353e4a;
+  transition: all ease 0.3s;
+}
+.bg-blue:hover {
+  background: #366599;
+}
+@media screen and (max-width: 956px) {
+  .contenedor-project-filter {
+    width: 100%;
+  }
+  .contenedor-filtro-gallito {
+    width: 100%;
+  }
+  .contenedor-filtro-gallito {
+    padding-bottom: 0.5em;
+  }
+  .contenedor-filtro-proyecto {
+    width: 100%;
+    padding: 0em 0em 0em 0em;
+  }
+  .contenedor-filtro-gallito {
+    height: inherit;
+    padding-bottom: 1.5em;
+  }
+  footer {
+    margin-top: 1em;
+  }
+}
+.icon-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-pointer {
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.contenedor-title-borde {
+  position: relative;
+  font-family: calibri;
+}
+.title-text-borde {
+  font-weight: bold;
+  color: #353e4a !important;
+  font-size: 1.3em !important;
+  padding-right: 0.5em !important;
+  background: #fff !important;
+  display: inline-block !important;
+}
+.borde-inferior-titulo {
+  background: #353e4a;
+  height: 0.1em;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  z-index: -1;
+}
+.circle-sup {
+  display: inline-block;
+  height: 4.8em;
+  width: 4.8em;
+  border-radius: 50%;
+  padding: 0.1em;
+  background: #353e4a;
+  transition: all ease 0.3s;
+}
+.circle-interno {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+  background: #353e4a;
+  transition: all ease 0.3s;
+}
+.contenedor-icon-img-fallitoPerfil {
+  cursor: pointer;
+  display: inline-block;
+  width: 14%;
+  min-width: 7em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  transition: all ease 0.3s;
+}
+.contenedor-icon-img-fallitoPerfil:hover {
+  color: #366599 !important;
+}
+.contenedor-all-circle-gallitoPerfil-icon {
+  padding: 1.5em 1em;
+  text-align: center;
+}
+.circle-text {
+  font-family: calibri;
+  color: #353e4a;
+  font-weight: bold;
+  margin-top: 0.3em;
+  transition: all ease 0.3s;
+}
+.check-icon-view {
+  margin: 0 auto;
+  margin-top: -0.8em;
+  transition: all ease 0.4s;
+}
+.transalate-icon-efect {
+  transform: translate(0, 6px);
+}
+.transalate-icon-check {
+  transform: translate(0, -70px);
+}
+.bg-yellow {
+  background: #fc3;
+}
+.bg-green {
+  background: #093;
+}
+.bg-red {
+  background: #c00;
+}
+.margin-icon-estudios {
+  padding-top: 0.8em;
+}
+.margin-icon-idomas {
+  padding-top: 0.6em;
+}
+.margin-icon-referencias {
+  padding-top: 0.7em;
+}
+.margin-icon-datos_personales {
+  padding-top: 1.2em;
+}
+.margin-icon-estudios_cv {
+  padding-top: 0.8em;
+}
+.bg-blueLight {
+  background: #366599;
+}
+.color-blueLight {
+  color: #366599;
+}
+textarea {
+  resize: none;
+  height: 5em;
+}
+.icon-inline {
+  display: inline-block;
+  vertical-align: top;
+}
+.smb {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.spb {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.contenedor-title-borde {
+  position: relative;
+  font-family: calibri;
+}
+.title-text-borde-2 {
+  color: #527494;
+  font-size: 1.3em;
+  padding-right: 0.5em;
+  background: #fff;
+  display: inline-block;
+}
+.borde-inferior-titulo {
+  background: #527494;
+  height: 0.05em;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  z-index: -1;
+}
+.label-form-gallito {
+  font-weight: normal;
+  cursor: pointer;
+}
+.label-form-gallito,
+#check_no_tengo_estudios {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0px;
+}
+#check_no_tengo_estudios {
+  margin-top: 1px;
+  margin-left: 0.5em;
+}
+.cont-file {
+  padding: 0.5em 0em;
+  position: relative;
+}
+.contenedor-formulario-gallito {
+  font-family: calibri;
+}
+.input_form_perfil {
+  width: 100%;
+  outline: none;
+  padding: 0.4em 0.8em;
+  border: 1px solid #808080;
+  background: #fff;
+}
+.align-middle-text {
+  margin-top: 0.5em;
+}
+.error-format {
+  color: #ad3a3a;
+  margin-left: 0.2em;
+}
+.icon-alert-left {
+  margin-left: 0.5em;
+}
+.cont-file {
+  color: #353e4a;
+}
+.text-2-line {
+  width: 6em;
+  display: inline-block;
+  line-height: 1;
+}
+.text-2-line-error {
+  display: inline-block;
+  min-width: 6em;
+}
+.select_color {
+  color: #808080;
+  cursor: pointer;
+}
+.slecet-izquieda {
+  padding-right: 1em !important;
+}
+.slecet-derecha {
+  padding-left: 1em !important;
+}
+.pad-last-check {
+  padding-top: 0em;
+}
+.btn-form-gallito {
+  border: none;
+  padding: 0.4em 3em;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1em;
+  cursor: pointer;
+}
+.btn-gallit-ligth {
+  background: #527494;
+}
+.btn-gallit-green {
+  background: #0cb570;
+}
+.content-btn-form {
+  text-align: right;
+  padding-right: 3em;
+}
+@media screen and (max-width: 768px) {
+  .text-2-line {
+    width: 100%;
+  }
+  .slecet-derecha {
+    margin-top: 1em;
+    padding-left: 0em !important;
+  }
+  .slecet-izquieda {
+    padding-right: 0em !important;
+  }
+  .cont-module-error {
+    margin-top: 0em;
+  }
+  .icon-alert-left {
+    margin-left: 0em;
+  }
+  .contenedor-formulario-gallito {
+    padding: 0em 1em;
+  }
+  .align-middle-text {
+    margin-top: 0em;
+  }
+  .cont-file {
+    padding: 0.5em 0em;
+  }
+  .contenedor-paginacion {
+    padding: 0em 1em;
+  }
+}
+@media screen and (max-width: 573px) {
+  .content-btn-form {
+    text-align: center;
+  }
+  #btn-guardarDatos-finta,
+  #addEstudio {
+    width: 100%;
     display: inline-block;
-    border-radius: 3px;
-    font-size: 1em;
-    line-height: 1.6em;
-    cursor: pointer;
-    font-weight: normal;
-    padding: 0.2em 1em;
-.contenido-banner-registro_aviso
-    background-image url(rutaImagenes+"gallito/baner_empresa.jpg")
-    height: 8em;
-    background-position-y: -6.5em;
-    background-size 100%
-.contenido-banner-registro_aviso-text
-    font-family: calibri;
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
-    background: rgba(0, 0, 0, 0.88);
-    height: 4em;
+    margin-top: 0.3em;
+  }
+  .btn-form-gallito {
+    margin-left: 0em;
+  }
+  .content-btn-form {
+    padding-right: 0em;
+  }
+}
+.contenedor-title-borde {
+  position: relative;
+  font-family: calibri;
+}
+.title-text-borde {
+  font-weight: bold;
+  color: #353e4a !important;
+  font-size: 1.3em !important;
+  padding-right: 0.5em !important;
+  background: #fff !important;
+  display: inline-block !important;
+}
+.borde-inferior-titulo {
+  background: #353e4a;
+  height: 0.1em;
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  z-index: -1;
+}
+.text-notificaciones {
+  color: #527494;
+  font-weight: bold;
+  padding: 1em 0em;
+  font-size: 1.3em;
+}
+.owl-carousel {
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+}
+.owl-carousel position relative {
+  width: 100%;
+}
+.owl-carousel position relative.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.grabbing {
+  cursor: url("grabbing.png") 8 8, move;
+}
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+#owl-slider_3 .item {
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.customNavigation {
+  text-align: center;
+}
+.customNavigation a {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.smB {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#slider_3_demo {
+  position: relative;
+}
+.arrow-prev i,
+.arrow-next i {
+  font-size: 2em;
+  font-weight: bold;
+  color: #afb8c2;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.arrow-transale-pagination {
+  display: inline-block;
+  vertical-align: middle;
+}
+.arrow-transale-pagination i {
+  color: #366599;
+}
+.pagination-formulario {
+  padding: 0.2em 0.6em;
+  border: none;
+  outline: none;
+  margin-left: 0.5em;
+}
+.pagination-formulario:first-child {
+  margin-left: 0em;
+}
+.hideDiv {
+  display: none;
+}
+.active-pagination {
+  background: #0cb570;
+  color: #fff;
+}
+.item-gallitoB {
+  position: relative;
+}
+.imagen-slider-empresa {
+  width: 100%;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.error-validacion {
+  border: 1px solid #ad3a3a;
+}
+.error {
+  font-weight: normal;
+}
+.slider-hover-title {
+  padding: 1em;
+  font-weight: bold;
+}
+.slider-hover-description {
+  padding: 0em 1em;
+  font-style: italic;
+}
+.container-slider-empresa-img,
+.container-slider-empresa-title {
+  display: inline-block;
+  vertical-align: top;
+}
+.container-slider-empresa-img img {
+  width: 74%;
+}
+.container-slider-empresa-img {
+  height: 5em;
+  font-size: 14px;
+}
+.container-slider-empresa-title {
+  height: 5em;
+  text-align: left;
+  font-size: 14px;
+  text-align: center;
+}
+.ofertas-laborales-text-slider {
+  line-height: 0;
+}
+.container-slider-empresa-img {
+  border-bottom: 2px solid #c5c5c5;
+  border-top: none;
+  border-left: 2px solid #c5c5c5;
+}
+.container-slider-empresa-title {
+  border: 2px solid #c5c5c5;
+  border-top: none;
+}
+.spB {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.cont-hver-desc-slider {
+  height: 0px;
+}
+.owl-pagination {
+  display: block;
+  height: 1em;
+  text-align: center;
+  padding: 1em;
+}
+.owl-page {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background: #5e7397;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+.owl-page.active {
+  background: #976e5e;
+}
+.owl-buttons {
+  display: none;
+}
+.owl-pagination {
+  display: none;
+}
+.arrow-next i:hover {
+  color: #5e7397;
+}
+.container-btn-green {
+  color: #fff;
+  background: #007f4c;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.2em;
+  font-size: 1.5em;
+  border-radius: 0.2em;
+  margin-bottom: 2em;
+}
+.cuadro-todobusco-slider-casabusco {
+  border: 6px solid #ffa200;
+  border-radius: 21px;
+  overflow: hidden;
+  height: 12.8em;
+}
+.icon-todobusco-slider {
+  position: absolute;
+  left: -1px;
+  top: 6px;
+  height: 17%;
+}
+.bl-slider {
+  border-right: 3px solid #ffa200;
+  position: absolute;
+  top: 24px;
+  height: 5em;
+  width: 1em;
+  right: 8px;
+}
+.br-slider {
+  border-right: 3px solid #ffa200;
+  position: absolute;
+  top: 129px;
+  height: 5em;
+  width: 1em;
+  left: -5px;
+}
+.title-slider-todobusco {
+  color: #007f4c;
+  padding: 0.5em;
+  font-weight: bold;
+}
+.text-slider-todobusco {
+  color: #424242;
+}
+.precio-slider {
+  background: #007f4c;
+  padding: 0.1em 1em;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.item-gallitoB {
+  padding: 1em;
+  display: inline-block;
+  transition: all ease 0.3s;
+}
+.item-gallitoB:hover {
+  transform: scale(1.1);
+}
+.bgred-todobusco {
+  background: #d12626;
+}
+.borderojo-todobusco {
+  border: 6px solid #d12626;
+}
+.br-slider-red {
+  border-right: 3px solid #d12626;
+}
+.borde-azul-todobusco {
+  border: 6px solid #0e5682;
+}
+.br-slider-azul {
+  border-right: 3px solid #0e5682;
+}
+.borde-green-todobusco {
+  border: 6px solid #b9bd33;
+}
+.br-slider-green {
+  border-right: 3px solid #b9bd33;
+}
+.label-form-gallito {
+  color: #333;
+}
+.icon-translate {
+  transition: all ease 0.3s;
+}
+@media screen and (max-width: 600px) {
+  .imagen-slider-empresa {
+    height: 100%;
+  }
+  .cuadro-todobusco-slider-casabusco {
+    background: #efb762;
+  }
+  .borde-azul-todobusco {
+    background: #337dab;
+  }
+  .borde-green-todobusco {
+    background: #ccd06b;
+  }
+  .borderojo-todobusco {
+    background: #d8a3a3;
+  }
+}
+@media screen and (max-width: 542px) {
+  .post-gallito-title-txt {
+    font-size: 1.1em;
     text-align: center;
-    padding-top: 1.2em;
-//************** tabs gallito **************//
-body
-    margin 0
-    font-size 16px
-
-backgroundNumero=#3a7e6d
-colorNumero=white
-backgroundPestania=#b4b4b4
-bordePestania=#8A8A8A
-hoverPestaniaBackground=#DEE0E2
-colorContenido=#777
-.contenedor-tab-gallito
-    font-family calibri
-.desactivarTab
-    background backgroundPestania !important// backgroundPestania
-    &:hover
-        background hoverPestaniaBackground !important//hoverPestaniaBackground
-.activarTab
-    background hoverPestaniaBackground !important//hoverPestaniaBackground
-.TabsAsep
-    display block
-    & a
-        text-decoration none
-    &-Pestania
-        height inherit
-        padding 0.6em 0.5em
-        cursor pointer
-        transition all ease 0.3s
-        text-align center
-        &-Bloque2
-            margin-top 0.4em
-            text-align left
-        &-Ttulo
-            color backgroundNumero //backgroundNumero
-            &-Numero
-                background backgroundNumero //backgroundNumero
-                border-radius: 50%;
-                height: 1.5em;
-                width: 1.5em;
-                color: #fff;
-                margin-right: 0.3em;
-                font-weight: bold;
-                font-size: 1.5em;
-                padding-top 0.1em
-                text-align center
-        &-Contenido
-            color #35344a //colorContenido
-            font-weight bold
-            font-size 1.6em
-.TabsAsep-Pestania-1 .TabsAsep-Pestania-Ttulo-Numero
-    background #0cb570
-.TabsAsep-Pestania-Ttulo-Texto
-    font-size 1.4em
-    color #353e4a
-    line-height 0.8
-.smb
-    margin-right 0em
-    margin-left 0em
-.spb
-    padding-left 0em
-    padding-right 0em
-.TabsAsep-Pestania-Ttulo-Numero,.TabsAsep-Pestania-Bloque2
-    display inline-block
-    vertical-align middle
-.TabsAsep-Pestania-1 .TabsAsep-Pestania-Contenido
-    border-bottom 4px solid #0cb570
-.TabsAsep-Pestania-2 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-2 .TabsAsep-Pestania-Contenido,.TabsAsep-Pestania-3 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-3 .TabsAsep-Pestania-Contenido
-    color #929497
-@media screen and (max-width: 1100px)
-    .contenedor-tab-gallito
-        font-size 14px
-@media screen and (max-width: 942px)
-    .contenedor-tab-gallito
-        font-size 13px
-    .TabsAsep-Pestania-Contenido
-        font-size 1.4em
-@media screen and (max-width: 785px)
-    .contenedor-tab-gallito
-        font-size 12px
-    .TabsAsep-Pestania-Contenido
-        font-size 1.4em
-@media screen and (max-width: 726px)
-    .TabsAsep-Pestania-Bloque2
-        display block
-        text-align center
-@media screen and (max-width: 408px)
-    .TabsAsep-Pestania-Contenido
-        font-size 0.9em
-    .TabsAsep-Pestania-Ttulo-Texto
-        font-size 1.2em
-//************** tabs gallito **************//
+  }
+  .post-gallito-title {
+    margin-bottom: 0em;
+  }
+  .contenedor-post-gallito {
+    border-top: 1px solid #808080;
+    padding: 1em 0em 0em 0em;
+  }
+}
+@media screen and (max-width: 390px) {
+  .imagen-slider-empresa {
+    height: initial;
+  }
+}
+input[type="file"] {
+  z-index: 999;
+  line-height: 0;
+  font-size: 50px;
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+.cargar {
+  text-align: center;
+  background-color: #4d8ac8;
+  color: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 1em;
+  line-height: 1.6em;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 0.2em 1em;
+}
+.contenido-banner-registro_aviso {
+  background-image: url("../../../../static/imagenes/no_sprite/gallito/baner_empresa.jpg");
+  height: 8em;
+  background-position-y: -6.5em;
+  background-size: 100%;
+}
+.contenido-banner-registro_aviso-text {
+  font-family: calibri;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0,0,0,0.88);
+  height: 4em;
+  text-align: center;
+  padding-top: 1.2em;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.contenedor-tab-gallito {
+  font-family: calibri;
+}
+.desactivarTab {
+  background: #b4b4b4 !important;
+}
+.desactivarTab:hover {
+  background: #dee0e2 !important;
+}
+.activarTab {
+  background: #dee0e2 !important;
+}
+.TabsAsep {
+  display: block;
+}
+.TabsAsep a {
+  text-decoration: none;
+}
+.TabsAsep-Pestania {
+  height: inherit;
+  padding: 0.6em 0.5em;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  text-align: center;
+}
+.TabsAsep-Pestania-Bloque2 {
+  margin-top: 0.4em;
+  text-align: left;
+}
+.TabsAsep-Pestania-Ttulo {
+  color: #3a7e6d;
+}
+.TabsAsep-Pestania-Ttulo-Numero {
+  background: #3a7e6d;
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+  color: #fff;
+  margin-right: 0.3em;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 0.1em;
+  text-align: center;
+}
+.TabsAsep-Pestania-Contenido {
+  color: #35344a;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+.TabsAsep-Pestania-1 .TabsAsep-Pestania-Ttulo-Numero {
+  background: #0cb570;
+}
+.TabsAsep-Pestania-Ttulo-Texto {
+  font-size: 1.4em;
+  color: #353e4a;
+  line-height: 0.8;
+}
+.smb {
+  margin-right: 0em;
+  margin-left: 0em;
+}
+.spb {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+.TabsAsep-Pestania-Ttulo-Numero,
+.TabsAsep-Pestania-Bloque2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.TabsAsep-Pestania-1 .TabsAsep-Pestania-Contenido {
+  border-bottom: 4px solid #0cb570;
+}
+.TabsAsep-Pestania-2 .TabsAsep-Pestania-Ttulo-Texto,
+.TabsAsep-Pestania-2 .TabsAsep-Pestania-Contenido,
+.TabsAsep-Pestania-3 .TabsAsep-Pestania-Ttulo-Texto,
+.TabsAsep-Pestania-3 .TabsAsep-Pestania-Contenido {
+  color: #929497;
+}
+@media screen and (max-width: 1100px) {
+  .contenedor-tab-gallito {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 942px) {
+  .contenedor-tab-gallito {
+    font-size: 13px;
+  }
+  .TabsAsep-Pestania-Contenido {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 785px) {
+  .contenedor-tab-gallito {
+    font-size: 12px;
+  }
+  .TabsAsep-Pestania-Contenido {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 726px) {
+  .TabsAsep-Pestania-Bloque2 {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 408px) {
+  .TabsAsep-Pestania-Contenido {
+    font-size: 0.9em;
+  }
+  .TabsAsep-Pestania-Ttulo-Texto {
+    font-size: 1.2em;
+  }
+}
 .rect-auto,
 .c100.p51 .slice,
 .c100.p52 .slice,
@@ -1176,7 +1395,7 @@ colorContenido=#777
   border-radius: 50%;
   float: left;
   margin: 0 0.1em 0.1em 0;
-  background-color: #cccccc;
+  background-color: #ccc;
 }
 .c100 *,
 .c100 *:before,
@@ -1204,7 +1423,7 @@ colorContenido=#777
   width: 5em;
   line-height: 5em;
   font-size: 0.2em;
-  color: #cccccc;
+  color: #ccc;
   display: block;
   text-align: center;
   white-space: nowrap;
@@ -1966,17 +2185,17 @@ colorContenido=#777
   height: 0.92em;
 }
 .c100.dark {
-  background-color: #777777;
+  background-color: #777;
 }
 .c100.dark .bar,
 .c100.dark .fill {
   border-color: #c6ff00 !important;
 }
 .c100.dark > span {
-  color: #777777;
+  color: #777;
 }
 .c100.dark:after {
-  background-color: #666666;
+  background-color: #666;
 }
 .c100.dark:hover > span {
   color: #c6ff00;
@@ -2008,4 +2227,296 @@ colorContenido=#777
 }
 .c100.orange.dark:hover > span {
   color: #e08833;
+}
+@-moz-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+@-webkit-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+@-o-keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+@keyframes animationButton {
+  0% {
+    background: #823333;
+  }
+  50% {
+    background: #e26a39;
+  }
+  100% {
+    background: #823333;
+  }
+}
+/************Layout****************/
+.contenedor-layout {
+  max-width: inherit !important;
+}
+.borde-top-blue {
+  background: #353e4a;
+  height: 0.1em;
+  margin: 2em 0em;
+}
+.contenedor-imagen {
+  position: relative;
+  background: rgba(4,15,29,0.68);
+  overflow: hidden;
+  height: 20em;
+}
+.img-inicio {
+  position: absolute;
+  z-index: -1;
+  top: -7em;
+}
+.texo-dasboard-inicio {
+  color: #fff;
+}
+.texo-dasboard-inicio span {
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 1.2em;
+  top: 50%;
+  width: 78%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 11em;
+}
+.btn-ir-perfil {
+  display: block;
+  width: 8em;
+  background: #0cb570;
+  color: #fff;
+  text-align: center;
+  font-family: calibri;
+  font-size: 1.2em;
+  margin: 0 auto;
+  padding: 0.2em 0em;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.btn-ir-perfil:hover {
+  background: #098a55;
+  color: #fff;
+}
+.contenedor-borde {
+  position: relative;
+  border-bottom: 1px solid #527494;
+  margin-top: 1em;
+}
+.text-borde {
+  color: #527494;
+  font-size: 1.3em;
+  font-weight: bold;
+  position: absolute;
+  background: #fff;
+  display: inline-block;
+  width: 4.5em;
+}
+.contenedor-filtro-proyecto {
+  font-family: calibri;
+}
+.borde-inferior {
+  height: 1.2em;
+}
+.img-left {
+  width: 100%;
+}
+.cont-bloque-middle {
+  margin-top: 1em;
+}
+.cont-circle {
+  padding: 0em 0.5em;
+}
+.cont-texto-circle {
+  font-size: 1.2em;
+}
+.text-blue {
+  color: #527494;
+  font-weight: bold;
+}
+.c100:hover > span,
+.c100 > span {
+  color: #0cb570;
+}
+.circle-text {
+  line-height: 1;
+  font-weight: normal;
+  color: #808080;
+  margin-top: 0em;
+}
+.circle-bar {
+  height: 2em;
+  background: #0cb570;
+  width: 0.25em;
+}
+.circle-bar,
+.circle-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.circle-text {
+  width: 95%;
+}
+.circle-gray {
+  background: #ccc;
+}
+.text-circle {
+  padding-left: 0.5em;
+}
+.circle-text-one {
+  margin: 1em 0em;
+}
+.contenedor-img-left {
+  margin-top: 1em;
+  height: 12em;
+  overflow: hidden;
+  position: relative;
+}
+.img-right {
+  width: 100%;
+  position: absolute;
+  top: -4em;
+}
+.text-borde-postulaciones {
+  width: 8em;
+}
+.txt-no-post {
+  padding-top: 1em;
+  color: #808080;
+  height: 11em;
+}
+.btn-ver-todos {
+  background: #366599;
+  color: #fff;
+  padding: 0.2em 1em;
+  margin: 0 auto;
+  width: 8em;
+  text-align: center;
+  cursor: pointer;
+}
+.cont-bottom {
+  padding-bottom: 1em;
+  position: relative;
+}
+.txt-no-post-left {
+  border-right: 1px solid #527494;
+}
+.cadro-blanco {
+  position: absolute;
+  top: 2em;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  background: #fff;
+}
+.cont-bottom-left {
+  padding-right: 1em;
+}
+@media screen and (max-width: 1322px) {
+  .c100 {
+    font-size: 100px;
+    float: initial;
+    margin: 0 auto;
+  }
+  .text-circle {
+    width: 100%;
+  }
+  .content-circle-css {
+    width: 100%;
+  }
+  .circle-text {
+    font-size: 14px;
+  }
+  .circle-bar {
+    height: 1.1em;
+  }
+  .circle-text-one {
+    margin: 0.5em 0em;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .c100 {
+    font-size: 61px;
+  }
+}
+@media screen and (max-width: 1042px) {
+  .texo-dasboard-inicio span {
+    width: 87%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .circle-text-one {
+    margin-top: 1em;
+  }
+  .c100 {
+    font-size: 100px;
+  }
+  .txt-no-post-left {
+    border-right: none;
+  }
+  .img-left {
+    width: initial;
+  }
+  .cont-img-left {
+    width: 17%;
+  }
+  .contenedor-img-left {
+    display: none;
+  }
+}
+@media screen and (max-width: 956px) {
+  .cont-content {
+    padding: 0em 1em;
+  }
+}
+@media screen and (max-width: 878px) {
+  .cont-img-left {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cont-bloque-middle {
+    text-align: center;
+  }
+  .cont-img-left {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  .circle-text {
+    display: inline;
+  }
+}
+@media screen and (max-width: 614px) {
+  .texo-dasboard-inicio span {
+    width: 100%;
+  }
+  .texo-dasboard-inicio span {
+    margin-top: 10.5em;
+    font-size: 16px;
+  }
 }

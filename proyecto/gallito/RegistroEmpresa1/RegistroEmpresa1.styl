@@ -5,98 +5,8 @@ rutaImagenes='../../../../static/imagenes/no_sprite/'
 /************Layout****************/
 @import('../layout/layout.styl')
 /************Layout****************/
-//************** tabs gallito **************//
-body
-    margin 0
-    font-size 16px
 
-backgroundNumero=#3a7e6d
-colorNumero=white
-backgroundPestania=#b4b4b4
-bordePestania=#8A8A8A
-hoverPestaniaBackground=#DEE0E2
-colorContenido=#777
-.contenedor-tab-gallito
-    font-family calibri
-.desactivarTab
-    background backgroundPestania !important// backgroundPestania
-    &:hover
-        background hoverPestaniaBackground !important//hoverPestaniaBackground
-.activarTab
-    background hoverPestaniaBackground !important//hoverPestaniaBackground
-.TabsAsep
-    display block
-    & a
-        text-decoration none
-    &-Pestania
-        height inherit
-        padding 0.6em 0.5em
-        cursor pointer
-        transition all ease 0.3s
-        text-align center
-        &-Bloque2
-            margin-top 0.4em
-            text-align left
-        &-Ttulo
-            color backgroundNumero //backgroundNumero
-            &-Numero
-                background backgroundNumero //backgroundNumero
-                border-radius: 50%;
-                height: 1.5em;
-                width: 1.5em;
-                color: #fff;
-                margin-right: 0.3em;
-                font-weight: bold;
-                font-size: 1.5em;
-                padding-top 0.1em
-                text-align center
-        &-Contenido
-            color #35344a //colorContenido
-            font-weight bold
-            font-size 1.6em
-.TabsAsep-Pestania-1 .TabsAsep-Pestania-Ttulo-Numero
-    background #0cb570
-.TabsAsep-Pestania-Ttulo-Texto
-    font-size 1.4em
-    color #353e4a
-    line-height 0.8
-.smb
-    margin-right 0em
-    margin-left 0em
-.spb
-    padding-left 0em
-    padding-right 0em
-.TabsAsep-Pestania-Ttulo-Numero,.TabsAsep-Pestania-Bloque2
-    display inline-block
-    vertical-align middle
-.TabsAsep-Pestania-1 .TabsAsep-Pestania-Contenido
-    border-bottom 4px solid #0cb570
-.TabsAsep-Pestania-2 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-2 .TabsAsep-Pestania-Contenido,.TabsAsep-Pestania-3 .TabsAsep-Pestania-Ttulo-Texto,.TabsAsep-Pestania-3 .TabsAsep-Pestania-Contenido
-    color #929497
-@media screen and (max-width: 1100px)
-    .contenedor-tab-gallito
-        font-size 14px
-@media screen and (max-width: 942px)
-    .contenedor-tab-gallito
-        font-size 13px
-    .TabsAsep-Pestania-Contenido
-        font-size 1.4em
-@media screen and (max-width: 785px)
-    .contenedor-tab-gallito
-        font-size 12px
-    .TabsAsep-Pestania-Contenido
-        font-size 1.4em
-@media screen and (max-width: 726px)
-    .TabsAsep-Pestania-Bloque2
-        display block
-        text-align center
-@media screen and (max-width: 408px)
-    .TabsAsep-Pestania-Contenido
-        font-size 0.9em
-    .TabsAsep-Pestania-Ttulo-Texto
-        font-size 1.2em
-//************** tabs gallito **************//
-//************** formulario gallitoRegistro **************//
+/************** formulario gallitoRegistro **************/
 body
     margin 0
     font-size 16px
@@ -289,7 +199,7 @@ colorError=#ad3a3a
         margin-left 0em
     .content-btn-form
         padding-right 0em
-//************** formulario gallito **************//
+/************** formulario gallito **************/
 
 .borde-azul-todobusco  
     border: 6px solid #0e5682;
@@ -344,20 +254,6 @@ colorError=#ad3a3a
     margin-top 1em
 .input-documento
     margin-top 0.5em
-.contenido-banner-registro_aviso
-    background-image url(rutaImagenes+"gallito/baner_empresa.jpg")
-    height: 8em;
-    background-position-y: -6.5em;
-    background-size 100%
-.contenido-banner-registro_aviso-text
-    font-family: calibri;
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
-    background: rgba(0, 0, 0, 0.88);
-    height: 4em;
-    text-align: center;
-    padding-top: 1.2em;
 label.error
     font-weight normal
 @media screen and (max-width: 802px)

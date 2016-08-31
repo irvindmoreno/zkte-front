@@ -1,0 +1,52 @@
+extends ../layout/layout.jade
+block head
+    link(href='./postulante.css' rel='stylesheet')
+block navegacion    
+block contenido
+    - rutaImagenes ='../../../../static/imagenes/no_sprite'
+    div(class="contenedor-img")
+        img(class="img-inicio" src=rutaImagenes+"/gallito/baner_empresa.jpg")
+        div(class="baner-text")
+            div(class="text-bold") Mas de 21,580 postulantes esperando por ti
+            a(href="#" class="btn-pulicar-aviso") Publicar aviso
+    .row.contendeor-contador-gallito.smb
+        .col-md-1
+        .col-xs-4.col-sm-4.col-md-3.contenedor-cont
+            img.img-icon.lazyload(src='http://cds.dev.gallito.clickslatam.com/tg/imagenes/icon_Aviso.png?v=19557')
+            .contador-gallito-text Mas de 21,158 postulantes
+        .col-xs-4.col-sm-4.col-md-4.contenedor-cont
+            img.img-icon.lazyload(src='http://cds.dev.gallito.clickslatam.com/tg/imagenes/icon_postulantes.png?v=19557')
+            .contador-gallito-text Mas de 5,7125 CVs enviados
+        .col-xs-4.col-sm-4.col-md-3.contenedor-cont.contenedor-cont-last
+            img.img-icon.lazyload(src='http://cds.dev.gallito.clickslatam.com/tg/imagenes/icon_empresas.png?v=19557')
+            .contador-gallito-text Mas de 7,7584 postulaciones mensuales
+        .col-md-1
+    div(class="conten-img-3-pasos")
+        img(class="img-inicio" src=rutaImagenes+"/gallito/tu_aviso_3_pasos.jpg")
+        div(class="contenido-3-pasos")
+            div(class="text-3-pasos") Publicá tu aviso en 3 pasos
+            div(class="row row-3-pasos")
+                div(class="col-xs-4 col-sm-4 col-md-4")
+                    div(class="content-cuadrado-3-pasos")
+                        span Elige el tipo de aviso
+                        div(class="contenedor-circle-3-pasos")
+                            div(class="circle-3-pasos bg-circle-blueDark")
+                            div(class="circle-3-pasos")
+                            div(class="circle-3-pasos")
+                div(class="col-xs-4 col-sm-4 col-md-4")
+                    div(class="content-cuadrado-3-pasos content-cuadrado-3-pasos-middle")
+                        span Ingresá el texto a publicar
+                        div(class="contenedor-circle-3-pasos")
+                            div(class="circle-3-pasos bg-circle-blueDark")
+                            div(class="circle-3-pasos bg-circle-blueDark")
+                            div(class="circle-3-pasos")
+                div(class="col-xs-4 col-sm-4 col-md-4")
+                    div(class="content-cuadrado-3-pasos")
+                        span Confirma y listo!
+                        div(class="contenedor-circle-3-pasos")
+                            div(class="circle-3-pasos bg-circle-blueDark")
+                            div(class="circle-3-pasos bg-circle-blueDark")
+                            div(class="circle-3-pasos bg-circle-blueDark")
+block script
+    script(src='./clases.js')
+    script(src='./postulante.js')

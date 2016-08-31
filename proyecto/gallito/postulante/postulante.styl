@@ -1,0 +1,136 @@
+rutaComponentes='../../../componentes'
+rutaImagenes='../../../imagenes'
+
+
+/************Layout****************/
+@import('../layout/layout.styl')
+/************Layout****************/
+.contenedor-layout
+    max-width inherit !important
+    font-family calibri
+.img-inicio
+    width 100%
+    margin-top -2px
+.contenedor-img
+    position relative
+.baner-text
+    position: absolute;
+    bottom: 2em;
+    width: 50%;
+    background: rgba(58, 64, 75, 0.67);
+    color: #fff;
+    padding: 1em 1em;
+    display: block;
+    border: 1px solid rgba(58,64,75,0.67);
+    left: 25%;
+    font-size: 1.5em;
+    text-align center
+.btn-pulicar-aviso
+    color: white;
+    background: #52749a;
+    padding: 0.2em;
+    display: block;
+    text-align: center;
+    border: 1px solid #444444;
+    cursor: pointer;
+    border-radius: 4px;
+    transition all ease 0.3s
+    font-size 18px
+    width 27%
+    margin 0 auto
+.btn-pulicar-aviso:hover
+    color white
+    background #353e4a
+.headerDashboard
+    z-index 1
+.contendeor-contador-gallito
+    padding: 1em 0em;
+    background: #f2f2f3;
+    font-size: 14px;
+.contenedor-cont
+    text-align: center;
+    padding: 2em 3em;
+    background: #f2f2f3;
+    border-right: 1px #808080 dashed;
+.img-icon
+    height 3em
+.contador-gallito-text
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height 1
+    margin 0 auto
+    width 7em
+    margin-top 1em
+    color: #3a404b;
+.contenedor-cont-last
+    border-right none
+.text-bold
+    font-weight bold
+.row-3-pasos
+    margin 3em
+.content-cuadrado-3-pasos
+    border: 2px solid #3a404b;
+    height: 6em;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    position relative
+.text-3-pasos
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 1em;
+.circle-3-pasos
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    border: 2px solid #3a404b;
+    border-radius: 50%;
+    margin-right 0.2em
+    background  white
+.contenedor-circle-3-pasos
+    margin-top 1.65em
+.bg-circle-blueDark
+    background #3a404b
+.conten-img-3-pasos img
+    opacity 0.7;
+.conten-img-3-pasos
+    position relative
+    height 25em
+    overflow hidden
+.contenido-3-pasos
+    position absolute
+    top 0
+    width 100%
+@media screen and (max-width: 1181px)
+    .baner-text
+        width 70%
+        left 15%
+@media screen and (max-width: 1032px)
+    .contenido-3-pasos
+        font-size 14px
+@media screen and (max-width: 952px)
+    .baner-text
+        position initial
+        width 100%
+        background #1eb3ec
+    .btn-pulicar-aviso
+        background #353e4a
+@media screen and (max-width: 876px)
+    .contenido-3-pasos
+        font-size 13px
+@media screen and (max-width: 823px)
+    .contenedor-cont
+        padding 2em 1em
+    .contador-gallito-number
+        font-size 1.5em
+    .contador-gallito-text
+        font-size 1em
+    .btn-pulicar-aviso
+        width 10em
+@media screen and (max-width: 500px)
+    .contador-gallito-text
+        width 5em
+    .text-bold
+        font-size 16px

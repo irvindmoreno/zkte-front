@@ -1,0 +1,189 @@
+rutaComponentes='../../../componentes'
+rutaImagenes='../../../imagenes'
+
+
+/************Layout****************/
+@import('../layout/layout.styl')
+/************Layout****************/
+.contenedor-layout
+    max-width inherit !important
+.borde-top-blue
+    background blueDark
+    height 0.1em
+    margin 2em 0em
+.contenedor-imagen
+    position relative
+    background rgba(4, 15, 29, 0.68)
+    overflow hidden
+    height 20em
+.img-inicio
+    position absolute
+    z-index -1
+    top -7em
+.texo-dasboard-inicio
+    color white    
+.texo-dasboard-inicio span
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 1.2em;
+    top: 50%;
+    width: 78%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 11em;
+.btn-ir-perfil
+    display: block;
+    width: 8em;
+    background: #0cb570;
+    color: white;
+    text-align: center;
+    font-family: calibri;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0.2em 0em;
+    cursor pointer
+    transition all ease 0.3s
+.btn-ir-perfil:hover
+    background #098a55
+    color white
+.contenedor-borde
+    position relative
+    border-bottom 1px solid #527494
+    margin-top 1em
+.text-borde
+    color #527494
+    font-size 1.3em
+    font-weight bold
+    position  absolute
+    background white
+    display inline-block
+    width 4.5em
+.contenedor-filtro-proyecto
+    font-family calibri
+.borde-inferior
+    height 1.2em    
+.img-left
+    width 100%
+.cont-bloque-middle
+    margin-top 1em
+.cont-circle
+    padding 0em 0.5em
+.cont-texto-circle
+    font-size 1.2em
+.text-blue
+    color #527494
+    font-weight bold
+.c100:hover > span,.c100 > span
+    color #0cb570
+.circle-text
+    line-height: 1;
+    font-weight: normal;
+    color: gray;
+    margin-top 0em
+.circle-bar
+    height: 2em;
+    background: #0cb570;
+    width: 0.25em;
+.circle-bar,.circle-text
+    display inline-block
+    vertical-align middle
+.circle-text
+    width 95%
+.circle-gray
+    background #ccc
+.text-circle
+    padding-left 0.5em
+.circle-text-one
+    margin 1em 0em
+.contenedor-img-left
+    margin-top: 1em;
+    height: 12em;
+    overflow: hidden;
+    position: relative;
+.img-right
+    width 100%
+    position absolute
+    top -4em
+.text-borde-postulaciones
+    width 8em
+.txt-no-post
+    padding-top 1em
+    color gray
+    height 11em
+.btn-ver-todos
+    background: #366599;
+    color: white;
+    padding: 0.2em 1em;
+    margin: 0 auto;
+    width: 8em;
+    text-align: center;
+    cursor: pointer;
+.cont-bottom
+    padding-bottom 1em
+    position relative
+.txt-no-post-left
+    border-right 1px solid #527494
+.cadro-blanco
+    position: absolute;
+    top: 2em;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    background: white;
+.cont-bottom-left
+    padding-right 1em
+@media screen and (max-width: 1322px)
+    .c100
+        font-size 100px
+        float initial
+        margin 0 auto
+    .text-circle
+        width 100%
+    .content-circle-css
+        width 100%
+    .circle-text
+        font-size 14px
+    .circle-bar
+        height 1.1em
+    .circle-text-one
+        margin 0.5em 0em
+@media screen and (max-width: 1110px)
+    .c100
+        font-size 61px
+@media screen and (max-width: 1042px)
+    .texo-dasboard-inicio span
+        width 87%
+@media screen and (max-width: 991px)
+    .circle-text-one
+        margin-top 1em
+    .c100
+        font-size 100px
+    .txt-no-post-left
+        border-right none
+    .img-left
+        width initial
+    .cont-img-left
+        width 17%
+    .contenedor-img-left
+        display none
+@media screen and (max-width: 956px)
+    .cont-content
+        padding 0em 1em
+@media screen and (max-width: 878px)
+    .cont-img-left
+        width 20%
+@media screen and (max-width: 768px)
+    .cont-bloque-middle
+        text-align center
+    .cont-img-left
+        width 100%
+        margin-bottom 0.5em
+    .circle-text
+        display inline
+@media screen and (max-width: 614px)
+    .texo-dasboard-inicio span
+        width 100%
+    .texo-dasboard-inicio span
+        margin-top 10.5em
+        font-size 16px

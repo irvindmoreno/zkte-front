@@ -1,0 +1,61 @@
+extends ../layout/layout.jade
+block head
+    link(href='./inicioDashboards.css' rel='stylesheet')
+block navegacion    
+block contenido
+    - rutaImagenes ='../../../../static/imagenes/no_sprite'
+    div(class="row smb")
+        div(class="col-sm-3 col-md-3 spb contenedor-project-filter")
+            include ../include/dashboard/filtro.jade
+        div(class="col-sm-9 col-md-9 contenedor-filtro-proyecto")
+            div(class="borde-top-blue")
+            div(class="contenedor-imagen")
+                img(class="img-inicio" src=rutaImagenes+"/gallito/img-opacity.jpg")
+                div(class="texo-dasboard-inicio")
+                    span.
+                        Mantén actualizado tu CV con la mayor cantidad de datos posibles,
+                        asi podrás incrementar las posibilidades de ser contratado.
+                    a(href="#" class="btn-ir-perfil") Ir a mi perfil
+            div(class="row smb cont-content")
+                div(class="contenedor-borde") 
+                    span(class="text-borde") Mis datos
+                    div(class="borde-inferior")
+                div(class="col-xs-12 col-md-6 spb cont-bloque-middle")
+                    div(class="col-xs-12 col-sm-4 col-md-4 spb cont-img-left")
+                        img(class="img-left" src=rutaImagenes+"/gallito/fotoperfil.jpg")
+                    div(class="col-xs-12 col-sm-8 col-md-8 spb cont-circle")
+                        div(class="cont-texto-circle")
+                            span(class="text-black") Hola 
+                            span(class="text-blue") Carla Paola,
+                        div(class="content-circle-css col-sm-6 col-md-5 spb")
+                            .c100.p25
+                                span 25%
+                                .slice
+                                    .bar
+                                    .fill
+                        div(class="text-circle col-sm-6 col-md-7 spb")
+                            div(class="circle-bar")
+                            div(class="circle-text circle-text-one").
+                                Tu perfil se encuentra al 25% de completado
+                        div(class="text-circle col-sm-6 col-md-7 spb")
+                            div(class="circle-bar circle-gray")
+                            div(class="circle-text").
+                                Espacio restarte para llegar al 100%
+                div(class="col-xs-12 col-md-6 spb contenedor-img-left")
+                    img(class="img-right" src=rutaImagenes+"/gallito/compuwoman.jpg")
+                div(class="col-xs-12 col-md-6 spb cont-bottom cont-bottom-left")
+                    div(class="contenedor-borde")
+                        span(class="text-borde text-borde-postulaciones") Mis Postulaciones
+                        div(class="borde-inferior")
+                    div(class="txt-no-post txt-no-post-left") No tiene postulaciones
+                    div(class="btn-ver-todos") Ver Todos
+                    div(class="cadro-blanco")
+                div(class="col-xs-12 col-md-6 spb cont-bottom")
+                    div(class="contenedor-borde") 
+                        span(class="text-borde text-borde-postulaciones") Mis Notificaciones
+                        div(class="borde-inferior")
+                    div(class="txt-no-post") No tiene notificaciones
+                    div(class="btn-ver-todos") Ver Todos
+block script
+    script(src='./clases.js')
+    script(src='./inicioDashboards.js')

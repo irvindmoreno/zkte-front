@@ -1,8 +1,80 @@
 extends ../layout/layout.jade
 block head
-	link(href='./conocePlanes.css' rel='stylesheet')
-block navegacion	
-block contenido	
+    link(href='./conocePlanes.css' rel='stylesheet')
+block banner
+    div(class="contenido-banner-registro_aviso")
+        div(class="contenido-banner-registro_aviso-text") 
+            span(class="text-2-line-height") Conoce nuestros planes para empresas
+block navegacion    
+block contenido
+        //************** formulario gallitoRegistro **************//
+        - rutaImagenes ='../../../imagenes'
+        form(id="formulario-registro-1" method="post" action="#")
+            div(class="contenedor-formulario-gallito")
+                div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                    div(class="contenedor-title-borde")
+                        span(class="title-text-borde") Completá el formulario y nos comunicaremos contigo a la brevedad  
+                div(class="contenedor-desplegado")
+                    div(class="contenedor-datos-cargo")
+                        div(class="row smb cont-file")
+                            div(class="col-md-12 spb")
+                                span(class="color-error") (*) Campos Obligatorios
+                        div(class="row smb cont-file")
+                            div(class="col-sm-3 col-md-2 spb")
+                                span(class="text-1-line") Nombre / Empresa (*)
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                input(type="text" class="input_form_perfil" maxlength="100" name="name_nombre_comercial" placeholder="Ingrese nombre o empresa")
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-3 col-md-2 spb")
+                                span(class="text-1-line") Consulta de planes (*)
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                input(type="text" class="input_form_perfil" maxlength="100" name="name_razon_social" placeholder="Correo electrónico y/o teléfono")
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+                        div(class="row smb cont-file")
+                            div(class="col-sm-3 col-md-2 spb align-middle-text")
+                                span(class="text-2-line ") Rubro (*)
+                            div(class="col-sm-6 col-md-7 spb align-middle")
+                                textarea(type="text" class="input_form_perfil" maxlength="100" name="name_razon_social" placeholder="Quiero recibir informacion sobre los planes especiales de Gallito para empresas")
+                            div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                                div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                                div(class="error-format text-2-line-error")
+            div(class="contenedor-datos-cargo")
+                div(class="row smb cont-file")
+                    div(class="col-sm-3 col-md-2 spb")
+                        span(class="text-1-line")
+                    div(class="col-sm-6 col-md-7 spb align-middle align-right")
+                        button(class="btn-form-gallito btn-gallit-green" type="submit " id="btn-continuaraPaso-2") Enviar
+                    div(class="col-sm-3 col-md-3 spb align-middle-text cont-module-error")
+                        div(class="icon-alert icon-inline icon-alert-left hideDiv")
+                        div(class="error-format text-2-line-error")
+            div(class="contenedor-icon-gallito-perfil block-desplegable-rectangle")
+                    div(class="contenedor-title-borde")
+                        span(class="title-text-borde") Beneficios especiales para tu empresa
+                div(class="contenedor-datos-cargo row spb")
+                    div(class="col-xs-12 col-sm-6 col-md-6 spb contenedor-check-text")
+                        i(class="fa fa-check icon-check-green" aria-hidden="true")
+                        span(class="text_check") Llegá a miles de posibles postulantes
+                    div(class="col-xs-12 col-sm-6 col-md-6 spb contenedor-check-text")
+                        i(class="fa fa-check icon-check-green" aria-hidden="true")
+                        span(class="text_check") 100% autogestión y sin horarios
+                    div(class="col-xs-12 col-sm-6 col-md-6 spb contenedor-check-text")
+                        i(class="fa fa-check icon-check-green" aria-hidden="true")
+                        span(class="text_check") Publicá durante las 24 hs.
+                    div(class="col-xs-12 col-sm-6 col-md-6 spb contenedor-check-text")
+                        i(class="fa fa-check icon-check-green" aria-hidden="true")
+                        span(class="text_check") Respondé preguntas en un solo clic.
+                    div(class="col-sm-6 col-md-6 spb")
+                        i(class="fa fa-check icon-check-green" aria-hidden="true")
+                        span(class="text_check") Tu aviso se puede publicar en web y/o papel.
+                    div(class="col-xs-12 col-sm-6 col-md-6 spb contenedor-check-text")
+                        i(class="fa fa-check icon-check-green" aria-hidden="true")
+                        span(class="text_check") Medí las vistas a tus avisos.
+        //************** formulario gallitoRegistro **************//
 block script
-	script(src='./clases.js')
-	script(src='./conocePlanes.js')
+    script(src='./clases.js')
+    script(src='./conocePlanes.js')
