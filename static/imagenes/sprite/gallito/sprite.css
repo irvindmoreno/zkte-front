@@ -18,73 +18,73 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-alert {
   background-image: url(sprite.png);
-  background-position: -278px -172px;
+  background-position: -314px -93px;
   width: 16px;
   height: 15px;
 }
 .icon-busqueda_postulante {
   background-image: url(sprite.png);
   background-position: -258px 0px;
-  width: 96px;
-  height: 96px;
+  width: 73px;
+  height: 72px;
 }
 .icon-check {
   background-image: url(sprite.png);
-  background-position: -205px -168px;
+  background-position: -227px -143px;
   width: 21px;
   height: 20px;
 }
 .icon-cv_circulo {
   background-image: url(sprite.png);
-  background-position: -101px -129px;
+  background-position: -303px -151px;
   width: 28px;
   height: 41px;
 }
 .icon-datos_personales {
   background-image: url(sprite.png);
-  background-position: -256px -190px;
+  background-position: -130px -174px;
   width: 45px;
   height: 27px;
 }
 .icon-estudios {
   background-image: url(sprite.png);
-  background-position: -101px -88px;
+  background-position: -190px -122px;
   width: 37px;
   height: 41px;
 }
 .icon-experiencia {
   background-image: url(sprite.png);
-  background-position: -163px -190px;
+  background-position: -190px -88px;
   width: 46px;
   height: 34px;
 }
 .icon-facebook {
   background-image: url(sprite.png);
-  background-position: -184px -168px;
+  background-position: -218px -174px;
   width: 21px;
   height: 21px;
 }
 .icon-home {
   background-image: url(sprite.png);
-  background-position: -138px -168px;
+  background-position: -227px -122px;
   width: 24px;
   height: 21px;
 }
 .icon-idiomas {
   background-image: url(sprite.png);
-  background-position: -74px -190px;
+  background-position: -258px -151px;
   width: 45px;
   height: 41px;
 }
 .icon-linkedin {
   background-image: url(sprite.png);
-  background-position: -301px -190px;
+  background-position: -236px -88px;
   width: 22px;
   height: 22px;
 }
 .icon-mensaje {
   background-image: url(sprite.png);
-  background-position: -323px -190px;
+  background-position: -175px -174px;
   width: 21px;
   height: 22px;
 }
@@ -96,43 +96,43 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-mensuales_check {
   background-image: url(sprite.png);
-  background-position: -138px -82px;
+  background-position: 0px -88px;
   width: 112px;
   height: 86px;
 }
 .icon-mi_cv {
   background-image: url(sprite.png);
-  background-position: -144px -231px;
+  background-position: -314px -72px;
   width: 14px;
   height: 21px;
 }
 .icon-mi_perfil {
   background-image: url(sprite.png);
-  background-position: -162px -168px;
+  background-position: -196px -174px;
   width: 22px;
   height: 21px;
 }
 .icon-mis_notificaciones {
   background-image: url(sprite.png);
-  background-position: -226px -168px;
+  background-position: -239px -174px;
   width: 19px;
   height: 20px;
 }
 .icon-mis_postulaciones {
   background-image: url(sprite.png);
-  background-position: -101px -170px;
+  background-position: -125px -204px;
   width: 19px;
   height: 19px;
 }
 .icon-otros estudios {
   background-image: url(sprite.png);
-  background-position: -74px -231px;
+  background-position: -302px -192px;
   width: 28px;
   height: 41px;
 }
 .icon-otros_estudios {
   background-image: url(sprite.png);
-  background-position: -209px -190px;
+  background-position: -83px -174px;
   width: 47px;
   height: 30px;
 }
@@ -144,43 +144,43 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-publicacion {
   background-image: url(sprite.png);
-  background-position: 0px -190px;
-  width: 74px;
-  height: 102px;
+  background-position: -258px -72px;
+  width: 56px;
+  height: 79px;
 }
 .icon-referencias {
   background-image: url(sprite.png);
-  background-position: -119px -190px;
+  background-position: -258px -192px;
   width: 44px;
   height: 41px;
 }
 .icon-republica {
   background-image: url(sprite.png);
-  background-position: -258px -96px;
-  width: 94px;
-  height: 76px;
+  background-position: 0px -174px;
+  width: 83px;
+  height: 66px;
 }
 .icon-seleccion {
   background-image: url(sprite.png);
-  background-position: 0px -88px;
-  width: 101px;
-  height: 102px;
+  background-position: -112px -88px;
+  width: 78px;
+  height: 79px;
 }
 .icon-twiter {
   background-image: url(sprite.png);
-  background-position: -102px -231px;
+  background-position: -83px -204px;
   width: 21px;
   height: 22px;
 }
 .icon-ver_avisos {
   background-image: url(sprite.png);
-  background-position: -258px -172px;
+  background-position: -144px -204px;
   width: 20px;
   height: 17px;
 }
 .icon-youtube {
   background-image: url(sprite.png);
-  background-position: -123px -231px;
+  background-position: -104px -204px;
   width: 21px;
   height: 22px;
 }

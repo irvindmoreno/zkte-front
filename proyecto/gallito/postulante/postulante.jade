@@ -1,5 +1,6 @@
 extends ../layout/layout.jade
 block head
+    link(rel='stylesheet' href=rutaLib+'/owl-slider/owl-slider.css')
     link(href='./postulante.css' rel='stylesheet')
 block navegacion    
 block contenido
@@ -26,27 +27,82 @@ block contenido
         div(class="contenido-3-pasos")
             div(class="text-3-pasos") Publicá tu aviso en 3 pasos
             div(class="row row-3-pasos")
-                div(class="col-xs-4 col-sm-4 col-md-4")
+                div(class="top-3-pasos col-xs-12 col-sm-4 col-md-4")
                     div(class="content-cuadrado-3-pasos")
                         span Elige el tipo de aviso
                         div(class="contenedor-circle-3-pasos")
                             div(class="circle-3-pasos bg-circle-blueDark")
                             div(class="circle-3-pasos")
                             div(class="circle-3-pasos")
-                div(class="col-xs-4 col-sm-4 col-md-4")
+                div(class="top-3-pasos col-xs-12 col-sm-4 col-md-4")
                     div(class="content-cuadrado-3-pasos content-cuadrado-3-pasos-middle")
                         span Ingresá el texto a publicar
                         div(class="contenedor-circle-3-pasos")
                             div(class="circle-3-pasos bg-circle-blueDark")
                             div(class="circle-3-pasos bg-circle-blueDark")
                             div(class="circle-3-pasos")
-                div(class="col-xs-4 col-sm-4 col-md-4")
+                div(class="top-3-pasos col-xs-12 col-sm-4 col-md-4")
                     div(class="content-cuadrado-3-pasos")
                         span Confirma y listo!
                         div(class="contenedor-circle-3-pasos")
                             div(class="circle-3-pasos bg-circle-blueDark")
                             div(class="circle-3-pasos bg-circle-blueDark")
                             div(class="circle-3-pasos bg-circle-blueDark")
+    div(class="text-3-pasos smtop") Nuestros Servicios
+    div(class="contenedor-servicios")
+        div(class="row smb marbtn1")
+            div(class="top-3-servicios col-xs-6 col-sm-6 col-md-6 spb")
+                div(class="mobile-ubi-left col-md-3 spb text-center")
+                    div(class="icon-busqueda_postulante")
+                div(class="mobile-ubi-right content-text-servicios col-md-8 spb")
+                    div(class="content-text-servicios-title") Realiza la búsqueda de Postulantes
+                    div(class="content-text-servicios-text") Puedes buscar a los postulantes e invitarlos al proceso de selección.
+            div(class="top-3-servicios col-xs-6 col-sm-6 col-md-6 spb")
+                div(class="mobile-ubi-left col-md-3 spb text-center")
+                    div(class="icon-publicacion")
+                div(class="mobile-ubi-right content-text-servicios col-md-8 spb")
+                    div(class="content-text-servicios-title") Administra tus Procesos de Selección
+                    div(class="content-text-servicios-text") Puedes administrar los CVs de los postulantes moviéndolos a una siguiente etapa de selección.
+        div(class="row smb")
+            div(class="top-3-servicios col-xs-6 col-sm-6 col-md-6 spb")
+                div(class="mobile-ubi-left col-md-3 spb text-center")
+                    div(class="icon-seleccion")
+                div(class="mobile-ubi-right content-text-servicios col-md-8 spb")
+                    div(class="content-text-servicios-title") Amplia la publicación de los Avisos
+                    div(class="content-text-servicios-text") Puedes realizar la ampliación de los avisos si es que aún no encuentras al candidato.
+            div(class="top-3-servicios col-xs-6 col-sm-6 col-md-6 spb")
+                div(class="mobile-ubi-left col-md-3 spb text-center")
+                    div(class="icon-republica")
+                div(class="mobile-ubi-right content-text-servicios col-md-8 spb")
+                    div(class="content-text-servicios-title") Republica los Avisos
+                    div(class="content-text-servicios-text") Puedes republicar tus avisos y actualizarlos a las nuevas necesidades de tu empresa.
+    div(class="contenedor-silder")
+        div(class="title-clientes") Conoce nuestros Clientes
+        div(id="slider_3_demo")
+          div(class="arrow-prev")
+            i(class="fa fa-angle-left" aria-hidden="true")
+          div(class="arrow-next")
+            i(class="fa fa-angle-right" aria-hidden="true")
+          div(class="container")
+            div(class="row")
+              div(class="span12")
+                div(id="owl-slider_3" class="owl-carousel")
+                    a(href="#" class="item item-gallitoB")
+                        div(class="cuadro-todobusco-slider-casabusco")
+                            img(class="imagen-slider-empresa lazyOwl" src="http://dev.todobusco.com/img/todobusco/home/casa_imagen.svg")
+                    a(href="#" class="item item-gallitoB")
+                        div(class="cuadro-todobusco-slider-casabusco ")
+                            img(class="imagen-slider-empresa lazyOwl" src="http://dev.todobusco.com/img/todobusco/home/carro_imagen.svg")
+                    a(href="#" class="item item-gallitoB")
+                        div(class="cuadro-todobusco-slider-casabusco  ")
+                            img(class="imagen-slider-empresa lazyOwl" src="http://dev.todobusco.com/img/todobusco/home/periodico_imagen.svg")
+                    a(href="#" class="item item-gallitoB")
+                        div(class="cuadro-todobusco-slider-casabusco ")
+                            img(class="imagen-slider-empresa lazyOwl" src="http://dev.todobusco.com/img/todobusco/home/bicicleta_imagen.svg")
+                    a(href="#" class="item item-gallitoB")
+                        div(class="cuadro-todobusco-slider-casabusco")
+                            img(class="imagen-slider-empresa lazyOwl" src="http://dev.todobusco.com/img/todobusco/home/casa_imagen.svg")
 block script
+    script(src=rutaLib+'/owl-slider/owl-slider.js')
     script(src='./clases.js')
     script(src='./postulante.js')
